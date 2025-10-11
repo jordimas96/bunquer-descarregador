@@ -1,0 +1,59 @@
+
+
+
+// Pantalla Mòbil //
+@mixin mobil {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+// Pantalla Tablet //
+@mixin tablet {
+    @media only screen and (min-width: 576px) {
+        @content;
+    }
+}
+// Pantalla PC //
+@mixin pc {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+// Pantalla Molt Gran //
+@mixin gran {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+// PC //
+@mixin cursor {
+    @media (pointer: fine) {
+        @content;
+    }
+}
+// Mòbil //
+@mixin tactil {
+    @media (pointer: coarse) {
+        @content;
+    }
+}
+
+// Firefox //
+@mixin firefox {
+    @-moz-document url-prefix() {
+        @content;
+    }
+    
+}
+
+// Dark Mode //
+@mixin dark {
+    @media (prefers-color-scheme: dark) {
+        @content;
+    }
+}
+@mixin light {
+    @media (prefers-color-scheme: light) {
+        @content;
+    }
+}

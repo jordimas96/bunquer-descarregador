@@ -1,0 +1,15 @@
+// Variables //
+
+// Bootstrap //
+$enable-negative-margins: true !important; // No funciona i no sé per què //
+
+
+:root {
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    --transicio-colors: background-color 0.3s, color 0.3s, border-color 0.3s, filter 0.3s, box-shadow 0.3s;
+}

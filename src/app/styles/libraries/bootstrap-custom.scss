@@ -1,0 +1,24 @@
+
+// Functions first
+@import "bootstrap/scss/functions";
+
+// Variable overrides second
+// $primary: #0cf;
+$enable-shadows: true;
+// $prefix: "bs-";
+
+// Required Bootstrap imports
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+
+// Optional components
+@import "bootstrap/scss/utilities"; // Clases de utilidad: p-1, m-2, d-block, w-100 //
+@import "bootstrap/scss/reboot"; // Resetea y normaliza estilos básicos del navegador //
+@import "bootstrap/scss/containers"; // Contenedores responsivos: container-lg //
+@import "bootstrap/scss/grid"; // row, col-12, col-sm-6 //
+@import "bootstrap/scss/helpers"; // Clases para utilidades y ayudantes //
+@import "bootstrap/scss/utilities/api"; // bg-primary, bg-danger, rounded //
+@import "bootstrap/scss/type"; // h1, h2, h3, h4, h5, h6 //

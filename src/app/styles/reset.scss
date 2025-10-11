@@ -1,0 +1,21 @@
+@mixin reset-button {
+    border: none;
+    background: none;
+    padding: 0;
+
+    color: inherit;
+
+    cursor: pointer;
+}
+@mixin reset-a {
+    color: inherit;
+    text-decoration: none;
+}
+@mixin reset-figure {
+    margin: 0;
+}
+
+
+button.rs { @include reset-button; }
+a.rs { @include reset-a; }
+figure.rs { @include reset-figure; }
