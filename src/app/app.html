@@ -21,30 +21,37 @@
     </div>
 
 
-    <div class="llista-capitols">
+    <div class="llista-capitols mt-5">
         <table class="taula capitols">
-            <thead>
-                <tr>
-                    <th>Temporada</th>
-                    <th class="text-center">
-                        @if (tabSeleccionat == 'capitols') { Capítol }
-                        @if (tabSeleccionat == 'especials') { Número }
-                        @if (tabSeleccionat == 'millors') { Setmana }
-                    </th>
-                    <th></th>
-                    <th>Títol</th>
-                    <th>Descarregar</th>
-                    <th>Veure</th>
-                </tr>
-            </thead>
             @for (capitol of cs.getLlista(tabSeleccionat); track capitol.title) {
-                <tr class="fila" title="Descarregar MP3">
-                    <td class="temporada">{{capitol.temporada}}</td>
-                    <td class="capitol text-center">
-                        {{ capitol.capitol || capitol.ordre || capitol.setmana }}
-                    </td>
-                    <td></td>
-                    <td class="titol">{{ capitol.titolMostrar }}</td>
+                @if (capitol.capitol == 1 || capitol.ordre == 1 || capitol.setmana == 1) {
+                    <tr class="fila-temporada">
+                        <td colspan="5">
+                            <h1 class="titol">Temporada {{capitol.temporada}}</h1>
+                        </td>
+                    </tr>
+
+                    
+                    <tr class="header">
+                        <!-- <th>T.</th> -->
+                        @if (tabSeleccionat != 'especials') {
+                            <th class="text-center">
+                                @if (tabSeleccionat == 'capitols') { Cap. }
+                                @if (tabSeleccionat == 'millors') { Setmana }
+                            </th>
+                        }
+                        <th>Títol</th>
+                        <th>Descarregar</th>
+                        <th>Veure</th>
+                    </tr>
+                    
+                }
+                <tr class="fila">
+                    <!-- <td class="temporada">{{capitol.temporada}}</td> -->
+                    @if (tabSeleccionat != 'especials') {
+                        <td class="capitol text-center">{{ capitol.capitol || capitol.setmana }}</td>
+                    }
+                    <td class="titol ps-3">{{ capitol.titolMostrar }}</td>
                     <td>
                         <button class="descarregar boto boing" (click)="cs.descarregar(capitol)" title="Descarregar MP3">
                             <i class="fa-solid fa-download"></i>

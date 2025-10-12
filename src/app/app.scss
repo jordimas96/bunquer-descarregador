@@ -4,6 +4,8 @@
     // max-width: 940px;
     margin: auto;
 
+    font-size: 0.5rem;
+
 
     h1.titol-pagina {
         color: #f61e50;
@@ -13,8 +15,9 @@
 
 
     .selector-tabs {
-        padding: 1rem 2rem;
+        padding: 0.5rem 0.5rem;
         display: flex;
+        flex-wrap: wrap;
         gap: 0.5rem;
         justify-content: center;
         width: 100%;
@@ -30,6 +33,14 @@
             padding: 0.5rem 1.5rem;
             border-radius: 0.75rem;
 
+            @include mobil {
+                font-size: 1rem;
+                padding: 0.25rem 0.75rem;
+                border-radius: 2rem;
+            }
+
+            white-space: nowrap;
+
             &:hover {
                 background-color: #592834;
             }
@@ -43,17 +54,19 @@
     .llista-capitols {
         .taula {
             font-size: 1.25rem;
+            font-weight: 300;
             // width: 96%;
             margin: auto;
 
-            border-radius: 1.5rem;
-
             overflow: hidden;
             
-            thead tr {
+            tr.header {
                 background-color: hsl(346, 92%, 20%);
+
                 th {
                     padding: 1rem 1rem;
+                    &:first-child { border-top-left-radius: 1.5rem; }
+                    &:last-child { border-top-right-radius: 1.5rem; }
                 }
             }
             th, td {
@@ -61,6 +74,17 @@
                 text-align: center;
             }
            
+            .fila-temporada {
+                &:not(:first-of-type) {
+                    td .titol {
+                        margin-top: 7rem;
+                    }
+                }
+                td .titol {
+                    margin-bottom: 3rem;
+                }
+            }
+
             .fila {
                 cursor: pointer;
                 
