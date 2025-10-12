@@ -38,7 +38,7 @@
                 </tr>
             </thead>
             @for (capitol of cs.getLlista(tabSeleccionat); track capitol.title) {
-                <tr class="fila" (click)="cs.descarregar(capitol)" title="Descarregar MP3">
+                <tr class="fila" title="Descarregar MP3">
                     <td class="temporada">{{capitol.temporada}}</td>
                     <td class="capitol text-center">
                         {{ capitol.capitol || capitol.ordre || capitol.setmana }}
@@ -46,8 +46,8 @@
                     <td></td>
                     <td class="titol">{{ capitol.titolMostrar }}</td>
                     <td>
-                        <button class="descarregar boto boing" title="Descarregar MP3">
-                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                        <button class="descarregar boto boing" (click)="cs.descarregar(capitol)" title="Descarregar MP3">
+                            <i class="fa-solid fa-download"></i>
                         </button>
                     </td>
                     <td>
