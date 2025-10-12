@@ -41,6 +41,10 @@
           "configurations": {
             "production": {
               "baseHref": "/bunquer-descarregador-capitols/",
+              "outputPath": {
+                "base": "docs",
+                "browser": ""
+              },
               "budgets": [
                 {
                   "type": "initial",
