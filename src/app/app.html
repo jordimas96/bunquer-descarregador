@@ -9,24 +9,47 @@
 
 
 
+    <div class="selector-tabs">
+        <button
+            (click)="tabSeleccionat = 'capitols'"
+            [class.selected]="tabSeleccionat == 'capitols'">
+            Capítols
+        </button>
+        <button
+            (click)="tabSeleccionat = 'especials'"
+            [class.selected]="tabSeleccionat == 'especials'">
+            Especials
+        </button>
+        <button
+            (click)="tabSeleccionat = 'millors'"
+            [class.selected]="tabSeleccionat == 'millors'">
+            Millors moments
+        </button>
+    </div>
 
 
     <div class="llista-capitols">
-        <table class="taula">
+        <table class="taula capitols">
             <thead>
                 <tr>
                     <th>Temporada</th>
-                    <th class="text-center">Capítol</th>
+                    <th class="text-center">
+                        @if (tabSeleccionat == 'capitols') { Capítol }
+                        @if (tabSeleccionat == 'especials') { Número }
+                        @if (tabSeleccionat == 'millors') { Setmana }
+                    </th>
                     <th></th>
                     <th>Títol</th>
                     <th>Descarregar</th>
                     <th>Veure</th>
                 </tr>
             </thead>
-            @for (capitol of cs.capitols; track capitol.title) {
+            @for (capitol of cs.getLlista(tabSeleccionat); track capitol.title) {
                 <tr class="fila" (click)="descarregar(capitol)" title="Descarregar MP3">
                     <td class="temporada">{{capitol.temporada}}</td>
-                    <td class="capitol text-center">{{capitol.capitol}}</td>
+                    <td class="capitol text-center">
+                        {{ capitol.capitol || capitol.ordre || capitol.setmana }}
+                    </td>
                     <td></td>
                     <td class="titol">{{capitol.title}}</td>
                     <td>

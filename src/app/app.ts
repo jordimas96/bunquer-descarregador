@@ -9,7 +9,7 @@ import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 })
 export class App {
 
-    public paginaActiva = "capitols";
+    public tabSeleccionat = "capitols";
 
     constructor(public cs: CapitolsService) {
     
