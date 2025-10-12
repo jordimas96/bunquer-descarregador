@@ -1,0 +1,98 @@
+@import "src/styles.scss";
+
+.content {
+    // max-width: 940px;
+    margin: auto;
+
+
+    h1.titol-pagina {
+        color: #f61e50;
+        font-weight: bold;
+        margin: 4rem 0;
+    }
+
+
+
+    .llista-capitols {
+        .taula {
+            font-size: 1.25rem;
+            // width: 96%;
+            margin: auto;
+
+            border-radius: 1.5rem;
+
+            overflow: hidden;
+            
+            thead tr {
+                background-color: hsl(346, 92%, 20%);
+                th {
+                    padding: 1rem 1rem;
+                }
+            }
+            th, td {
+                padding: 0.25rem 0.5rem;
+                text-align: center;
+            }
+           
+            .fila {
+                cursor: pointer;
+                
+                &:nth-child(even) { background-color: hsl(346, 30%, 10%); }
+                &:nth-child(odd) { background-color: hsl(346, 30%, 13%) }
+
+                &:hover {
+                    background-color: #450010;
+                }
+
+                .titol {
+                    text-align: left;
+                }
+                .boto {
+                    @include reset-button;
+                    @include reset-a;
+
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0;
+
+                    height: 2rem;
+
+                    background-color: #7d001d;
+                    border-radius: 2rem;
+
+                    padding: 0.5rem 2rem;
+                    margin: auto;
+
+                    &:hover {
+                        background-color: #dd0034;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #4e0012;
+    margin: 10rem -0.5rem -0.5rem;
+    padding: 0.5rem;
+    .firma {
+        display: block;
+
+        color: hsl(346, 100%, 68%);
+        
+        font-size: 1.5rem;
+
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: none;
+
+        letter-spacing: 1px;
+
+        margin: 5rem 2rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
