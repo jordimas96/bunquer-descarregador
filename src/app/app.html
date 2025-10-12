@@ -41,8 +41,7 @@
                             </th>
                         }
                         <th>Títol</th>
-                        <th>Descarregar</th>
-                        <th>Veure</th>
+                        <th>Descarregar / Veure</th>
                     </tr>
                     
                 }
@@ -51,16 +50,16 @@
                     @if (tabSeleccionat != 'especials') {
                         <td class="capitol text-center">{{ capitol.capitol || capitol.setmana }}</td>
                     }
-                    <td class="titol ps-3">{{ capitol.titolMostrar }}</td>
+                    <td class="titol">{{ capitol.titolMostrar }}</td>
                     <td>
-                        <button class="descarregar boto boing" (click)="cs.descarregar(capitol)" title="Descarregar MP3">
-                            <i class="fa-solid fa-download"></i>
-                        </button>
-                    </td>
-                    <td>
-                        <a class="veure boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecoltar a 3Cat">
-                            <i class="fa-solid fa-play"></i>
-                        </a>
+                        <div class="botons">
+                            <button class="descarregar boto boing" (click)="cs.descarregar(capitol)" title="Descarregar MP3">
+                                <i class="fa-solid fa-download"></i>
+                            </button>
+                            <a class="veure boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecoltar a 3Cat">
+                                <i class="fa-solid fa-play"></i>
+                            </a>
+                        </div>
                     </td>
                 </tr>
             }
