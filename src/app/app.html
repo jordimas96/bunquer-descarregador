@@ -2,13 +2,6 @@
     <h1 class="titol-pagina text-center">Descarregador de capítols d'El búnquer</h1>
 
 
-
-
-
-
-
-
-
     <div class="selector-tabs">
         <button
             (click)="tabSeleccionat = 'capitols'"
@@ -45,15 +38,15 @@
                 </tr>
             </thead>
             @for (capitol of cs.getLlista(tabSeleccionat); track capitol.title) {
-                <tr class="fila" (click)="descarregar(capitol)" title="Descarregar MP3">
+                <tr class="fila" (click)="cs.descarregar(capitol)" title="Descarregar MP3">
                     <td class="temporada">{{capitol.temporada}}</td>
                     <td class="capitol text-center">
                         {{ capitol.capitol || capitol.ordre || capitol.setmana }}
                     </td>
                     <td></td>
-                    <td class="titol">{{capitol.title}}</td>
+                    <td class="titol">{{ capitol.titolMostrar }}</td>
                     <td>
-                        <button class="descarregar boto boing" (click)="descarregar(capitol)" title="Descarregar MP3">
+                        <button class="descarregar boto boing" title="Descarregar MP3">
                             <i class="fa-solid fa-cloud-arrow-down"></i>
                         </button>
                     </td>

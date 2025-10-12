@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 
@@ -16,10 +17,4 @@ export class App {
     
     }
 
-
-
-    descarregar(capitol: Capitol) {
-        console.log("descarregat", capitol.title, capitol.urlArxiu);
-        
-    }
 }
