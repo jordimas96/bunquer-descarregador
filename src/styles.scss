@@ -25,6 +25,10 @@ html {
     }
 }
 
+// Reset //
+button.boto { @extend .rs; }
+a.boto { @include reset-a; }
+
 // Shared //
 
 .boing {

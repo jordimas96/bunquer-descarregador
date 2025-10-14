@@ -1,0 +1,63 @@
+
+
+.content {
+    display: block;
+
+    height: 90vh;
+    overflow-y: auto;
+
+    background-color: #91002243;
+    backdrop-filter: blur(20px);
+
+    // max-width: 720px;
+    min-width: 90vw;
+    text-align: center;
+
+    padding: 2rem;
+    border-radius: 2rem;
+
+    font-size: 1.5rem;
+
+    select {
+        font-size: 1.2rem;
+        padding: 0 0.5rem;
+        background: none;
+        border: none;
+        option {
+            background-color: #3c0210;
+        }
+    }
+    p-slider {
+        --p-slider-range-background: #f61e50;
+        --p-slider-handle-content-background: #ff7696;
+    }
+
+    .info-capitols-seleccionats {
+        text-align: left;
+
+        .des-de, .fins-a {
+            display: inline-block;
+
+            background-color: #ff95ae41;
+            // color: #600016;
+            border-radius: 2rem;
+            padding: 0.2rem 1rem;
+        }
+        .titol-capitol {
+            font-size: 1.2rem;
+            height: 90px;
+        }
+    }
+    .boto.descarregar {
+        background-color: #ffa4ba;
+        color: #80001e;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        padding: 1.5rem 2.5rem;
+        font-weight: bold;
+    }
+}
+
+.text-80 {
+    color: rgba(255, 255, 255, 0.8);
+}

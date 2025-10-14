@@ -14,6 +14,15 @@
         padding: 0 2rem;
     }
 
+    .boto.descarregar-en-grup {
+        background-color: #ffa4ba;
+        color: #80001e;
+        font-size: 1.5rem;
+        border-radius: 3rem;
+        padding: 1.5rem 2.5rem;
+        font-weight: bold;
+    }
+
 
     .selector-tabs {
         padding: 0.5rem 0.5rem;
@@ -23,9 +32,7 @@
         justify-content: center;
         width: 100%;
 
-        button {
-            @include reset-button;
-
+        .boto {
             background-color: #530013;
 
             font-weight: bold;
@@ -112,8 +119,6 @@
                 }
 
                 .boto {
-                    @include reset-button;
-                    @include reset-a;
 
                     border-radius: 2rem;
 
@@ -130,7 +135,7 @@
                         }
                     }
 
-                    &.veure {
+                    &.escoltar {
                         background-color: hsl(346, 100%, 25%);
                         &:hover { background-color: #dd0034 !important; }
 
@@ -169,5 +174,21 @@ footer {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+
+// Eliminar estils modal //
+::ng-deep .modal-descarrega-bloc {
+    --p-dialog-background: none;
+    --p-dialog-border-color: none;
+    --p-slider-track-size: 10px;
+    --p-slider-track-background: #ff61863d;
+    border: none !important;
+    .p-dialog-header { display: none; }
+    .p-dialog-content {
+        padding: 0;
+        background: none;
+        overflow-y: visible;
     }
 }

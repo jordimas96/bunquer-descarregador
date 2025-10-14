@@ -1,0 +1,30 @@
+
+<div class="content">
+
+    <h1>Selecciona els capítols</h1>
+
+    <label class="mt-4">
+        Tipus: 
+        <select [(ngModel)]="tipus" (change)="resetSlider()">
+            <option value="capitols">Capitols</option>
+            <option value="especials">Especials</option>
+            <option value="millors">Millors</option>
+        </select>
+    </label>
+
+    <p-slider class="my-4" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1"></p-slider>
+
+    @if (tipus) {
+        <div class="mt-5 mb-3">Capitols seleccionats:</div>
+        <div class="info-capitols-seleccionats">
+            <div class="des-de ms-3 mb-2">Des de:</div>
+            <div class="titol-capitol">{{ llistaSelecionada[rangCapitols[0]].title }}</div>
+            <div class="fins-a ms-3 mb-2 mt-4">Fins a:</div>
+            <div class="titol-capitol">{{ llistaSelecionada[rangCapitols[1]].title }}</div>
+        </div>
+
+        <button class="boto descarregar mt-5" (click)="descarregar()">Descarregar</button>
+    }
+
+
+</div>

@@ -2,18 +2,28 @@
     <h1 class="titol-pagina text-center">Descarregador de capítols d'El búnquer</h1>
 
 
+    <div class="text-center mb-5">
+        <button class="rs boto descarregar-en-grup" (click)="obrirModal()">
+            <i class="fa-solid fa-list-check"></i>
+            Descarrega en grup
+        </button>
+    </div>
+
     <div class="selector-tabs">
         <button
+            class="boto"
             (click)="tabSeleccionat = 'capitols'"
             [class.selected]="tabSeleccionat == 'capitols'">
             Capítols
         </button>
         <button
+            class="boto"
             (click)="tabSeleccionat = 'especials'"
             [class.selected]="tabSeleccionat == 'especials'">
             Especials
         </button>
         <button
+            class="boto"
             (click)="tabSeleccionat = 'millors'"
             [class.selected]="tabSeleccionat == 'millors'">
             Millors moments
@@ -41,7 +51,7 @@
                             </th>
                         }
                         <th>Títol</th>
-                        <th>Descarregar / Veure</th>
+                        <th>Descarrega / Escolta</th>
                     </tr>
                     
                 }
@@ -53,10 +63,10 @@
                     <td class="titol">{{ capitol.titolMostrar }}</td>
                     <td>
                         <div class="botons">
-                            <button class="descarregar boto boing" (click)="cs.descarregar(capitol)" title="Descarregar MP3">
+                            <button class="descarregar boto boing" (click)="cs.descarregar(capitol)" title="Descarrega MP3">
                                 <i class="fa-solid fa-download"></i>
                             </button>
-                            <a class="veure boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecoltar a 3Cat">
+                            <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
                                 <i class="fa-solid fa-play"></i>
                             </a>
                         </div>
