@@ -4,26 +4,43 @@
     <h1>Selecciona els capítols</h1>
 
     <label class="mt-4">
-        Tipus: 
-        <select [(ngModel)]="tipus" (change)="resetSlider()">
-            <option value="capitols">Capitols</option>
+        Llista: 
+        <select [(ngModel)]="tipus" (change)="resetSlider()" class="ms-3" [disabled]="cs.descarregant">
+            <option value="temporada1">Temporada 1</option>
+            <option value="temporada2">Temporada 2</option>
+            <option value="temporada3">Temporada 3</option>
+            <option value="temporada4">Temporada 4</option>
+            <option value="temporada5">Temporada 5</option>
             <option value="especials">Especials</option>
             <option value="millors">Millors</option>
         </select>
     </label>
 
-    <p-slider class="my-4" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1"></p-slider>
+    <p-slider class="my-4" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1"
+        [disabled]="cs.descarregant"></p-slider>
 
     @if (tipus) {
-        <div class="mt-5 mb-3">Capitols seleccionats:</div>
+        <div class="mt-5 mb-3">Capítols seleccionats:</div>
         <div class="info-capitols-seleccionats">
             <div class="des-de ms-3 mb-2">Des de:</div>
-            <div class="titol-capitol">{{ llistaSelecionada[rangCapitols[0]].title }}</div>
+            <div class="titol-capitol">{{ llistaActual[rangCapitols[0]].title }}</div>
             <div class="fins-a ms-3 mb-2 mt-4">Fins a:</div>
-            <div class="titol-capitol">{{ llistaSelecionada[rangCapitols[1]].title }}</div>
+            <div class="titol-capitol">{{ llistaActual[rangCapitols[1]].title }}</div>
         </div>
 
-        <button class="boto descarregar mt-5" (click)="descarregar()">Descarregar</button>
+        @if (!cs.descarregant) {
+            <button class="boto descarregar mt-5" (click)="descarregar()">Descarrega {{ rangCapitols[1] - rangCapitols[0] + 1}} capítols</button>
+        } @else {
+            <div class="progres-descarrega">
+                <h4 class="mb-4">Descarregant ({{ cs.progresDescarrega!.descarregats }} / {{ cs.progresDescarrega!.total }})</h4>
+
+                <div class="barra-progres mt-2">
+                    <div class="total">
+                        <div class="progres" [style.width.%]="cs.progresDescarrega!.descarregats / cs.progresDescarrega!.total * 100"></div>
+                    </div>
+                </div>
+            </div>
+        }
     }
 
 

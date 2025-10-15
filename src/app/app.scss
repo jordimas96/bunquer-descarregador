@@ -96,7 +96,6 @@
             }
 
             .fila {
-                cursor: pointer;
                 
                 &:nth-child(even) { background-color: hsl(346, 30%, 10%); }
                 &:nth-child(odd) { background-color: hsl(346, 30%, 13%) }
@@ -122,16 +121,29 @@
 
                     border-radius: 2rem;
 
-                    
+                    &:disabled {
+                        opacity: 0.5;
+                        cursor: default;
+                    }
 
                     &.descarregar {
                         background-color: #2d46ff;
-                        &:hover { background-color: #0522ff !important; }
+                        &:hover { background-color: #00a2ff !important; }
 
                         padding: 0.5rem 2rem;
                         @include mobil {
                             padding: 0.5rem 1rem;
                             flex: 2;
+                        }
+
+                        p-progress-spinner {
+                            width: 20px;
+                            height: 20px;
+                            vertical-align: middle;
+
+                            ::ng-deep .p-progressspinner-circle {
+                                stroke: white !important;
+                            }
                         }
                     }
 

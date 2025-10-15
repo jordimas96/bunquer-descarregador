@@ -56,6 +56,26 @@
         padding: 1.5rem 2.5rem;
         font-weight: bold;
     }
+
+    .progres-descarrega {
+        
+
+        .barra-progres {
+            .total {
+                height: 1.5rem;
+                background-color: #78001c;
+                border-radius: 0.4rem;
+
+                .progres {
+                    background-color: #f61e50;
+                    width: 20%;
+                    height: 100%;
+                    border-radius: inherit;
+                    transition: 0.3s width;
+                }
+            }
+        }
+    }
 }
 
 .text-80 {

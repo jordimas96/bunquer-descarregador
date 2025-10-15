@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { catchError, delay, forkJoin, from, mergeMap, of, toArray } from 'rxjs';
 
 import capitolsJson from "src/assets/urls/capitols.json";
 import especialsJson from "src/assets/urls/especials.json";
@@ -13,6 +14,8 @@ export class Capitol {
     capitol?: number;
     ordre?: number;
     setmana?: number;
+
+    descarregant: boolean = false;
 
     get titolMostrar() {
         return this.title.includes(" - ") ? this.title.split(" - ")[1] : this.title;
@@ -33,11 +36,17 @@ export class CapitolsService {
     public especials: Capitol[] = (especialsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
     public millors: Capitol[] = (millorsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
 
+    public progresDescarrega: { descarregats: number, total: number } | null = null;
+
     constructor(private http: HttpClient) {
 
         this.capitols.reverse();
         this.especials.reverse();
         this.millors.reverse();
+    }
+
+    get descarregant() {
+        return !!this.progresDescarrega;
     }
 
     getLlista(tipus: string): Capitol[] {
@@ -47,7 +56,9 @@ export class CapitolsService {
         return [];
     }
 
-    descarregar(capitol: Capitol) {
+    descarregarCapitol(capitol: Capitol) {
+        capitol.descarregant = true;
+        
         this.http.get(capitol.urlArxiu, { responseType: 'blob' }).subscribe({
             next: (blob) => {
                 const url = window.URL.createObjectURL(blob);
@@ -59,7 +70,96 @@ export class CapitolsService {
             },
             error: (err) => {
                 console.error('Error descarregant arxiu:', err);
+            },
+            complete: () => {
+                setTimeout(() => {
+                    capitol.descarregant = false;
+                }, 500);
             }
         });
     }
+
+    descarregarCapitols(capitols: Capitol[]) {
+        const MAX_CONCURRENT = 5;
+        this.progresDescarrega = { descarregats: 0, total: capitols.length };
+
+        const descarregarCapitol = (capitol: Capitol) => {
+            return this.http.get(capitol.urlArxiu, { responseType: 'blob' }).pipe(
+                mergeMap((blob) => {
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = capitol.nomArxiu || 'fitxer.mp3';
+                    link.click();
+                    window.URL.revokeObjectURL(url);
+
+                    capitol.descarregant = false;
+                    this.progresDescarrega!.descarregats++;
+
+                    return from([true]);
+                }),
+                catchError(err => {
+                    console.error('Error al descargar:', capitol.nomArxiu, err);
+                    capitol.descarregant = false;
+                    return from([false]);
+                })
+            );
+        };
+
+        // Processar el capítols de 5 en 5 en paralel //
+        const lots: Capitol[][] = [];
+        for (let i = 0; i < capitols.length; i += MAX_CONCURRENT) {
+            lots.push(capitols.slice(i, i + MAX_CONCURRENT));
+        }
+
+        (async () => {
+            for (const lot of lots) {
+                await forkJoin(lot.map(descarregarCapitol)).pipe(toArray()).toPromise();
+            }
+            this.progresDescarrega = null;
+        })();
+    }
+
+    descarregarCapitolsTest(capitols: Capitol[], ms: number = 300) {
+        const MAX_CONCURRENT = 1;
+        this.progresDescarrega = { descarregats: 0, total: capitols.length };
+        capitols.forEach(c => c.descarregant = true);
+
+        const descarregarCapitol = (capitol: Capitol) => {
+            return of(null).pipe(
+                delay(ms),
+                mergeMap(() => {
+                    const blob = new Blob([`Simulació ${capitol.nomArxiu}`]);
+                    const url = window.URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = (capitol.nomArxiu || 'fitxer.mp3').replace('.mp3', ' - mock.mp3');
+                    link.click();
+                    window.URL.revokeObjectURL(url);
+
+                    capitol.descarregant = false;
+                    this.progresDescarrega!.descarregats++;
+
+                    return from([true]);
+                }),
+                catchError(err => {
+                    capitol.descarregant = false;
+                    return from([false]);
+                })
+            );
+        };
+
+        const lots: Capitol[][] = [];
+        for (let i = 0; i < capitols.length; i += MAX_CONCURRENT) {
+            lots.push(capitols.slice(i, i + MAX_CONCURRENT));
+        }
+
+        (async () => {
+            for (const lot of lots) {
+                await forkJoin(lot.map(descarregarCapitol)).toPromise();
+            }
+            this.progresDescarrega = null;
+        })();
+    }
+
 }

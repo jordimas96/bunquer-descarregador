@@ -2,10 +2,11 @@ import { Component, OnDestroy } from '@angular/core';
 import { DialogService } from 'primeng/dynamicdialog';
 import { CapitolsService } from 'src/app/services/capitols.service';
 import { DescarregaBloc } from './components/descarrega-bloc/descarrega-bloc';
+import { ProgressSpinner, ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @Component({
     selector: 'app-root',
-    imports: [],
+    imports: [ProgressSpinner],
     providers: [DialogService],
     templateUrl: './app.html',
     styleUrl: './app.scss'

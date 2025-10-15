@@ -63,8 +63,12 @@
                     <td class="titol">{{ capitol.titolMostrar }}</td>
                     <td>
                         <div class="botons">
-                            <button class="descarregar boto boing" (click)="cs.descarregar(capitol)" title="Descarrega MP3">
-                                <i class="fa-solid fa-download"></i>
+                            <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3" [disabled]="capitol.descarregant">
+                                @if (!capitol.descarregant) {
+                                    <i class="fa-solid fa-download"></i>
+                                } @else {
+                                    <p-progress-spinner strokeWidth="6" />
+                                }
                             </button>
                             <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
                                 <i class="fa-solid fa-play"></i>
