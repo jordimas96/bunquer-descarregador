@@ -3,29 +3,25 @@
 
     <h1>Selecciona els capítols</h1>
 
-    <label class="mt-4">
-        Llista: 
-        <select [(ngModel)]="tipus" (change)="resetSlider()" class="ms-3" [disabled]="cs.descarregant">
-            <option value="temporada1">Temporada 1</option>
-            <option value="temporada2">Temporada 2</option>
-            <option value="temporada3">Temporada 3</option>
-            <option value="temporada4">Temporada 4</option>
-            <option value="temporada5">Temporada 5</option>
-            <option value="especials">Especials</option>
-            <option value="millors">Millors</option>
-        </select>
-    </label>
+    <h4 class="mt-4">Temporades:</h4>
+    <div class="mt-2 botons-temporades">
+        @for (boto of botonsTemporades; track boto.id) {
+            <label [class.selected]="seleccio[boto.id]" [class.disabled]="cs.descarregant">
+                <input type="checkbox" (change)="seleccioChange()" [disabled]="cs.descarregant" [(ngModel)]="seleccio[boto.id]">
+                {{ boto.text }}
+            </label>
+        }
+    </div>
 
-    <p-slider class="my-4" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1"
-        [disabled]="cs.descarregant"></p-slider>
+    <p-slider class="my-4" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
 
-    @if (tipus) {
+    @if (llistaSeleccionada.length) {
         <div class="mt-5 mb-3">Capítols seleccionats:</div>
         <div class="info-capitols-seleccionats">
             <div class="des-de ms-3 mb-2">Des de:</div>
-            <div class="titol-capitol">{{ llistaActual[rangCapitols[0]].title }}</div>
+            <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[0]].title }}</div>
             <div class="fins-a ms-3 mb-2 mt-4">Fins a:</div>
-            <div class="titol-capitol">{{ llistaActual[rangCapitols[1]].title }}</div>
+            <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[1]].title }}</div>
         </div>
 
         @if (!cs.descarregant) {

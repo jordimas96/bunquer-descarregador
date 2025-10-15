@@ -40,9 +40,6 @@ export class CapitolsService {
 
     constructor(private http: HttpClient) {
 
-        this.capitols.reverse();
-        this.especials.reverse();
-        this.millors.reverse();
     }
 
     get descarregant() {
@@ -93,14 +90,12 @@ export class CapitolsService {
                     link.click();
                     window.URL.revokeObjectURL(url);
 
-                    capitol.descarregant = false;
                     this.progresDescarrega!.descarregats++;
 
                     return from([true]);
                 }),
                 catchError(err => {
                     console.error('Error al descargar:', capitol.nomArxiu, err);
-                    capitol.descarregant = false;
                     return from([false]);
                 })
             );
@@ -123,7 +118,6 @@ export class CapitolsService {
     descarregarCapitolsTest(capitols: Capitol[], ms: number = 300) {
         const MAX_CONCURRENT = 1;
         this.progresDescarrega = { descarregats: 0, total: capitols.length };
-        capitols.forEach(c => c.descarregant = true);
 
         const descarregarCapitol = (capitol: Capitol) => {
             return of(null).pipe(
@@ -134,16 +128,14 @@ export class CapitolsService {
                     const link = document.createElement('a');
                     link.href = url;
                     link.download = (capitol.nomArxiu || 'fitxer.mp3').replace('.mp3', ' - mock.mp3');
-                    link.click();
+                    // link.click();
                     window.URL.revokeObjectURL(url);
 
-                    capitol.descarregant = false;
                     this.progresDescarrega!.descarregats++;
 
                     return from([true]);
                 }),
                 catchError(err => {
-                    capitol.descarregant = false;
                     return from([false]);
                 })
             );
