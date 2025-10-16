@@ -3,36 +3,58 @@
 
     <h1>Selecciona els capítols</h1>
 
-    <h4 class="mt-4">Temporades:</h4>
-    <div class="mt-2 botons-temporades">
-        @for (boto of botonsTemporades; track boto.id) {
-            <label [class.selected]="seleccio[boto.id]" [class.disabled]="cs.descarregant">
-                <input type="checkbox" (change)="seleccioChange()" [disabled]="cs.descarregant" [(ngModel)]="seleccio[boto.id]">
-                {{ boto.text }}
-            </label>
-        }
-    </div>
-
-    <p-slider class="my-4" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
-
-    @if (llistaSeleccionada.length) {
-        <div class="mt-5 mb-3">Capítols seleccionats:</div>
-        <div class="info-capitols-seleccionats">
-            <div class="des-de ms-3 mb-2">Des de:</div>
-            <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[0]].title }}</div>
-            <div class="fins-a ms-3 mb-2 mt-4">Fins a:</div>
-            <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[1]].title }}</div>
+    <section>
+        <h4 class="mt-5 mb-4">Temporades:</h4>
+        <div class="mt-2 mb-5 botons-temporades">
+            @for (boto of botonsTemporades; track boto.id) {
+                <label [class.selected]="seleccio[boto.id]" [class.disabled]="cs.descarregant">
+                    <input type="checkbox" (change)="seleccioChange()" [disabled]="cs.descarregant" [(ngModel)]="seleccio[boto.id]">
+                    {{ boto.text }}
+                </label>
+            }
         </div>
+    </section>
+
+    
+    @if (llistaSeleccionada.length) {
+        <section class="pb-4">
+            <h4 class="mb-4">Rang de capítols seleccionats:</h4>
+            <p-slider class="my-2" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
+        </section>
+
+        <section class="mt-4">
+            <h4 class="mt-2 mb-3">Capítols seleccionats:</h4>
+            <div class="info-capitols-seleccionats">
+                <div class="des-de ms-3 mb-2">Des de:</div>
+                <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[0]].title }}</div>
+                <div class="fins-a ms-3 mb-2 mt-4">Fins a:</div>
+                <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[1]].title }}</div>
+            </div>
+        </section>
 
         @if (!cs.descarregant) {
-            <button class="boto descarregar mt-5" (click)="descarregar()">Descarrega {{ rangCapitols[1] - rangCapitols[0] + 1}} capítols</button>
+            <section class="preview-descarrega card">
+                <div class="marcadors-descarrega mb-2">
+                    <div class="marcador numero">{{ capitolsSeleccionats.length }} capítols</div>
+                    <div class="marcador pes">{{ midaDescarregaString }}</div>
+                    <div class="marcador temps-estimat">{{ tempsEstimatDescarregaString }}</div>
+                </div>
+                <button class="boto descarregar" (click)="descarregar()">Descarrega</button>
+            </section>
         } @else {
             <div class="progres-descarrega">
-                <h4 class="mb-4">Descarregant ({{ cs.progresDescarrega!.descarregats }} / {{ cs.progresDescarrega!.total }})</h4>
+                <h4 class="mb-4">
+                    Descarregant ({{ cs.progresDescarrega!.descarregats }} / {{ cs.progresDescarrega!.total }})
+                    <span class="temps-restant"> - {{ tempsRestantString }} restants</span>
+                </h4>
+                <div class="arxiu-actual-descarregant">{{ cs.progresDescarrega?.arxiuActualDescarregant?.title || "" }}</div>
 
                 <div class="barra-progres mt-2">
                     <div class="total">
-                        <div class="progres" [style.width.%]="cs.progresDescarrega!.descarregats / cs.progresDescarrega!.total * 100"></div>
+                        <div class="progres"
+                            [style.width.%]="cs.progresDescarrega!.descarregats / cs.progresDescarrega!.total * 100"
+                            [style.--lum]="30 + (cs.progresDescarrega!.descarregats / cs.progresDescarrega!.total * (100 - 30)) + '%'"
+                        ></div>
                     </div>
                 </div>
             </div>

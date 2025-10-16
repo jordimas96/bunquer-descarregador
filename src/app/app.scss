@@ -191,16 +191,24 @@ footer {
 
 
 // Eliminar estils modal //
-::ng-deep .modal-descarrega-bloc {
-    --p-dialog-background: none;
-    --p-dialog-border-color: none;
-    --p-slider-track-size: 10px;
-    --p-slider-track-background: #ff61863d;
-    border: none !important;
-    .p-dialog-header { display: none; }
-    .p-dialog-content {
-        padding: 0;
-        background: none;
-        overflow-y: visible;
+::ng-deep .p-dialog-mask.p-overlay-mask {
+    --p-mask-background: transparent;
+    overflow-y: auto;
+    padding-right: 15px;
+
+    .p-dialog.modal-descarrega-bloc {
+        --p-dialog-background: none;
+        --p-dialog-border-color: none;
+        --p-dialog-border-radius: 2rem;
+        border: none !important;
+
+        box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.6);
+
+        .p-dialog-header { display: none; }
+        .p-dialog-content {
+            padding: 0;
+            background: none;
+            overflow-y: visible;
+        }
     }
 }

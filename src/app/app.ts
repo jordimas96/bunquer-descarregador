@@ -36,11 +36,12 @@ export class App implements OnDestroy {
             },
         });
 
-        document.body.style.paddingRight = "23px";
+        document.body.style.paddingRight = window.innerWidth > 767 ? "23px" : "8px";
 
         this.ref.onDestroy.subscribe(() => {
             document.body.style.paddingRight = "";
         });
+        
 
 
     }

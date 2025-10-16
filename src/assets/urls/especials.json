@@ -4,48 +4,55 @@
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/2/0/1721647841502.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/diogo-alves-lassassi-de-laqueducte/audio/1214523/",
         "temporada": 4,
-        "ordre": 1
+        "ordre": 1,
+        "mida": 49425345
     },
     {
         "title": "Especial assassins en sèrie. David Berkowitz, el fill d'en Sam",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/6/8/1721647845486.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/david-berkowitz-el-fill-den-sam/audio/1214525/",
         "temporada": 4,
-        "ordre": 2
+        "ordre": 2,
+        "mida": 49491800
     },
     {
         "title": "Especial assassins en sèrie. Milena Quaglini, la viuda negra de Pavia (sobrenom molt injust)",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/7/4/1720601727947.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/milena-quaglini-la-viuda-negra-de-pavia-sobrenom-molt-injust/audio/1213839/",
         "temporada": 4,
-        "ordre": 3
+        "ordre": 3,
+        "mida": 49221381
     },
     {
         "title": "Especial assassins en sèrie. Herbert Baumeister, l'estrangulador de la I-70",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/9/5/1720602039359.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/herbert-baumeister-lestrangulador-de-la-i-70/audio/1213842/",
         "temporada": 4,
-        "ordre": 4
+        "ordre": 4,
+        "mida": 49401521
     },
     {
         "title": "Especial assassins en sèrie. Aileen Wuornos, la pel·lícula \"Monster\" està inspirada en aquesta pobra",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/1/3/1720603242031.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/alieen-wuornos-la-pellicula-monster-esta-inspirada-en-aquesta-pobra-mossa/audio/1213848/",
         "temporada": 4,
-        "ordre": 5
+        "ordre": 5,
+        "mida": 49582915
     },
     {
         "title": "Especial assassins en sèrie. Pierre Basson, el primer assassí serial de Ciutat del Cap",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/9/0/1720602935809.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/pierre-basson-el-primer-assassi-serial-de-cape-town/audio/1213847/",
         "temporada": 4,
-        "ordre": 6
+        "ordre": 6,
+        "mida": 49124414
     },
     {
         "title": "Especial campanades de Cap d'Any",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/5/3/1735042524435.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/especial-campanades-de-cap-dany/audio/1229078/",
         "temporada": 5,
-        "ordre": 1
+        "ordre": 1,
+        "mida": 70788075
     }
 ]

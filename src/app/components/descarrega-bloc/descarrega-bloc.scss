@@ -1,22 +1,25 @@
 @import "src/styles.scss";
 
+:host {
+    display: block;
+    padding-bottom: 2rem; // Espai no clickable com a backdrop :/ //
+}
+
 .content {
     display: block;
 
-    height: 90vh;
-    overflow-y: auto;
 
     background-color: #91002243;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(60px);
 
     // max-width: 720px;
-    min-width: 90vw;
     text-align: center;
 
     padding: 2rem;
     border-radius: 2rem;
 
     font-size: 1.5rem;
+    
 
 
     .botons-temporades {
@@ -30,6 +33,10 @@
 
             cursor: pointer;
             font-size: 1.5rem;
+
+            @include mobil {
+                font-size: 1.2rem;
+            }
 
             background-color: #fff2;
 
@@ -47,6 +54,8 @@
             border-radius: 2rem;
             padding: 0.5rem 1rem;
 
+            transition: 0.3s background-color, 0.3s color, 0.3s font-weight;
+
             input[type=checkbox] {
                 display: none;
             }
@@ -54,8 +63,11 @@
     }
 
     p-slider {
+        --p-slider-track-size: 10px;
         --p-slider-range-background: #f61e50;
+        --p-slider-track-background: #ff61863d;
         --p-slider-handle-content-background: #ff7696;
+        
         &.p-disabled {
             filter: saturate(0.5);
         }
@@ -67,8 +79,7 @@
         .des-de, .fins-a {
             display: inline-block;
 
-            background-color: #ff95ae41;
-            // color: #600016;
+            color: #fffa;
             border-radius: 2rem;
             padding: 0.2rem 1rem;
         }
@@ -77,17 +88,53 @@
             height: 90px;
         }
     }
-    .boto.descarregar {
-        background-color: #ffa4ba;
-        color: #80001e;
-        font-size: 1.5rem;
-        border-radius: 3rem;
-        padding: 1.5rem 2.5rem;
-        font-weight: bold;
+
+    section.preview-descarrega {
+        background-color: #ffa4ba40;
+        border-radius: 2rem;
+        padding: 1rem;
+
+        .marcadors-descarrega {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+
+            .marcador {
+                padding: 0.5rem 1rem;
+                border-radius: 2rem;
+            }
+            
+            .numero { background-color: hsla(306, 100%, 80%, 0.5); }
+            .pes { background-color: hsla(346, 100%, 80%, 0.5); }
+            .temps-estimat { background-color: hsla(386, 100%, 80%, 0.5); }
+        }
+
+        .boto.descarregar {
+            background-color: #ffa4ba;
+            color: #80001e;
+            font-size: 1.5rem;
+            border-radius: 3rem;
+            padding: 1.5rem 2.5rem;
+            font-weight: bold;
+        }
     }
 
     .progres-descarrega {
+        background-color: #ffa4ba40;
+        border-radius: 2rem;
+        padding: 1.5rem 1rem;
         
+        .temps-restant { opacity: 0.6; }
+        
+        .arxiu-actual-descarregant {
+            font-size: 1.2rem;
+            @include mobil {
+                font-size: 1rem;
+                height: 4.5rem;
+            }
+            opacity: 0.6;
+        }
 
         .barra-progres {
             .total {
@@ -96,11 +143,11 @@
                 border-radius: 0.4rem;
 
                 .progres {
-                    background-color: #f61e50;
+                    background-color: hsl(346, 92%, var(--lum));
                     width: 20%;
                     height: 100%;
                     border-radius: inherit;
-                    transition: 0.3s width;
+                    transition: 0.3s width, 0.3s background-color;
                 }
             }
         }
@@ -110,3 +157,10 @@
 .text-80 {
     color: rgba(255, 255, 255, 0.8);
 }
+
+// section {
+//     background-color: #ffa4ba40;
+//     border-radius: 1.5rem;
+//     margin-bottom: 1rem;
+//     padding: 1rem;
+// }

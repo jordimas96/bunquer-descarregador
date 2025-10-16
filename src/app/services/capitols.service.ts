@@ -14,6 +14,7 @@ export class Capitol {
     capitol?: number;
     ordre?: number;
     setmana?: number;
+    mida: number;
 
     descarregant: boolean = false;
 
@@ -36,7 +37,11 @@ export class CapitolsService {
     public especials: Capitol[] = (especialsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
     public millors: Capitol[] = (millorsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
 
-    public progresDescarrega: { descarregats: number, total: number } | null = null;
+    public progresDescarrega: {
+        descarregats: number,
+        total: number,
+        arxiuActualDescarregant: Capitol | null;
+    } | null = null;
 
     constructor(private http: HttpClient) {
 
@@ -78,7 +83,7 @@ export class CapitolsService {
 
     descarregarCapitols(capitols: Capitol[]) {
         const MAX_CONCURRENT = 5;
-        this.progresDescarrega = { descarregats: 0, total: capitols.length };
+        this.progresDescarrega = { descarregats: 0, total: capitols.length, arxiuActualDescarregant: null };
 
         const descarregarCapitol = (capitol: Capitol) => {
             return this.http.get(capitol.urlArxiu, { responseType: 'blob' }).pipe(
@@ -91,6 +96,9 @@ export class CapitolsService {
                     window.URL.revokeObjectURL(url);
 
                     this.progresDescarrega!.descarregats++;
+                    
+                    this.progresDescarrega!.arxiuActualDescarregant = capitol;
+                    console.log(capitol.title);
 
                     return from([true]);
                 }),
@@ -117,7 +125,7 @@ export class CapitolsService {
 
     descarregarCapitolsTest(capitols: Capitol[], ms: number = 300) {
         const MAX_CONCURRENT = 1;
-        this.progresDescarrega = { descarregats: 0, total: capitols.length };
+        this.progresDescarrega = { descarregats: 0, total: capitols.length, arxiuActualDescarregant: null };
 
         const descarregarCapitol = (capitol: Capitol) => {
             return of(null).pipe(
@@ -132,6 +140,10 @@ export class CapitolsService {
                     window.URL.revokeObjectURL(url);
 
                     this.progresDescarrega!.descarregats++;
+
+                    this.progresDescarrega!.arxiuActualDescarregant = capitol;
+                    console.log(capitol.title);
+                    
 
                     return from([true]);
                 }),
