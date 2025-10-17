@@ -1,59 +1,38 @@
-# Descarregador de capítols d'El búnquer
+# Descarregador de capítols d'El Búnquer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.5.
+Aquest projecte és una eina que permet **descarregar tots els episodis del programa El Búnquer** de Catalunya Ràdio, amb l’objectiu de **fomentar el català i fer més accessible la cultura catalana**.
 
-## Development server
+## Descripció
 
-To start a local development server, run:
+La web de Catalunya Ràdio mostra tots els capítols d'El Búnquer amb un scroll infinit, de manera poc còmode per accedir a tots els episodis (sobretot els més vells). Té feed RSS, però allà només hi els darrers 300 capítols. Aquesta web simplement facilita l'accés ràpid a tots els arxius mp3, disponibles a la web oficial.
 
-```bash
-ng serve
-```
+Per crear aquesta web, primer vaig realitzar un **scraping** de la web oficial per recollir la informació de tots els episodis (enllaços a MP3, títols, temporades i descripcions) i generar un fitxer JSON que serveix com a índex de tots els episodis i base per al funcionament de la web. Els scripts per reproduir el scraping són al repositori per a ús tècnic. (/scrapping)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Funcionalitats de la web
 
-## Code scaffolding
+- Veure tots els episodis ordenats per **temporada i tipus** (normals, especials i millors moments)  
+- Descàrrega d’episodis individuals  
+- Descàrrega múltiple amb **previsualització del pes i temps estimat**  
+- Barra de progrés amb temps restant  
+- Gestió de descàrregues paral·leles per evitar saturar el servidor  
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Tecnologies
 
-```bash
-ng generate component component-name
-```
+- Angular, HTML, TypeScript, CSS  
+- Fitxers JSON com a base de dades dels capítols  
+- Playwright (scripts de scraping)  
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Enllaços
 
-```bash
-ng generate --help
-```
+- [Web publicada](https://jordimas96.github.io/bunquer-descarregador-capitols/)  
+- [Informació del projecte](https://jordimas96.github.io/bunquer/)
+- [Programa oficial](https://www.3cat.cat/3cat/el-bunquer/)  
+- [Avís legal](./AVIS-LEGAL.md)
 
-## Building
+## Objectiu
 
-To build the project run:
+Aquest projecte és **independent**, creat per fer més accessible la cultura catalana i fomentar l’ús del català. No està afiliat ni té permís oficial de 3Cat o Catalunya Ràdio.  
 
-```bash
-ng build
-```
+## Autor
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Jordi Mas**

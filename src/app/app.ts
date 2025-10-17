@@ -30,10 +30,6 @@ export class App implements OnDestroy {
             styleClass: "modal-descarrega-bloc",
             modal: true,
             dismissableMask: true,
-            breakpoints: {
-                '960px': '75vw',
-                '640px': '90vw'
-            },
         });
 
         document.body.style.paddingRight = window.innerWidth > 767 ? "23px" : "8px";

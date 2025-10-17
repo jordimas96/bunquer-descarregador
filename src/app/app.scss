@@ -7,11 +7,22 @@
     font-size: 0.5rem;
 
 
-    h1.titol-pagina {
-        color: #f61e50;
-        font-weight: bold;
-        margin: 4rem 0;
-        padding: 0 2rem;
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1rem;
+        margin-bottom: 2rem;
+        
+        img {
+            max-height: 8rem;
+            max-width: 60%;
+        }
+        h1.titol-pagina {
+            color: #f61e50;
+            font-weight: bold;
+        }
     }
 
     .boto.descarregar-en-grup {
@@ -165,9 +176,17 @@
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
     background-color: #4e0012;
     margin: 10rem -0.5rem -0.5rem;
     padding: 0.5rem;
+
+    min-height: 13rem;
+
     .firma {
         display: block;
 
@@ -181,10 +200,28 @@ footer {
 
         letter-spacing: 1px;
 
-        margin: 5rem 2rem;
+        transition: 0.2s letter-spacing, 0.1s transform;
 
         &:hover {
             text-decoration: underline;
+            letter-spacing: 2px;
+        }
+    }
+
+    .legal {
+        color: hsla(346, 100%, 88%, 0.512);
+        
+        font-size: 1rem;
+        font-style: italic;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -195,14 +232,13 @@ footer {
     --p-mask-background: transparent;
     overflow-y: auto;
     padding-right: 15px;
+    padding: 0 0.5rem;
 
     .p-dialog.modal-descarrega-bloc {
         --p-dialog-background: none;
         --p-dialog-border-color: none;
         --p-dialog-border-radius: 2rem;
         border: none !important;
-
-        box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.6);
 
         .p-dialog-header { display: none; }
         .p-dialog-content {
