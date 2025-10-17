@@ -24,10 +24,10 @@ Per crear aquesta web, primer vaig realitzar un **scraping** de la web oficial p
 
 ## Enllaços
 
-- [Web](https://jordimas96.github.io/bunquer-descarregador-capitols/)  
+- [Web](https://jordimas96.github.io/bunquer-descarregador/)  
 - [Informació del projecte](https://jordimas96.github.io/bunquer/)
 - [Programa oficial](https://www.3cat.cat/3cat/el-bunquer/)  
-- [Avís legal](https://jordimas96.github.io/bunquer-descarregador-capitols/AVIS-LEGAL)
+- [Avís legal](https://jordimas96.github.io/bunquer-descarregador/AVIS-LEGAL)
 
 ## Objectiu
 
