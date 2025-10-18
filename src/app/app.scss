@@ -1,29 +1,45 @@
 @import "src/styles.scss";
 
+
+header {
+    position: sticky;
+    top: 0;
+    backdrop-filter: saturate(1) blur(20px);
+    display: flex;
+    height: 8rem;
+    @include mobil {
+        height: 4rem;
+    }
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+
+    z-index: 1;
+    
+    img {
+        max-height: 100%;
+        max-width: 60%;
+    }
+    .titol-pagina {
+        font-size: 2.5rem;
+        @include mobil {
+            font-size: 1.2rem;
+        }
+        letter-spacing: 1px;
+        color: #ffffff;
+        font-weight: normal;
+        font-style: italic;
+    }
+}
+
 .content {
     // max-width: 940px;
     margin: auto;
 
     font-size: 0.5rem;
 
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        padding: 2rem 1rem;
-        margin-bottom: 2rem;
-        
-        img {
-            max-height: 8rem;
-            max-width: 60%;
-        }
-        h1.titol-pagina {
-            color: #f61e50;
-            font-weight: bold;
-        }
-    }
+    padding: 0.5rem;
 
     .boto.descarregar-en-grup {
         background-color: #ffa4ba;
@@ -84,7 +100,7 @@
                 background-color: hsl(346, 92%, 20%);
 
                 th {
-                    padding: 1rem 1rem;
+                    padding: 0.5rem 1rem;
                     @include mobil { padding: 0.5rem 1rem; }
                     &:first-child { border-top-left-radius: 1.5rem; }
                     &:last-child { border-top-right-radius: 1.5rem; }
@@ -123,7 +139,6 @@
                     display: flex;
                     row-gap: 0.25rem;
                     column-gap: 0.5rem;
-                    flex-wrap: wrap;
                     justify-content: center;
                     align-items: center;
                 }
@@ -183,29 +198,43 @@ footer {
     gap: 2rem;
     
     background-color: #4e0012;
-    margin: 10rem -0.5rem -0.5rem;
-    padding: 0.5rem;
+    margin-top: 10rem;
+    padding: 2rem 1rem;
 
-    min-height: 13rem;
+    // min-height: 13rem;
 
     .firma {
-        display: block;
-
-        color: hsl(346, 100%, 68%);
+        display: flex;
+        align-items: center;
+        gap: 1rem;
         
-        font-size: 1.5rem;
-
-        font-weight: bold;
-        font-style: italic;
         text-decoration: none;
 
-        letter-spacing: 1px;
-
-        transition: 0.2s letter-spacing, 0.1s transform;
 
         &:hover {
-            text-decoration: underline;
-            letter-spacing: 2px;
+            .text {
+                text-decoration: underline;
+            }
+        }
+
+        .logo {
+            height: 3rem;
+            border-radius: 50%;
+            
+        }
+        .text {
+                
+            display: block;
+
+            color: hsl(346, 100%, 68%);
+            
+            font-size: 1.5rem;
+            @include mobil {
+                font-size: 1rem;
+            }
+
+            font-weight: bold;
+            font-style: italic;
         }
     }
 

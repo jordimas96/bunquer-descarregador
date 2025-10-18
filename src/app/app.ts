@@ -1,8 +1,8 @@
 import { Component, OnDestroy } from '@angular/core';
 import { DialogService } from 'primeng/dynamicdialog';
+import { ProgressSpinner } from 'primeng/progressspinner';
 import { CapitolsService } from 'src/app/services/capitols.service';
 import { DescarregaBloc } from './components/descarrega-bloc/descarrega-bloc';
-import { ProgressSpinner, ProgressSpinnerModule } from 'primeng/progressspinner';
 
 @Component({
     selector: 'app-root',
@@ -37,7 +37,7 @@ export class App implements OnDestroy {
         this.ref.onDestroy.subscribe(() => {
             document.body.style.paddingRight = "";
         });
-        
+
 
 
     }
