@@ -41,6 +41,12 @@ header {
 
     padding: 0.5rem;
 
+    .descarrega-massiva.card, .descarrega-individual.card {
+        background-color: #420010;
+        border-radius: 2rem;
+        padding: 1rem;
+    }
+
     .boto.descarregar-en-grup {
         background-color: #ffa4ba;
         color: #80001e;
