@@ -17,6 +17,7 @@ export class Capitol {
     mida: number;
 
     descarregant: boolean = false;
+    descarregat: boolean = false;
 
     get titolMostrar() {
         return this.title.includes(" - ") ? this.title.split(" - ")[1] : this.title;
@@ -36,6 +37,8 @@ export class CapitolsService {
     public capitols: Capitol[] = (capitolsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
     public especials: Capitol[] = (especialsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
     public millors: Capitol[] = (millorsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
+
+    public capitolsTots: Capitol[] = [...this.capitols, ...this.especials, ...this.millors];
 
     public progresDescarrega: {
         descarregats: number,
@@ -57,6 +60,17 @@ export class CapitolsService {
         if (tipus == "millors") return this.millors;
         return [];
     }
+    getLlistaFiltrada(textBuscar: string): Capitol[] {
+        return this.capitolsTots.filter(c => {
+            return (
+                c.title.toLowerCase().includes(textBuscar) ||
+                c.temporada.toString().includes(textBuscar) ||
+                (c.capitol ?? "").toString().includes(textBuscar) ||
+                (c.ordre ?? "").toString().includes(textBuscar) ||
+                (c.setmana ?? "").toString().includes(textBuscar)
+            );
+        });
+    }
 
     descarregarCapitol(capitol: Capitol) {
         capitol.descarregant = true;
@@ -69,6 +83,10 @@ export class CapitolsService {
                 link.download = capitol.nomArxiu || 'fitxer.mp3';
                 link.click();
                 window.URL.revokeObjectURL(url);
+                
+                setTimeout(() => {
+                    capitol.descarregat = true;
+                }, 500);
             },
             error: (err) => {
                 console.error('Error descarregant arxiu:', err);
@@ -99,6 +117,8 @@ export class CapitolsService {
                     
                     this.progresDescarrega!.arxiuActualDescarregant = capitol;
                     console.log(capitol.title);
+
+                    capitol.descarregat = true;
 
                     return from([true]);
                 }),
@@ -144,6 +164,7 @@ export class CapitolsService {
                     this.progresDescarrega!.arxiuActualDescarregant = capitol;
                     console.log(capitol.title);
                     
+                    capitol.descarregat = true;
 
                     return from([true]);
                 }),

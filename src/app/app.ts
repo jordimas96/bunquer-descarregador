@@ -1,32 +1,63 @@
-import { Component, OnDestroy } from '@angular/core';
-import { DialogService } from 'primeng/dynamicdialog';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { ProgressSpinner } from 'primeng/progressspinner';
-import { CapitolsService } from 'src/app/services/capitols.service';
+import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 import { DescarregaBloc } from './components/descarrega-bloc/descarrega-bloc';
 
 @Component({
     selector: 'app-root',
-    imports: [ProgressSpinner],
+    imports: [ProgressSpinner, FormsModule],
     providers: [DialogService],
     templateUrl: './app.html',
     styleUrl: './app.scss'
 })
-export class App implements OnDestroy {
+export class App implements OnInit, OnDestroy {
 
-    private ref: any;
+    private modalRef: DynamicDialogRef<DescarregaBloc> | null;
+
+    public textBuscar = "";
+    public llistaCapitols: Capitol[];
 
     public tabSeleccionat = "capitols";
+
+    public textNumCapitol: any = "Cap.";
 
     constructor(
         public cs: CapitolsService,
         private dialogService: DialogService
-    ) {
+    ) { }
 
+    ngOnInit(): void {
+        this.actLlista();
+    }
 
+    get textNumResultats() {
+        if (this.llistaCapitols.length == 1) return "1 resultat";
+        else return this.llistaCapitols.length + " resultats";
+    }
+
+    actLlista() {
+        if (this.textBuscar)
+            this.llistaCapitols = this.cs.getLlistaFiltrada(this.textBuscar.toLowerCase());
+        else
+            this.llistaCapitols = this.cs.getLlista(this.tabSeleccionat);
+        
+        this.actTextCapitol();
+    }
+
+    actTextCapitol() {
+        this.textNumCapitol = [];
+        let teCap = this.textNumCapitol[0] = this.llistaCapitols.some(c => c.capitol);
+        let teSet = this.textNumCapitol[1] = this.llistaCapitols.some(c => c.setmana);
+        if (teCap && teSet) this.textNumCapitol = "Cap. / Set.";
+        else if (teCap) this.textNumCapitol = "Cap.";
+        else if (teSet) this.textNumCapitol = "Setmana";
+        else this.textNumCapitol = "Cap.";
     }
 
     obrirModal() {
-        this.ref = this.dialogService.open(DescarregaBloc, {
+        this.modalRef = this.dialogService.open(DescarregaBloc, {
             styleClass: "modal-descarrega-bloc",
             modal: true,
             dismissableMask: true,
@@ -34,7 +65,7 @@ export class App implements OnDestroy {
 
         document.body.style.paddingRight = window.innerWidth > 767 ? "23px" : "8px";
 
-        this.ref.onDestroy.subscribe(() => {
+        this.modalRef?.onDestroy.subscribe(() => {
             document.body.style.paddingRight = "";
         });
 
@@ -42,8 +73,8 @@ export class App implements OnDestroy {
 
     }
     ngOnDestroy() {
-        if (this.ref) {
-            this.ref.close();
+        if (this.modalRef) {
+            this.modalRef.close();
         }
     }
 

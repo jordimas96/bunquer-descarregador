@@ -1,5 +1,5 @@
 <header>
-    <img src="assets/logo-bunquer-transparent.png" alt="">
+    <img class="logo" src="assets/logo-bunquer-transparent.png">
     <div class="titol-pagina text-center flex-grow-1">Descarregador de capítols d'El&nbsp;búnquer</div>
 </header>
 
@@ -20,76 +20,135 @@
     <section class="descarrega-individual card">
         <h3 class="mb-4 ps-2">Descàrrega individual:</h3>
 
-        <div class="selector-tabs">
-            <button
-                class="boto"
-                (click)="tabSeleccionat = 'capitols'"
-                [class.selected]="tabSeleccionat == 'capitols'">
-                Capítols
-            </button>
-            <button
-                class="boto"
-                (click)="tabSeleccionat = 'especials'"
-                [class.selected]="tabSeleccionat == 'especials'">
-                Especials
-            </button>
-            <button
-                class="boto"
-                (click)="tabSeleccionat = 'millors'"
-                [class.selected]="tabSeleccionat == 'millors'">
-                Millors moments
-            </button>
+        <div class="buscador mb-4">
+            <input [(ngModel)]="textBuscar" placeholder="Busca..." (input)="actLlista()">
         </div>
 
+        @if (!textBuscar) {
+            <div class="selector-tabs">
+                <button
+                    class="boto"
+                    (click)="tabSeleccionat = 'capitols'; actLlista()"
+                    [class.selected]="tabSeleccionat == 'capitols'">
+                    Capítols
+                </button>
+                <button
+                    class="boto"
+                    (click)="tabSeleccionat = 'especials'; actLlista()"
+                    [class.selected]="tabSeleccionat == 'especials'">
+                    Especials
+                </button>
+                <button
+                    class="boto"
+                    (click)="tabSeleccionat = 'millors'; actLlista()"
+                    [class.selected]="tabSeleccionat == 'millors'">
+                    Millors moments
+                </button>
+            </div>
 
-        <div class="llista-capitols mt-5">
-            <table class="taula capitols">
-                @for (capitol of cs.getLlista(tabSeleccionat); track capitol.title) {
-                    @if (capitol.capitol == 1 || capitol.ordre == 1 || capitol.setmana == 1) {
-                        <tr class="fila-temporada">
-                            <td colspan="5">
-                                <h1 class="titol">Temporada {{capitol.temporada}}</h1>
+
+            <div class="llista-capitols mt-5">
+                <table class="taula capitols">
+                    @for (capitol of llistaCapitols; track capitol.title) {
+                        @if (capitol.capitol == 1 || capitol.ordre == 1 || capitol.setmana == 1) {
+                            <tr class="fila-temporada">
+                                <td colspan="5">
+                                    <h1 class="titol">Temporada {{capitol.temporada}}</h1>
+                                </td>
+                            </tr>
+
+                            
+                            <tr class="header">
+                                <!-- <th>T.</th> -->
+                                @if (tabSeleccionat != 'especials') {
+                                    <th class="text-center">
+                                        @if (tabSeleccionat == 'capitols') { Cap. }
+                                        @if (tabSeleccionat == 'millors') { Setmana }
+                                    </th>
+                                }
+                                <th>Títol</th>
+                                <th>Desc. / Escolta</th>
+                            </tr>
+                            
+                        }
+                        <tr class="fila">
+                            <!-- <td class="temporada">{{capitol.temporada}}</td> -->
+                            @if (tabSeleccionat != 'especials') {
+                                <td class="capitol text-center">{{ capitol.capitol || capitol.setmana }}</td>
+                            }
+                            <td class="titol">{{ capitol.titolMostrar }}</td>
+                            <td>
+                                <div class="botons">
+                                    <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"
+                                        [disabled]="capitol.descarregant" [class.descarregat]="capitol.descarregat">
+                                        @if (capitol.descarregat) {
+                                            <i class="fa-solid fa-check"></i>
+                                        } @else if (capitol.descarregant) {
+                                            <p-progress-spinner strokeWidth="6" />
+                                        } @else {
+                                            <i class="fa-solid fa-download"></i>
+                                        }
+                                    </button>
+                                    <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
                             </td>
                         </tr>
-
-                        
+                    }
+                </table>
+            </div>
+        } @else {
+            <div class="llista-capitols filtrada mt-5">
+                @if (llistaCapitols.length) {
+                    <h4 class="text-center fst-italic mb-3">{{ textNumResultats }}</h4>
+                    <table class="taula capitols">
                         <tr class="header">
-                            <!-- <th>T.</th> -->
-                            @if (tabSeleccionat != 'especials') {
-                                <th class="text-center">
-                                    @if (tabSeleccionat == 'capitols') { Cap. }
-                                    @if (tabSeleccionat == 'millors') { Setmana }
-                                </th>
-                            }
+                            <th>Temp.</th>
+                            <th class="text-center">
+                                {{ textNumCapitol }}
+                            </th>
                             <th>Títol</th>
                             <th>Desc. / Escolta</th>
                         </tr>
-                        
-                    }
-                    <tr class="fila">
-                        <!-- <td class="temporada">{{capitol.temporada}}</td> -->
-                        @if (tabSeleccionat != 'especials') {
-                            <td class="capitol text-center">{{ capitol.capitol || capitol.setmana }}</td>
+                        @for (capitol of llistaCapitols; track capitol.title) {
+                            @if (!textBuscar && (capitol.capitol == 1 || capitol.ordre == 1 || capitol.setmana == 1)) {
+                                <tr class="fila-temporada">
+                                    <td colspan="5">
+                                        <h1 class="titol">Temporada {{capitol.temporada}}</h1>
+                                    </td>
+                                </tr>
+                                
+                            }
+                            <tr class="fila">
+                                <td class="temporada">{{capitol.temporada}}</td>
+                                <td class="capitol text-center">{{ capitol.capitol || capitol.setmana }}</td>
+                                <td class="titol">{{ capitol.titolMostrar }}</td>
+                                <td>
+                                    <div class="botons">
+                                        <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"
+                                            [disabled]="capitol.descarregant" [class.descarregat]="capitol.descarregat">
+                                            @if (capitol.descarregat) {
+                                                <i class="fa-solid fa-check"></i>
+                                            } @else if (capitol.descarregant) {
+                                                <p-progress-spinner strokeWidth="6" />
+                                            } @else {
+                                                <i class="fa-solid fa-download"></i>
+                                            }
+                                        </button>
+                                        <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
                         }
-                        <td class="titol">{{ capitol.titolMostrar }}</td>
-                        <td>
-                            <div class="botons">
-                                <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3" [disabled]="capitol.descarregant">
-                                    @if (!capitol.descarregant) {
-                                        <i class="fa-solid fa-download"></i>
-                                    } @else {
-                                        <p-progress-spinner strokeWidth="6" />
-                                    }
-                                </button>
-                                <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </td>
-                    </tr>
+                    </table>
+                } @else {
+                    <h3 class="text-center fst-italic">Cap resultat</h3>
                 }
-            </table>
-        </div>
+            </div>
+        }
 
     </section>
 

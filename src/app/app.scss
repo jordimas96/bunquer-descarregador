@@ -6,43 +6,53 @@ header {
     top: 0;
     backdrop-filter: saturate(1) blur(20px);
     display: flex;
-    height: 8rem;
+    height: 6rem;
     @include mobil {
         height: 4rem;
     }
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
-    margin-bottom: 2rem;
 
     z-index: 1;
     
-    img {
+    img.logo {
         max-height: 100%;
         max-width: 60%;
+        padding: 0.5rem;
+        padding-left: 1.5rem;
+
+        position: static;
+        @include gran {
+            position: absolute;
+        }
     }
     .titol-pagina {
-        font-size: 2.5rem;
+        font-size: calc(1.325rem + 1.2vw);
+        line-height: 2.5rem;
         @include mobil {
             font-size: 1.2rem;
+            line-height: 1.5rem;
         }
         letter-spacing: 1px;
         color: #ffffff;
         font-weight: normal;
         font-style: italic;
+
+        padding: 0.5rem;
     }
 }
 
 .content {
-    // max-width: 940px;
+    max-width: 1200px;
     margin: auto;
 
     font-size: 0.5rem;
 
     padding: 0.5rem;
+    padding-top: 4rem;
 
     .descarrega-massiva.card, .descarrega-individual.card {
-        background-color: #420010;
+        background-color: #480011;
         border-radius: 2rem;
         padding: 1rem;
     }
@@ -54,6 +64,28 @@ header {
         border-radius: 3rem;
         padding: 1.5rem 2.5rem;
         font-weight: bold;
+    }
+
+
+    .buscador {
+        text-align: center;
+        input {
+            min-width: 20%;
+            max-width: 80%;
+            padding-left: 1.5rem;
+            font-size: 2rem;
+
+            background-color: #2f000b;
+            color: #ffadbe;
+
+            border-radius: 10rem;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                color: #ffadbe80;
+            }
+        }
     }
 
 
@@ -75,8 +107,8 @@ header {
             border-radius: 0.75rem;
 
             @include mobil {
-                font-size: 1.1rem;
-                padding: 0.4rem 0.8rem;
+                font-size: 1.2rem;
+                padding: 0.5rem 1rem;
                 // border-radius: 2rem;
             }
 
@@ -99,6 +131,10 @@ header {
             font-weight: 300;
             // width: 96%;
             margin: auto;
+
+            border-radius: 1.5rem;
+
+            color: white;
 
             overflow: hidden;
             
@@ -150,7 +186,7 @@ header {
                 }
 
                 .boto {
-
+                    color: white;
                     border-radius: 2rem;
 
                     &:disabled {
@@ -166,6 +202,12 @@ header {
                         @include mobil {
                             padding: 0.5rem 1rem;
                             flex: 2;
+                        }
+
+                        &.descarregat {
+                            background-color: hsl(140, 76%, 34%);
+                            color: rgb(163, 255, 126);
+                            pointer-events: none;
                         }
 
                         p-progress-spinner {
