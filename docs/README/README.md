@@ -31,7 +31,7 @@ Per crear aquesta web, primer vaig realitzar un **scraping** de la web oficial p
 
 ## Objectiu
 
-Aquest projecte és **independent**, creat per fer més accessible la cultura catalana i fomentar l’ús del català. No està afiliat ni té permís oficial de 3Cat o Catalunya Ràdio.  
+Aquest projecte és **independent**, creat per fer més accessible la cultura catalana i fomentar l’ús del català. No està afiliat ni té permís oficial de 3Cat o Catalunya Ràdio. Aquesta web **NO** allotja cap arxiu.
 
 ## Autor
 

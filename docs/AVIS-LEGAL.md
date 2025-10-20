@@ -1,6 +1,6 @@
 # Avís Legal
 
-Aquest projecte és independent i **no està afiliat ni té permís oficial de 3Cat ni de Catalunya Ràdio**. L'objectiu és facilitar l'accés a continguts públics del programa **“El Búnquer”**, allotjats a [3cat.cat](https://www.3cat.cat/3cat/el-bunquer).
+Aquest projecte és independent i **no està afiliat ni té permís oficial de 3Cat ni de Catalunya Ràdio**. L'objectiu és facilitar l'accés a continguts públics del programa **“El Búnquer”**, allotjats a [3cat.cat](https://www.3cat.cat/3cat/el-bunquer). Aquesta web **NO** allotja cap arxiu.
 
 Tots els drets dels programes, logotips i marques són propietat dels seus titulars. Aquesta web només proporciona **enllaços públics disponibles al lloc oficial** i no distribueix cap contingut de manera no autoritzada.
 
