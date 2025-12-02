@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { ProgressSpinner } from 'primeng/progressspinner';
@@ -22,6 +22,8 @@ export class App implements OnInit, OnDestroy {
     public tabSeleccionat = "capitols";
 
     public textNumCapitol: any = "Cap.";
+
+    public scrolled: boolean;
 
     constructor(
         public cs: CapitolsService,
@@ -76,6 +78,12 @@ export class App implements OnInit, OnDestroy {
         if (this.modalRef) {
             this.modalRef.close();
         }
+    }
+
+
+    @HostListener('window:scroll')
+    onScroll() {
+        this.scrolled = window.scrollY > 150;
     }
 
 }
