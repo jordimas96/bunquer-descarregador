@@ -1,6 +1,6 @@
 # Descarregador de capítols d'El Búnquer
 
-Aquest projecte és una eina que permet **descarregar tots els episodis del programa El Búnquer** de Catalunya Ràdio, amb l’objectiu de **fomentar el català i fer més accessible la cultura catalana**.
+Aquest projecte és una eina que permet **descarregar tots els episodis del programa El Búnquer** de Catalunya Ràdio, amb l'objectiu de **fomentar el català i fer més accessible la cultura catalana**.
 
 ## Descripció
 
@@ -11,7 +11,7 @@ Per crear aquesta web, primer vaig realitzar un **scraping** de la web oficial p
 ## Funcionalitats de la web
 
 - Veure tots els episodis ordenats per **temporada i tipus** (normals, especials i millors moments)  
-- Descàrrega d’episodis individuals  
+- Descàrrega d'episodis individuals  
 - Descàrrega múltiple amb **previsualització del pes i temps estimat**  
 - Barra de progrés amb temps restant  
 - Gestió de descàrregues paral·leles per evitar saturar el servidor  
@@ -31,7 +31,7 @@ Per crear aquesta web, primer vaig realitzar un **scraping** de la web oficial p
 
 ## Objectiu
 
-Aquest projecte és **independent**, creat per fer més accessible la cultura catalana i fomentar l’ús del català. No està afiliat ni té permís oficial de 3Cat o Catalunya Ràdio. Aquesta web **NO** allotja cap arxiu.
+Aquest projecte és **independent**, creat per fer més accessible la cultura catalana i fomentar l'ús del català. No està afiliat ni té permís oficial de 3Cat o Catalunya Ràdio. Aquesta web **NO** allotja cap arxiu.
 
 ## Autor
 
