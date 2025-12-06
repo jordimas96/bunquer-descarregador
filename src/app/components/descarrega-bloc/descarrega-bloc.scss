@@ -96,21 +96,26 @@
 
     .info-capitols-seleccionats {
         text-align: left;
+        display: flex;
+        gap: 0.25rem;
 
-        .card {
+        @include mobil { flex-direction: column; }
+        
+
+        .info-capitol.card {
             background-color: hsla(345, 100%, 82%, 0.12);
             padding: 1rem;
 
-            &:first-child { border-radius: 2rem 2rem 0.5rem 0.5rem; }
-            &:last-child { border-radius: 0.5rem 0.5rem 2rem 2rem; }
+            flex: 1;
 
+            border-radius: 2rem;
 
-            .des-de, .fins-a {
-                color: #fffa;
+            .titol {
+                color: hsl(345, 100%, 85%);
                 border-radius: 2rem;
-                padding: 0 1.8rem;
+                padding: 0 1rem;
             }
-            .titol-capitol {
+            .nom {
                 font-size: 1.2rem;
                 min-height: 86px;
             }
