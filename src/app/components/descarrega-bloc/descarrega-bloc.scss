@@ -23,8 +23,7 @@
     
     box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.6);
     
-    .tancar {
-        @include reset-button;
+    .boto.tancar {
         position: absolute;
         top: 0;
         right: 0;
@@ -140,8 +139,8 @@
         }
 
         .boto.descarregar {
-            background-color: #ffa4ba;
-            color: #80001e;
+            background-color: hsl(336, 100%, 79%);
+            color: hsl(336, 100%, 25%);
             font-size: 1.5rem;
             border-radius: 3rem;
             padding: 1.5rem 2.5rem;
@@ -179,6 +178,17 @@
                     transition: 0.3s width, 0.3s background-color;
                 }
             }
+        }
+
+        .boto.cancelar {
+            background-color: #dd0034;
+            color: #fff;
+            font-size: 1.5rem;
+            border-radius: 3rem;
+            padding: 0.5rem 1.5rem;
+            font-weight: bold;
+
+            &:disabled { opacity: 0.5; }
         }
     }
 }

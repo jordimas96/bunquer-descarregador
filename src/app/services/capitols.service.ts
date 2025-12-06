@@ -46,6 +46,8 @@ export class CapitolsService {
         arxiuActualDescarregant: Capitol | null;
     } | null = null;
 
+    public seguirDescarregant = false;
+
     constructor(private http: HttpClient) {
 
     }
@@ -102,6 +104,7 @@ export class CapitolsService {
     descarregarCapitols(capitols: Capitol[]) {
         const MAX_CONCURRENT = 5;
         this.progresDescarrega = { descarregats: 0, total: capitols.length, arxiuActualDescarregant: null };
+        this.seguirDescarregant = true;
 
         const descarregarCapitol = (capitol: Capitol) => {
             return this.http.get(capitol.urlArxiu, { responseType: 'blob' }).pipe(
@@ -137,6 +140,7 @@ export class CapitolsService {
 
         (async () => {
             for (const lot of lots) {
+                if (!this.seguirDescarregant) break;
                 await forkJoin(lot.map(descarregarCapitol)).pipe(toArray()).toPromise();
             }
             this.progresDescarrega = null;
@@ -146,6 +150,7 @@ export class CapitolsService {
     descarregarCapitolsTest(capitols: Capitol[], ms: number = 300) {
         const MAX_CONCURRENT = 1;
         this.progresDescarrega = { descarregats: 0, total: capitols.length, arxiuActualDescarregant: null };
+        this.seguirDescarregant = true;
 
         const descarregarCapitol = (capitol: Capitol) => {
             return of(null).pipe(
@@ -181,6 +186,7 @@ export class CapitolsService {
 
         (async () => {
             for (const lot of lots) {
+                if (!this.seguirDescarregant) break;
                 await forkJoin(lot.map(descarregarCapitol)).toPromise();
             }
             this.progresDescarrega = null;

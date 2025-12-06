@@ -1,7 +1,7 @@
 
 <div class="content">
 
-    <button class="tancar" (click)="dialogRef.close()">
+    <button class="boto tancar" (click)="dialogRef.close()">
         <i class="fa-solid fa-xmark"></i>
     </button>
 
@@ -42,12 +42,15 @@
 
         @if (!cs.descarregant) {
             <section class="preview-descarrega card">
-                <div class="marcadors-descarrega mb-2">
+                <div class="marcadors-descarrega mb-3">
                     <div class="marcador numero">{{ capitolsSeleccionats.length }} capítols</div>
                     <div class="marcador pes">{{ midaDescarregaString }}</div>
                     <div class="marcador temps-estimat">{{ tempsEstimatDescarregaString }}</div>
                 </div>
-                <button class="boto descarregar boing" (click)="descarregar()">Descarrega</button>
+                <button class="boto descarregar boing" (click)="descarregar()">
+                    <i class="fa-solid fa-download me-2"></i>
+                    Descarrega
+                </button>
             </section>
         } @else {
             <div class="progres-descarrega">
@@ -55,7 +58,7 @@
                     Descarregant ({{ cs.progresDescarrega!.descarregats }} / {{ cs.progresDescarrega!.total }})
                     <span class="temps-restant"> - {{ tempsRestantString }} restants</span>
                 </h4>
-                <div class="arxiu-actual-descarregant">{{ cs.progresDescarrega?.arxiuActualDescarregant?.title || "" }}</div>
+                <div class="arxiu-actual-descarregant">{{ cs.progresDescarrega?.arxiuActualDescarregant?.title || "&nbsp;" }}</div>
 
                 <div class="barra-progres mt-2">
                     <div class="total">
@@ -65,6 +68,11 @@
                         ></div>
                     </div>
                 </div>
+
+                <button class="boto cancelar mt-3" (click)="cancelar()" [disabled]="!cs.seguirDescarregant">
+                    @if (cs.seguirDescarregant) { Cancel·la }
+                    @else { Cancel·lant... }
+                </button>
             </div>
         }
     }

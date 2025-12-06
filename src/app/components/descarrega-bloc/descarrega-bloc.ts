@@ -134,4 +134,7 @@ export class DescarregaBloc {
     descarregar() {
         this.cs.descarregarCapitols(this.capitolsSeleccionats);
     }
+    cancelar() {
+        this.cs.seguirDescarregant = false;
+    }
 }
