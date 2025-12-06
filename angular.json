@@ -34,13 +34,13 @@
                 "input": "public"
               },
               {
-                "glob": "**/*",
-                "input": "README.md",
+                "glob": "README.md",
+                "input": ".",
                 "output": "README/"
               },
               {
-                "glob": "**/*",
-                "input": "AVIS-LEGAL.md"
+                "glob": "AVIS-LEGAL.md",
+                "input": "."
               }
             ],
             "styles": [
