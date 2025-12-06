@@ -1,6 +1,7 @@
 
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { SliderModule } from 'primeng/slider';
 import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 
@@ -44,7 +45,10 @@ export class DescarregaBloc {
     }
 
 
-    constructor(public cs: CapitolsService) {
+    constructor(
+        public cs: CapitolsService,
+        public dialogRef: DynamicDialogRef
+    ) {
         this.llistes = {
             temporada1: cs.capitols.filter(c => c.temporada == 1),
             temporada2: cs.capitols.filter(c => c.temporada == 2),

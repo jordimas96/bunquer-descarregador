@@ -23,6 +23,25 @@
     
     box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.6);
     
+    .tancar {
+        @include reset-button;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        height: 2.5rem;
+        width: 2.5rem;
+        font-size: 1.5rem;
+        border-radius: 2rem;
+        margin: 1rem;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(255, 164, 186, 0.30);
+        color: #ffffff;
+    }
 
 
     .botons-temporades {
@@ -79,16 +98,23 @@
     .info-capitols-seleccionats {
         text-align: left;
 
-        .des-de, .fins-a {
-            display: inline-block;
+        .card {
+            background-color: hsla(345, 100%, 82%, 0.12);
+            padding: 1rem;
 
-            color: #fffa;
-            border-radius: 2rem;
-            padding: 0.2rem 1rem;
-        }
-        .titol-capitol {
-            font-size: 1.2rem;
-            height: 90px;
+            &:first-child { border-radius: 2rem 2rem 0.5rem 0.5rem; }
+            &:last-child { border-radius: 0.5rem 0.5rem 2rem 2rem; }
+
+
+            .des-de, .fins-a {
+                color: #fffa;
+                border-radius: 2rem;
+                padding: 0 1.8rem;
+            }
+            .titol-capitol {
+                font-size: 1.2rem;
+                min-height: 86px;
+            }
         }
     }
 

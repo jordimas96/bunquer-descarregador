@@ -1,7 +1,11 @@
 
 <div class="content">
 
-    <h1>Selecciona els capítols</h1>
+    <button class="tancar" (click)="dialogRef.close()">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <h1 class="mx-4">Selecciona els capítols</h1>
 
     <section>
         <h4 class="mt-5 mb-4">Temporades:</h4>
@@ -22,13 +26,17 @@
             <p-slider class="my-2" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
         </section>
 
-        <section class="mt-4">
+        <section class="mt-4 mb-4">
             <h4 class="mt-2 mb-3">Capítols seleccionats:</h4>
             <div class="info-capitols-seleccionats">
-                <div class="des-de ms-3 mb-2">Des de:</div>
-                <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[0]].title }}</div>
-                <div class="fins-a ms-3 mb-2 mt-4">Fins a:</div>
-                <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[1]].title }}</div>
+                <div class="card mb-1">
+                    <div class="des-de mb-2">Des de:</div>
+                    <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[0]].title }}</div>
+                </div>
+                <div class="card">
+                    <div class="fins-a mb-2">Fins a:</div>
+                    <div class="titol-capitol">{{ llistaSeleccionada[rangCapitols[1]].title }}</div>
+                </div>
             </div>
         </section>
 
