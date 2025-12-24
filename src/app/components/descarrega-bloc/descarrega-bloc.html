@@ -12,6 +12,9 @@
         <div class="mt-2 mb-5 botons-temporades">
             @for (boto of botonsTemporades; track boto.id) {
                 <label [class.selected]="seleccio[boto.id]" [class.disabled]="cs.descarregant">
+                    @if (seleccio[boto.id]) {
+                        <i class="fa-solid fa-check me-1"></i>
+                    }
                     <input type="checkbox" (change)="seleccioChange()" [disabled]="cs.descarregant" [(ngModel)]="seleccio[boto.id]">
                     {{ boto.text }}
                 </label>
