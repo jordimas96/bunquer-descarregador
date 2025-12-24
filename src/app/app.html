@@ -7,23 +7,23 @@
 
     <h1 class="titol-pagina">Descarregador de capítols d'El búnquer</h1>
 
-    <section class="descarrega-massiva card mb-5">
+    <section class="descarrega-bloc card mb-5">
         <h3 class="mb-4 ps-2">Descarrega'ls tots de cop:</h3>
         
         <div class="text-center mb-3">
             <button class="rs boto descarregar-en-grup boing" (click)="obrirModal()">
                 <i class="fa-solid fa-list-check me-1"></i>
-                Descàrrega massiva
+                Descàrrega en bloc
             </button>
         </div>
     </section>
 
 
     <section class="descarrega-individual card">
-        <h3 class="mb-4 ps-2">Descàrrega individual:</h3>
+        <h3 class="mb-4 ps-2">Cerca i descarrega'ls un per un:</h3>
 
         <div class="buscador mb-4">
-            <input [(ngModel)]="textBuscar" placeholder="Busca..." (input)="actLlistaFiltrada()">
+            <input [(ngModel)]="textBuscar" placeholder="Cerca..." (input)="actLlistaFiltrada()">
         </div>
 
         @if (!textBuscar) {
@@ -82,8 +82,8 @@
         } @else {
             <!-- Buscant -->
             <div class="llista-capitols filtrada mt-5">
-                <h4 class="text-center fst-italic">{{ textNumResultats }}</h4>
                 @if (llistaFiltrada.length) {
+                    <h4 class="text-center fst-italic">{{ textNumResultats }}</h4>
                     <table class="taula capitols mx-auto mb-0">
                         <tr class="header">
                             <th>Capítol</th>

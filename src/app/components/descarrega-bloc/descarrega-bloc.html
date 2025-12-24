@@ -42,6 +42,11 @@
 
         @if (!cs.descarregant) {
             <section class="preview-descarrega card">
+                
+                @if (capitolsSeleccionats.length > 200) {
+                    <div class="avis-moderacio mb-3">Avís: utilitzar amb moderació</div>
+                }
+
                 <div class="marcadors-descarrega mb-3">
                     <div class="marcador numero">{{ capitolsSeleccionats.length }} capítols</div>
                     <div class="marcador pes">{{ midaDescarregaString }}</div>

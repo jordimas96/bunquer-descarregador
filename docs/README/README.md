@@ -35,4 +35,4 @@ Aquest projecte és **independent**, creat per fer més accessible la cultura ca
 
 ## Autor
 
-**Jordi Mas**
+**Jordi Mas Parramon**
