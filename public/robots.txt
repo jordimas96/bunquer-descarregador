@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jordimas96.github.io/bunquer-descarregador/sitemap.xml
+Sitemap: https://bunquer-descarregador.github.io/sitemap.xml
