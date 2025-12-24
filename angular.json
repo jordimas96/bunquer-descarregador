@@ -51,7 +51,6 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/bunquer-descarregador/",
               "outputPath": {
                 "base": "docs",
                 "browser": ""
