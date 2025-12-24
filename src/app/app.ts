@@ -17,11 +17,9 @@ export class App implements OnInit, OnDestroy {
     private modalRef: DynamicDialogRef<DescarregaBloc> | null;
 
     public textBuscar = "";
-    public llistaCapitols: Capitol[];
+    public llistaFiltrada: Capitol[];
 
-    public tabSeleccionat = "capitols";
-
-    public textNumCapitol: any = "Cap.";
+    public desplegablesOberts = [false, false, false, false, false, false];
 
     public scrolled: boolean;
 
@@ -31,31 +29,19 @@ export class App implements OnInit, OnDestroy {
     ) { }
 
     ngOnInit(): void {
-        this.actLlista();
+    }
+
+    get llistaPerTemporades() {
+        return [...this.cs.capitolsPerTemporades, this.cs.millors];
     }
 
     get textNumResultats() {
-        if (this.llistaCapitols.length == 1) return "1 resultat";
-        else return this.llistaCapitols.length + " resultats";
+        if (this.llistaFiltrada.length == 1) return "1 resultat";
+        else return this.llistaFiltrada.length + " resultats";
     }
 
-    actLlista() {
-        if (this.textBuscar)
-            this.llistaCapitols = this.cs.getLlistaFiltrada(this.textBuscar.toLowerCase());
-        else
-            this.llistaCapitols = this.cs.getLlista(this.tabSeleccionat);
-        
-        this.actTextCapitol();
-    }
-
-    actTextCapitol() {
-        this.textNumCapitol = [];
-        let teCap = this.textNumCapitol[0] = this.llistaCapitols.some(c => c.capitol);
-        let teSet = this.textNumCapitol[1] = this.llistaCapitols.some(c => c.setmana);
-        if (teCap && teSet) this.textNumCapitol = "Cap. / Set.";
-        else if (teCap) this.textNumCapitol = "Cap.";
-        else if (teSet) this.textNumCapitol = "Setmana";
-        else this.textNumCapitol = "Cap.";
+    actLlistaFiltrada() {
+        this.llistaFiltrada = this.cs.getLlistaFiltrada(this.textBuscar.toLowerCase());
     }
 
     obrirModal() {

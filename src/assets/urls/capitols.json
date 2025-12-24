@@ -688,7 +688,7 @@
         "mida": 25285694
     },
     {
-        "title": "1x87 - Franz Reichelt",
+        "title": "1x87 - Franz Reichelt, un home decidit, llançat, que s'hi tirava de cap",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/9/3/1611741627739.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/franz-reichelt/audio/1090998/",
         "temporada": 1,
@@ -1464,7 +1464,7 @@
         "mida": 50551327
     },
     {
-        "title": "1x184 - Capítol final de la 1a temporada. sorpresa!",
+        "title": "1x184 - Jesucrist Nostru Senyor, el Sant Cristo gros",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/7/4/1626341422447.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/capitol-final-de-la-1a-temporada/audio/1107235/",
         "temporada": 1,
@@ -2936,7 +2936,7 @@
         "mida": 52979252
     },
     {
-        "title": "2x184 - Capítol final de la 2a temporada",
+        "title": "2x184 - Phineas Barnum, el del circ dels horrors ",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/8/5/1657795531758.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/capitol-final-de-la-2a-temporada/audio/1141710/",
         "temporada": 2,
@@ -5792,6 +5792,54 @@
         "mida": 49738814
     },
     {
+        "title": "Especial assassins en sèrie. Diogo Alves, l'assassí de l'aqüeducte",
+        "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/2/0/1721647841502.mp3",
+        "urlPagina": "https://www.3cat.cat/3cat/diogo-alves-lassassi-de-laqueducte/audio/1214523/",
+        "temporada": 4,
+        "capitol": null,
+        "mida": 49425345
+    },
+    {
+        "title": "Especial assassins en sèrie. David Berkowitz, el fill d'en Sam",
+        "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/6/8/1721647845486.mp3",
+        "urlPagina": "https://www.3cat.cat/3cat/david-berkowitz-el-fill-den-sam/audio/1214525/",
+        "temporada": 4,
+        "capitol": null,
+        "mida": 49491800
+    },
+    {
+        "title": "Especial assassins en sèrie. Milena Quaglini, la viuda negra de Pavia (sobrenom molt injust)",
+        "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/7/4/1720601727947.mp3",
+        "urlPagina": "https://www.3cat.cat/3cat/milena-quaglini-la-viuda-negra-de-pavia-sobrenom-molt-injust/audio/1213839/",
+        "temporada": 4,
+        "capitol": null,
+        "mida": 49221381
+    },
+    {
+        "title": "Especial assassins en sèrie. Herbert Baumeister, l'estrangulador de la I-70",
+        "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/9/5/1720602039359.mp3",
+        "urlPagina": "https://www.3cat.cat/3cat/herbert-baumeister-lestrangulador-de-la-i-70/audio/1213842/",
+        "temporada": 4,
+        "capitol": null,
+        "mida": 49401521
+    },
+    {
+        "title": "Especial assassins en sèrie. Aileen Wuornos, la pel·lícula \"Monster\" està inspirada en aquesta pobra",
+        "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/1/3/1720603242031.mp3",
+        "urlPagina": "https://www.3cat.cat/3cat/alieen-wuornos-la-pellicula-monster-esta-inspirada-en-aquesta-pobra-mossa/audio/1213848/",
+        "temporada": 4,
+        "capitol": null,
+        "mida": 49582915
+    },
+    {
+        "title": "Especial assassins en sèrie. Pierre Basson, el primer assassí serial de Ciutat del Cap",
+        "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/9/0/1720602935809.mp3",
+        "urlPagina": "https://www.3cat.cat/3cat/pierre-basson-el-primer-assassi-serial-de-cape-town/audio/1213847/",
+        "temporada": 4,
+        "capitol": null,
+        "mida": 49124414
+    },
+    {
         "title": "5x1 - Richard Williams, el tenista del Titanic",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/5/7/1725031511675.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/richard-williams-el-tenista-del-titanic/audio/1216639/",
@@ -6350,6 +6398,14 @@
         "temporada": 5,
         "capitol": 70,
         "mida": 46599105
+    },
+    {
+        "title": "Especial campanades de Cap d'Any. Sant Nicolau",
+        "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/5/3/1735042524435.mp3",
+        "urlPagina": "https://www.3cat.cat/3cat/especial-campanades-de-cap-dany/audio/1229078/",
+        "temporada": 5,
+        "capitol": null,
+        "mida": 70788075
     },
     {
         "title": "5x71 - El Perro Paco, un gosset madrileny amant de la tauromàquia",
@@ -7192,7 +7248,7 @@
         "mida": 47507748
     },
     {
-        "title": "5x176 - Kílian Jornet",
+        "title": "5x176 - Kílian Jornet, un fan del programa que fa totes aquelles animalades mentre ens escolta",
         "urlArxiu": "https://audios.3catvideos.cat/multimedia/mp3/6/4/1751451010846.mp3",
         "urlPagina": "https://www.3cat.cat/3cat/ultim-capitol-de-la-5a-temporada/audio/1249532/",
         "temporada": 5,

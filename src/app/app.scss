@@ -50,8 +50,8 @@ header {
 
     font-size: 0.5rem;
 
-    padding: 0.5rem;
-    padding-top: 4rem;
+    padding: 0 1rem;
+    @include mobil { padding: 0 0.5rem; }
 
     .titol-pagina {
         font-size: calc(1.325rem + 1.7vw);
@@ -61,7 +61,7 @@ header {
         text-align: center;
 
         padding: 0.5rem;
-        margin-bottom: 4rem;
+        margin: 4rem 0;
 
         transition: opacity 0.3s;
     }
@@ -87,7 +87,7 @@ header {
         input {
             min-width: 20%;
             max-width: 80%;
-            padding-left: 1.5rem;
+            padding: 0.125rem 1.5rem;
             font-size: 2rem;
 
             background-color: #2f000b;
@@ -103,49 +103,56 @@ header {
         }
     }
 
+    .llista-capitols {
 
-    .selector-tabs {
-        padding: 0.5rem 0.5rem;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        justify-content: center;
-        width: 100%;
+        section.temporada {
+            display: flex;
+            flex-direction: column;
 
-        .boto {
-            background-color: #530013;
+            background-color: #ffacc033;
+            border-radius: 2rem;
+            margin: auto;
+            margin-bottom: 1rem;
+            overflow: hidden;
 
-            font-weight: bold;
+            width: fit-content;
 
-            font-size: 1.5rem;
-            padding: 0.5rem 1.5rem;
-            border-radius: 0.75rem;
-
-            @include mobil {
-                font-size: 1.2rem;
-                padding: 0.5rem 1rem;
-                // border-radius: 2rem;
+            &.obert {
+                .desplegable i {
+                    rotate: -180deg;
+                }
             }
+            &:not(.obert) {
+                
+                .taula {
+                    display: none;
+                }
+            }
+        }
 
-            white-space: nowrap;
+        button.titol.desplegable {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            width: 100%;
+            padding: 0.5rem 1.25rem;
+            outline: none;
 
             &:hover {
-                background-color: #592834;
-            }
-            &.selected {
-                background-color: #ba002b;
-                border-radius: 3rem;
+                background-color: rgba(255, 255, 255, 0.1);
             }
 
+            i {
+                font-size: smaller;
+            }
         }
-    }
 
-    .llista-capitols {
         .taula {
             font-size: 1.25rem;
             font-weight: 300;
             // width: 96%;
-            margin: auto;
+            margin: 1rem;
 
             border-radius: 1.5rem;
 
@@ -167,17 +174,6 @@ header {
                 padding: 0.25rem 0.5rem;
                 text-align: center;
             }
-           
-            .fila-temporada {
-                &:not(:first-of-type) {
-                    td .titol {
-                        margin-top: 7rem;
-                    }
-                }
-                td .titol {
-                    margin-bottom: 3rem;
-                }
-            }
 
             .fila {
                 
@@ -185,7 +181,15 @@ header {
                 &:nth-child(odd) { background-color: hsl(346, 30%, 13%) }
 
                 &:hover {
-                    background-color: #450010;
+                    background-color: #501825;
+                }
+
+                .capitol {
+                    .num-capitol {
+                        color: #d6aeb7;
+                        font-size: 1rem;
+                        margin-right: 0.125rem;
+                    }
                 }
 
                 .titol {
@@ -261,8 +265,10 @@ footer {
     gap: 2rem;
     
     background-color: #4e0012;
-    margin-top: 10rem;
+    margin-top: 6rem;
     padding: 2rem 1rem;
+
+    text-align: center;
 
     // min-height: 13rem;
 
@@ -308,7 +314,6 @@ footer {
         font-style: italic;
 
         a {
-            text-decoration: none;
             color: inherit;
             
 
@@ -332,6 +337,9 @@ footer {
         --p-dialog-border-color: none;
         --p-dialog-border-radius: 2rem;
         border: none !important;
+
+        max-width: 1200px;
+        width: 100%;
 
         .p-dialog-header { display: none; }
         .p-dialog-content {

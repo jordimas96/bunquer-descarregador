@@ -24,7 +24,6 @@ export class DescarregaBloc {
         { id: "temporada3", text: "Temporada 3" },
         { id: "temporada4", text: "Temporada 4" },
         { id: "temporada5", text: "Temporada 5" },
-        { id: "especials", text: "Especials" },
         { id: "millors", text: "Millors moments" },
     ];
 
@@ -40,7 +39,6 @@ export class DescarregaBloc {
         temporada3: true,
         temporada4: true,
         temporada5: true,
-        especials: true,
         millors: false,
     }
 
@@ -50,16 +48,16 @@ export class DescarregaBloc {
         public dialogRef: DynamicDialogRef
     ) {
         this.llistes = {
-            temporada1: cs.capitols.filter(c => c.temporada == 1),
-            temporada2: cs.capitols.filter(c => c.temporada == 2),
-            temporada3: cs.capitols.filter(c => c.temporada == 3),
-            temporada4: cs.capitols.filter(c => c.temporada == 4),
-            temporada5: cs.capitols.filter(c => c.temporada == 5),
-            especials: cs.especials,
+            temporada1: cs.capitolsPerTemporades[0],
+            temporada2: cs.capitolsPerTemporades[1],
+            temporada3: cs.capitolsPerTemporades[2],
+            temporada4: cs.capitolsPerTemporades[3],
+            temporada5: cs.capitolsPerTemporades[4],
             millors: cs.millors,
         };
 
         this.seleccioChange();
+        
     }
 
     get maxRang(): number {

@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { catchError, delay, forkJoin, from, mergeMap, of, toArray } from 'rxjs';
 
 import capitolsJson from "src/assets/urls/capitols.json";
-import especialsJson from "src/assets/urls/especials.json";
 import millorsJson from "src/assets/urls/millors-moments.json";
 
 export class Capitol {
@@ -12,7 +11,6 @@ export class Capitol {
     urlPagina: string;
     temporada: number;
     capitol?: number;
-    ordre?: number;
     setmana?: number;
     mida: number;
 
@@ -34,11 +32,9 @@ export class Capitol {
 })
 export class CapitolsService {
 
-    public capitols: Capitol[] = (capitolsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
-    public especials: Capitol[] = (especialsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
+    private capitols: Capitol[] = (capitolsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
+    public capitolsPerTemporades: Capitol[][];
     public millors: Capitol[] = (millorsJson as Capitol[]).map(c => Object.assign(new Capitol(), c));
-
-    public capitolsTots: Capitol[] = [...this.capitols, ...this.especials, ...this.millors];
 
     public progresDescarrega: {
         descarregats: number,
@@ -50,25 +46,23 @@ export class CapitolsService {
 
     constructor(private http: HttpClient) {
 
+        // Separar JSON capitols per temporades //
+        this.capitolsPerTemporades = [[], [], [], [], []];
+        this.capitols.forEach((capitol: Capitol) => {
+            this.capitolsPerTemporades[capitol.temporada - 1].push(capitol);
+        });
     }
 
     get descarregant() {
         return !!this.progresDescarrega;
     }
 
-    getLlista(tipus: string): Capitol[] {
-        if (tipus == "capitols") return this.capitols;
-        if (tipus == "especials") return this.especials;
-        if (tipus == "millors") return this.millors;
-        return [];
-    }
     getLlistaFiltrada(textBuscar: string): Capitol[] {
-        return this.capitolsTots.filter(c => {
+        return [...this.capitols, ...this.millors].filter(c => {
             return (
                 c.title.toLowerCase().includes(textBuscar) ||
                 c.temporada.toString().includes(textBuscar) ||
                 (c.capitol ?? "").toString().includes(textBuscar) ||
-                (c.ordre ?? "").toString().includes(textBuscar) ||
                 (c.setmana ?? "").toString().includes(textBuscar)
             );
         });

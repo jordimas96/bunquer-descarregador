@@ -8,12 +8,12 @@
     <h1 class="titol-pagina">Descarregador de capítols d'El búnquer</h1>
 
     <section class="descarrega-massiva card mb-5">
-        <h3 class="mb-4 ps-2">Descàrrega massiva:</h3>
+        <h3 class="mb-4 ps-2">Descarrega'ls tots de cop:</h3>
         
         <div class="text-center mb-3">
             <button class="rs boto descarregar-en-grup boing" (click)="obrirModal()">
                 <i class="fa-solid fa-list-check me-1"></i>
-                Descarregar tots
+                Descàrrega massiva
             </button>
         </div>
     </section>
@@ -23,108 +23,80 @@
         <h3 class="mb-4 ps-2">Descàrrega individual:</h3>
 
         <div class="buscador mb-4">
-            <input [(ngModel)]="textBuscar" placeholder="Busca..." (input)="actLlista()">
+            <input [(ngModel)]="textBuscar" placeholder="Busca..." (input)="actLlistaFiltrada()">
         </div>
 
         @if (!textBuscar) {
-            <div class="selector-tabs">
-                <button
-                    class="boto"
-                    (click)="tabSeleccionat = 'capitols'; actLlista()"
-                    [class.selected]="tabSeleccionat == 'capitols'">
-                    Capítols
-                </button>
-                <button
-                    class="boto"
-                    (click)="tabSeleccionat = 'especials'; actLlista()"
-                    [class.selected]="tabSeleccionat == 'especials'">
-                    Especials
-                </button>
-                <button
-                    class="boto"
-                    (click)="tabSeleccionat = 'millors'; actLlista()"
-                    [class.selected]="tabSeleccionat == 'millors'">
-                    Millors moments
-                </button>
-            </div>
-
-
+            <!-- Normal -->
             <div class="llista-capitols mt-5">
-                <table class="taula capitols">
-                    @for (capitol of llistaCapitols; track capitol.title) {
-                        @if (capitol.capitol == 1 || capitol.ordre == 1 || capitol.setmana == 1) {
-                            <tr class="fila-temporada">
-                                <td colspan="5">
-                                    <h1 class="titol">Temporada {{capitol.temporada}}</h1>
-                                </td>
-                            </tr>
+                @for (temporada of llistaPerTemporades; track $index) {
+                    <section class="temporada" [class.obert]="desplegablesOberts[$index]">
+                        <button class="rs h1 mb-0 mx-auto titol desplegable" (click)="desplegablesOberts[$index] = !desplegablesOberts[$index]">
+                            @if (temporada[0].capitol) { Temporada {{ $index + 1 }} }
+                            @else { Millors moments }
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
 
-                            
+                        <table class="taula">
                             <tr class="header">
-                                <!-- <th>T.</th> -->
-                                @if (tabSeleccionat != 'especials') {
-                                    <th class="text-center">
-                                        @if (tabSeleccionat == 'capitols') { Cap. }
-                                        @if (tabSeleccionat == 'millors') { Setmana }
-                                    </th>
+                                @if (!temporada[0].setmana) {
+                                    <th>Cap.</th>
                                 }
                                 <th>Títol</th>
                                 <th>Desc. / Escolta</th>
                             </tr>
-                            
-                        }
-                        <tr class="fila">
-                            <!-- <td class="temporada">{{capitol.temporada}}</td> -->
-                            @if (tabSeleccionat != 'especials') {
-                                <td class="capitol text-center">{{ capitol.capitol || capitol.setmana }}</td>
+                            @for (capitol of temporada; track capitol.title) {
+                                
+                                <tr class="fila">
+                                    @if (!capitol.setmana) {
+                                        <td class="capitol">
+                                            @if (capitol.capitol) {
+                                                <span class="num-capitol">{{ capitol.temporada }}x</span>{{ capitol.capitol }}
+                                            }
+                                        </td>
+                                    }
+                                    <td class="titol">{{ capitol.titolMostrar }}</td>
+                                    <td>
+                                        <div class="botons">
+                                            <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"
+                                                [disabled]="capitol.descarregant" [class.descarregat]="capitol.descarregat">
+                                                @if (capitol.descarregat) {
+                                                    <i class="fa-solid fa-check"></i>
+                                                } @else if (capitol.descarregant) {
+                                                    <p-progress-spinner strokeWidth="6" />
+                                                } @else {
+                                                    <i class="fa-solid fa-download"></i>
+                                                }
+                                            </button>
+                                            <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
+                                                <i class="fa-solid fa-play"></i>
+                                            </a>
+                                        </div>
+                                    </td>
+                                </tr>
                             }
-                            <td class="titol">{{ capitol.titolMostrar }}</td>
-                            <td>
-                                <div class="botons">
-                                    <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"
-                                        [disabled]="capitol.descarregant" [class.descarregat]="capitol.descarregat">
-                                        @if (capitol.descarregat) {
-                                            <i class="fa-solid fa-check"></i>
-                                        } @else if (capitol.descarregant) {
-                                            <p-progress-spinner strokeWidth="6" />
-                                        } @else {
-                                            <i class="fa-solid fa-download"></i>
-                                        }
-                                    </button>
-                                    <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
-                                        <i class="fa-solid fa-play"></i>
-                                    </a>
-                                </div>
-                            </td>
-                        </tr>
-                    }
-                </table>
+                        </table>
+                    </section>
+                }
             </div>
         } @else {
+            <!-- Buscant -->
             <div class="llista-capitols filtrada mt-5">
-                @if (llistaCapitols.length) {
-                    <h4 class="text-center fst-italic mb-3">{{ textNumResultats }}</h4>
-                    <table class="taula capitols">
+                <h4 class="text-center fst-italic">{{ textNumResultats }}</h4>
+                @if (llistaFiltrada.length) {
+                    <table class="taula capitols mx-auto mb-0">
                         <tr class="header">
-                            <th>Temp.</th>
-                            <th class="text-center">
-                                {{ textNumCapitol }}
-                            </th>
+                            <th>Capítol</th>
                             <th>Títol</th>
                             <th>Desc. / Escolta</th>
                         </tr>
-                        @for (capitol of llistaCapitols; track capitol.title) {
-                            @if (!textBuscar && (capitol.capitol == 1 || capitol.ordre == 1 || capitol.setmana == 1)) {
-                                <tr class="fila-temporada">
-                                    <td colspan="5">
-                                        <h1 class="titol">Temporada {{capitol.temporada}}</h1>
-                                    </td>
-                                </tr>
-                                
-                            }
+                        @for (capitol of llistaFiltrada; track capitol.title) {
                             <tr class="fila">
-                                <td class="temporada">{{capitol.temporada}}</td>
-                                <td class="capitol text-center">{{ capitol.capitol || capitol.setmana }}</td>
+                                <td class="capitol">
+                                    @if (capitol.capitol) {
+                                        <span class="num-capitol">{{ capitol.temporada }}x</span>{{ capitol.capitol }}
+                                    }
+                                </td>
                                 <td class="titol">{{ capitol.titolMostrar }}</td>
                                 <td>
                                     <div class="botons">
@@ -160,7 +132,7 @@
     
 </div>
 
-<footer class="text-center">
+<footer>
     <a class="firma boing" href="https://jordimas96.github.io/">
         <img class="logo" src="https://jordimas96.github.io/assets/icons/jmas/vermell.png" alt="logo jmas">
         <div class="text">Web desenvolupada per Jordi&nbsp;Mas</div>
