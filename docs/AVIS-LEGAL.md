@@ -10,7 +10,7 @@ Per a més informació sobre el projecte, visita la [pàgina principal](https://
 
 Aquest avís legal té per objectiu clarificar que aquest projecte **és independent** i actuar com a descàrrec de responsabilitat davant qualsevol confusió amb 3Cat o Catalunya Ràdio.
 
-- [Web](https://jordimas96.github.io/bunquer-descarregador/)  
+- [Web](https://jordimas96.github.io/bunquer-descarregador/)
 - [Informació del projecte](https://jordimas96.github.io/bunquer/)
 - [Readme](https://jordimas96.github.io/bunquer-descarregador/README)
 
