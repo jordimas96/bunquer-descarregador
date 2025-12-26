@@ -13,6 +13,7 @@ export class Capitol {
     capitol?: number;
     setmana?: number;
     mida: number;
+    textNormalitzat: string;
 
     descarregant: boolean = false;
     descarregat: boolean = false;
@@ -46,6 +47,11 @@ export class CapitolsService {
 
     constructor(private http: HttpClient) {
 
+        // Crear textNormalitzat per capítol //
+        [...this.capitols, ...this.millors].forEach(c => {
+            c.textNormalitzat = this.normalitzar(c.title);
+        });
+
         // Separar JSON capitols per temporades //
         this.capitolsPerTemporades = [[], [], [], [], []];
         this.capitols.forEach((capitol: Capitol) => {
@@ -59,12 +65,7 @@ export class CapitolsService {
 
     getLlistaFiltrada(textBuscar: string): Capitol[] {
         return [...this.capitols, ...this.millors].filter(c => {
-            return (
-                c.title.toLowerCase().includes(textBuscar) ||
-                c.temporada.toString().includes(textBuscar) ||
-                (c.capitol ?? "").toString().includes(textBuscar) ||
-                (c.setmana ?? "").toString().includes(textBuscar)
-            );
+            return c.textNormalitzat.includes(this.normalitzar(textBuscar));
         });
     }
 
@@ -185,6 +186,15 @@ export class CapitolsService {
             }
             this.progresDescarrega = null;
         })();
+    }
+
+
+    private normalitzar(text: string): string {
+        return text
+            .toLowerCase()
+            .replaceAll("ç", "__CE_TRENCADA__")
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+            .replaceAll("__CE_TRENCADA__", "ç");
     }
 
 }
