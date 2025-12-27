@@ -1,0 +1,106 @@
+<section class="descarrega-individual card">
+    <h3 class="mb-4 ps-2">Cerca i descarrega'ls d'un en un:</h3>
+
+    <div class="buscador mb-4">
+        <input [(ngModel)]="textBuscar" placeholder="Cerca..." (input)="actLlistaFiltrada()">
+    </div>
+
+    @if (!textBuscar) {
+        <!-- Normal -->
+        <div class="llista-capitols mt-5">
+            @for (temporada of llistaPerTemporades; track $index) {
+                <section class="temporada" [class.obert]="desplegablesOberts[$index]">
+                    <button class="rs h1 mb-0 mx-auto titol desplegable" (click)="desplegablesOberts[$index] = !desplegablesOberts[$index]">
+                        @if (temporada[0].capitol) { Temporada {{ $index + 1 }} }
+                        @else { Millors moments }
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <table class="taula">
+                        <tr class="header">
+                            @if (!temporada[0].setmana) {
+                                <th>Cap.</th>
+                            }
+                            <th>Títol</th>
+                            <th>Desc. / Escolta</th>
+                        </tr>
+                        @for (capitol of temporada; track capitol.title) {
+                            
+                            <tr class="fila">
+                                @if (!capitol.setmana) {
+                                    <td class="capitol">
+                                        @if (capitol.capitol) {
+                                            <span class="num-capitol">{{ capitol.temporada }}x</span>{{ capitol.capitol }}
+                                        }
+                                    </td>
+                                }
+                                <td class="titol">{{ capitol.titolMostrar }}</td>
+                                <td>
+                                    <div class="botons">
+                                        <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"
+                                            [disabled]="capitol.descarregant" [class.descarregat]="capitol.descarregat">
+                                            @if (capitol.descarregat) {
+                                                <i class="fa-solid fa-check"></i>
+                                            } @else if (capitol.descarregant) {
+                                                <p-progress-spinner strokeWidth="6" />
+                                            } @else {
+                                                <i class="fa-solid fa-download"></i>
+                                            }
+                                        </button>
+                                        <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
+                                            <i class="fa-solid fa-play"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </table>
+                </section>
+            }
+        </div>
+    } @else {
+        <!-- Buscant -->
+        <div class="llista-capitols filtrada mt-5">
+            @if (llistaFiltrada.length) {
+                <h4 class="text-center fst-italic">{{ textNumResultats }}</h4>
+                <table class="taula capitols mx-auto mb-0">
+                    <tr class="header">
+                        <th>Capítol</th>
+                        <th>Títol</th>
+                        <th>Desc. / Escolta</th>
+                    </tr>
+                    @for (capitol of llistaFiltrada; track capitol.title) {
+                        <tr class="fila">
+                            <td class="capitol">
+                                @if (capitol.capitol) {
+                                    <span class="num-capitol">{{ capitol.temporada }}x</span>{{ capitol.capitol }}
+                                }
+                            </td>
+                            <td class="titol">{{ capitol.titolMostrar }}</td>
+                            <td>
+                                <div class="botons">
+                                    <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"
+                                        [disabled]="capitol.descarregant" [class.descarregat]="capitol.descarregat">
+                                        @if (capitol.descarregat) {
+                                            <i class="fa-solid fa-check"></i>
+                                        } @else if (capitol.descarregant) {
+                                            <p-progress-spinner strokeWidth="6" />
+                                        } @else {
+                                            <i class="fa-solid fa-download"></i>
+                                        }
+                                    </button>
+                                    <a class="escoltar boto boing" [href]="capitol.urlPagina" target="_blank" title="Ecolta a 3Cat">
+                                        <i class="fa-solid fa-play"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            } @else {
+                <h3 class="text-center fst-italic">Cap resultat</h3>
+            }
+        </div>
+    }
+
+</section>
