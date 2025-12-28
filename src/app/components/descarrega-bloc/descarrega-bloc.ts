@@ -8,8 +8,8 @@ import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 @Component({
     selector: 'app-descarrega-bloc',
     imports: [
-        FormsModule,
         SliderModule,
+        FormsModule,
     ],
     templateUrl: './descarrega-bloc.html',
     styleUrl: './descarrega-bloc.scss'
@@ -57,7 +57,7 @@ export class DescarregaBloc {
         };
 
         this.seleccioChange();
-        
+
     }
 
     get maxRang(): number {
@@ -102,7 +102,7 @@ export class DescarregaBloc {
     }
 
     get tempsRestantString() {
-        let midaRestant = this.midaDescarrega * (1-this.cs.progresDescarrega!.descarregats / this.cs.progresDescarrega!.total);
+        let midaRestant = this.midaDescarrega * (1 - this.cs.progresDescarrega!.descarregats / this.cs.progresDescarrega!.total);
 
         let segons = Math.round(midaRestant / this.bytesDescarregatsPerSegon);
         const minuts = Math.floor(segons / 60);

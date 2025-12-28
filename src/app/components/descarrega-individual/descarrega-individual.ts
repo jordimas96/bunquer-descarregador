@@ -2,15 +2,13 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ProgressSpinner } from 'primeng/progressspinner';
-import { SliderModule } from 'primeng/slider';
 import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 
 @Component({
     selector: 'app-descarrega-individual',
     imports: [
-        ProgressSpinner,
         FormsModule,
-        SliderModule,
+        ProgressSpinner,
     ],
     templateUrl: './descarrega-individual.html',
     styleUrl: './descarrega-individual.scss'

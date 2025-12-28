@@ -1,12 +1,12 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { DescarregaBloc } from './components/descarrega-bloc/descarrega-bloc';
 import { DescarregaIndividual } from './components/descarrega-individual/descarrega-individual';
+import { Footer } from './components/footer/footer';
 
 @Component({
     selector: 'app-root',
-    imports: [FormsModule, DescarregaIndividual],
+    imports: [DescarregaIndividual, Footer],
     providers: [DialogService],
     templateUrl: './app.html',
     styleUrl: './app.scss'
@@ -33,14 +33,10 @@ export class App implements OnInit, OnDestroy {
         this.modalRef?.onDestroy.subscribe(() => {
             document.body.style.paddingRight = "";
         });
-
-
-
     }
+
     ngOnDestroy() {
-        if (this.modalRef) {
-            this.modalRef.close();
-        }
+        this.modalRef?.close();
     }
 
 
