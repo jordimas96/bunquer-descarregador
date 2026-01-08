@@ -1,7 +1,7 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
-import { DescarregaBloc } from './components/descarrega-bloc/descarrega-bloc';
 import { DescarregaIndividual } from './components/descarrega-individual/descarrega-individual';
+import { DescarregaMultiple } from './components/descarrega-multiple/descarrega-multiple';
 import { Footer } from './components/footer/footer';
 
 @Component({
@@ -13,7 +13,7 @@ import { Footer } from './components/footer/footer';
 })
 export class App implements OnInit, OnDestroy {
 
-    private modalRef: DynamicDialogRef<DescarregaBloc> | null;
+    private modalRef: DynamicDialogRef<DescarregaMultiple> | null;
 
     public scrolled: boolean;
 
@@ -22,8 +22,8 @@ export class App implements OnInit, OnDestroy {
     ngOnInit(): void { }
 
     obrirModal() {
-        this.modalRef = this.dialogService.open(DescarregaBloc, {
-            styleClass: "modal-descarrega-bloc",
+        this.modalRef = this.dialogService.open(DescarregaMultiple, {
+            styleClass: "modal-descarrega-multiple",
             modal: true,
             dismissableMask: true,
         });

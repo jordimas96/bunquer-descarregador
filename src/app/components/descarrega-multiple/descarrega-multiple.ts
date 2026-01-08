@@ -6,15 +6,15 @@ import { SliderModule } from 'primeng/slider';
 import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 
 @Component({
-    selector: 'app-descarrega-bloc',
+    selector: 'app-descarrega-multiple',
     imports: [
         SliderModule,
         FormsModule,
     ],
-    templateUrl: './descarrega-bloc.html',
-    styleUrl: './descarrega-bloc.scss'
+    templateUrl: './descarrega-multiple.html',
+    styleUrl: './descarrega-multiple.scss'
 })
-export class DescarregaBloc {
+export class DescarregaMultiple {
 
     public readonly llistes: any;
 

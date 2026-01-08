@@ -24,7 +24,7 @@ export class Capitol {
     get nomArxiu() {
         return this.title
             .replaceAll("\"", "'")
-            .replaceAll("?", ".") + ".mp3";
+            .replaceAll("?", ".") + ".mp3"; // [bunquer-descarregador.github.io].mp3
     }
 }
 
