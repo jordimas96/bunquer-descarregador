@@ -89,7 +89,7 @@
             overflow: hidden;
             
             tr.header {
-                background-color: hsl(346, 92%, 20%);
+                background-color: hsl(346, 97%, 25%);
 
                 th {
                     padding: 0.5rem 1rem;
@@ -103,18 +103,20 @@
                 text-align: center;
             }
 
-            .fila {
+            tr.fila {
+                transition: height 0.3s, background-color 0.3s, ;
 
                 &:nth-child(even) { background-color: hsl(346, 30%, 10%); }
                 &:nth-child(odd) { background-color: hsl(346, 30%, 13%) }
 
                 &:hover {
                     background-color: #640017;
-                    height: 10rem;
-
 
                     .titol {
                         font-size: 1.35rem;
+                        @include mobil {
+                            font-size: 1rem;
+                        }
                         font-weight: bold;
                         
                         &::before {
@@ -129,10 +131,12 @@
                         &.descarregar {
                             height: 9.5rem;
                             font-size: 1.75rem;
+                            border-radius: 2.5rem;
                         }
                         &.escoltar {
                             height: 5rem;
                             font-size: 1.5rem;
+                            border-radius: 1.625rem;
                         }
                     }
                     
@@ -153,6 +157,8 @@
                     z-index: 1;
                     position: relative;
 
+                    transition: font-size 0.3s, font-weight 0.3s;
+
                     &::before {
                         content: "";
                         position: absolute;
@@ -162,6 +168,8 @@
                         opacity: 0.2;
                         background-image: var(--fons);
                         z-index: -1;
+
+                        transition: opacity 0.3s;
                     }
                 }
                 td .botons {
@@ -181,6 +189,8 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    
+                    transition: height 0.3s, font-size 0.3s, border-radius 0.3s;
 
                     &:disabled {
                         opacity: 0.5;
@@ -190,12 +200,11 @@
                     &.descarregar {
                         background-color: #2d46ff;
                         &:hover { background-color: #00a2ff !important; }
+
                         width: 5.25rem;
 
                         @include mobil {
-                            padding: 0.5rem 0.75rem;
-                            // font-size: 1.1rem;
-                            flex: 2;
+                            width: 4rem;
                         }
 
                         &.descarregat {
@@ -220,13 +229,6 @@
                         &:hover { background-color: #dd0034 !important; }
                         
                         width: 2.75rem;
-
-                        @include mobil {
-                            padding: 0.5rem 0.75rem;
-                            // font-size: 1.1rem;
-                            flex: 1;
-                        }
-
                     }
                 }
             }

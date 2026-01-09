@@ -7,10 +7,10 @@
 
     @if (!textBuscar) {
         <!-- Normal -->
-        <div class="llista-capitols mt-5">
+        <div class="llista-capitols text-center mt-5">
             @for (temporada of llistaPerTemporades; track $index) {
                 <section class="temporada" [class.obert]="desplegablesOberts[$index]">
-                    <button class="rs h1 mb-0 mx-auto titol desplegable" (click)="desplegablesOberts[$index] = !desplegablesOberts[$index]">
+                    <button class="rs h1 mb-0 titol desplegable" (click)="desplegablesOberts[$index] = !desplegablesOberts[$index]">
                         @if (temporada[0].capitol) { Temporada {{ $index + 1 }} }
                         @else { Millors moments }
                         <i class="fa-solid fa-chevron-down"></i>
@@ -60,10 +60,10 @@
         </div>
     } @else {
         <!-- Buscant -->
-        <div class="llista-capitols filtrada mt-5">
+        <div class="llista-capitols filtrada text-center mt-5">
             @if (llistaFiltrada.length) {
                 <h4 class="text-center fst-italic">{{ textNumResultats }}</h4>
-                <table class="taula capitols mx-auto mb-0">
+                <table class="taula capitols">
                     <tr class="header">
                         <th>Capítol</th>
                         <th>Títol</th>
