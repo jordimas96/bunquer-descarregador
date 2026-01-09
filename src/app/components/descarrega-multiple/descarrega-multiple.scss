@@ -30,7 +30,7 @@
         height: 2.5rem;
         width: 2.5rem;
         font-size: 1.5rem;
-        border-radius: 2rem;
+        border-radius: 3rem;
         margin: 1rem;
         
         display: flex;
@@ -75,7 +75,7 @@
             border-radius: 2rem;
             padding: 0.5rem 1rem;
 
-            transition: 0.3s background-color, 0.3s color, 0.3s font-weight;
+            transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
 
             input[type=checkbox] {
                 display: none;
@@ -103,12 +103,36 @@
         
 
         .info-capitol.card {
+            
+            // background-image: var(--fons);
+            // background-size: cover;
+            // background-position: center;
+            
+            position: relative;
+
             background-color: hsla(345, 100%, 82%, 0.12);
             padding: 1rem;
 
             flex: 1;
 
             border-radius: 2rem;
+            z-index: 5;
+
+            .fons {
+                position: absolute;
+                inset: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 2rem;
+                opacity: 0.2;
+                z-index: 0;
+            }
+
+            div {
+                position: relative;
+                z-index: 10;
+            }
 
             .titol {
                 color: hsl(345, 100%, 85%);
@@ -184,7 +208,7 @@
                     width: 20%;
                     height: 100%;
                     border-radius: inherit;
-                    transition: 0.3s width, 0.3s background-color;
+                    transition: width 0.3s, background-color 0.3s;
                 }
             }
         }

@@ -13,6 +13,14 @@ export class Capitol {
     capitol?: number;
     setmana?: number;
     mida: number;
+
+    imatge_hd: any;
+    imatge: any;
+    durada_text: any;
+    durada_ms: any;
+    data_text: any;
+    data: any;
+
     textNormalitzat: string;
 
     descarregant: boolean = false;

@@ -1,5 +1,5 @@
 <section class="descarrega-individual card">
-    <h3 class="mb-4 ps-2">Cerca i descarrega'ls d'un en un:</h3>
+    <h3 class="m-2 mb-4 ps-2">Cerca i descarrega'ls d'un en un:</h3>
 
     <div class="buscador mb-4">
         <input [(ngModel)]="textBuscar" placeholder="Cerca..." (input)="actLlistaFiltrada()">
@@ -19,7 +19,7 @@
                     <table class="taula">
                         <tr class="header">
                             @if (!temporada[0].setmana) {
-                                <th>Cap.</th>
+                                <th class="px-2">Cap.</th>
                             }
                             <th>Títol</th>
                             <th>Desc. / Escolta</th>
@@ -34,7 +34,7 @@
                                         }
                                     </td>
                                 }
-                                <td class="titol">{{ capitol.titolMostrar }}</td>
+                                <td class="titol" [style.--fons]="`url(${capitol.imatge})`">{{ capitol.titolMostrar }}</td>
                                 <td>
                                     <div class="botons">
                                         <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"
@@ -76,7 +76,7 @@
                                     <span class="num-capitol">{{ capitol.temporada }}x</span>{{ capitol.capitol }}
                                 }
                             </td>
-                            <td class="titol">{{ capitol.titolMostrar }}</td>
+                            <td class="titol" [style.--fons]="`url(${capitol.imatge})`">{{ capitol.titolMostrar }}</td>
                             <td>
                                 <div class="botons">
                                     <button class="descarregar boto boing" (click)="cs.descarregarCapitol(capitol)" title="Descarrega MP3"

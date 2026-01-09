@@ -35,10 +35,16 @@
                 <div class="card info-capitol">
                     <div class="titol mb-2">Des de:</div>
                     <div class="nom">{{ llistaSeleccionada[rangCapitols[0]].title }}</div>
+                    @if (llistaSeleccionada[rangCapitols[0]].imatge) {
+                        <img class="fons" [src]="llistaSeleccionada[rangCapitols[0]].imatge">
+                    }
                 </div>
                 <div class="card info-capitol">
                     <div class="titol mb-2">Fins a:</div>
                     <div class="nom">{{ llistaSeleccionada[rangCapitols[1]].title }}</div>
+                    @if (llistaSeleccionada[rangCapitols[1]].imatge) {
+                        <img class="fons" [src]="llistaSeleccionada[rangCapitols[1]].imatge">
+                    }
                 </div>
             </div>
         </section>

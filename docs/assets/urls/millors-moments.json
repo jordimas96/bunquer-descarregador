@@ -5,7 +5,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-1/audio/1078022/",
         "temporada": 1,
         "setmana": 1,
-        "mida": 24865018
+        "mida": 24865018,
+        "durada_text": "00:51:48",
+        "durada_ms": 3108000,
+        "data_text": "04/09/2020 22:00",
+        "data": "2020-09-04T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 2)",
@@ -13,7 +17,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2/audio/1078503/",
         "temporada": 1,
         "setmana": 2,
-        "mida": 25515154
+        "mida": 25515154,
+        "durada_text": "00:53:09",
+        "durada_ms": 3189000,
+        "data_text": "11/09/2020 22:00",
+        "data": "2020-09-11T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 3)",
@@ -21,7 +29,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-3/audio/1079115/",
         "temporada": 1,
         "setmana": 3,
-        "mida": 25012349
+        "mida": 25012349,
+        "durada_text": "00:52:06",
+        "durada_ms": 3126000,
+        "data_text": "18/09/2020 22:05",
+        "data": "2020-09-18T22:05:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 4)",
@@ -29,7 +41,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-4/audio/1079717/",
         "temporada": 1,
         "setmana": 4,
-        "mida": 25185593
+        "mida": 25185593,
+        "durada_text": "00:52:28",
+        "durada_ms": 3148000,
+        "data_text": "25/09/2020 22:06",
+        "data": "2020-09-25T22:06:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 5)",
@@ -37,7 +53,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-5/audio/1080545/",
         "temporada": 1,
         "setmana": 5,
-        "mida": 25055608
+        "mida": 25055608,
+        "durada_text": "00:52:11",
+        "durada_ms": 3131000,
+        "data_text": "02/10/2020 22:00",
+        "data": "2020-10-02T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 6)",
@@ -45,7 +65,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-6/audio/1081009/",
         "temporada": 1,
         "setmana": 6,
-        "mida": 25270648
+        "mida": 25270648,
+        "durada_text": "00:52:38",
+        "durada_ms": 3158000,
+        "data_text": "09/10/2020 22:00",
+        "data": "2020-10-09T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 7)",
@@ -53,7 +77,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-7/audio/1081655/",
         "temporada": 1,
         "setmana": 7,
-        "mida": 25241182
+        "mida": 25241182,
+        "durada_text": "00:52:35",
+        "durada_ms": 3155000,
+        "data_text": "16/10/2020 22:05",
+        "data": "2020-10-16T22:05:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 8)",
@@ -61,7 +89,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-8/audio/1084196/",
         "temporada": 1,
         "setmana": 8,
-        "mida": 25070027
+        "mida": 25070027,
+        "durada_text": "00:52:13",
+        "durada_ms": 3133000,
+        "data_text": "23/10/2020 22:00",
+        "data": "2020-10-23T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 9)",
@@ -69,7 +101,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-9/audio/1083052/",
         "temporada": 1,
         "setmana": 9,
-        "mida": 25324564
+        "mida": 25324564,
+        "durada_text": "00:52:45",
+        "durada_ms": 3165000,
+        "data_text": "30/10/2020 22:05",
+        "data": "2020-10-30T22:05:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 10)",
@@ -77,7 +113,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-10/audio/1083793/",
         "temporada": 1,
         "setmana": 10,
-        "mida": 25251631
+        "mida": 25251631,
+        "durada_text": "00:52:36",
+        "durada_ms": 3156000,
+        "data_text": "06/11/2020 22:05",
+        "data": "2020-11-06T22:05:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 11)",
@@ -85,7 +125,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-11/audio/1084496/",
         "temporada": 1,
         "setmana": 11,
-        "mida": 25101583
+        "mida": 25101583,
+        "durada_text": "00:52:17",
+        "durada_ms": 3137000,
+        "data_text": "13/11/2020 22:05",
+        "data": "2020-11-13T22:05:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 12)",
@@ -93,7 +137,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-12/audio/1085163/",
         "temporada": 1,
         "setmana": 12,
-        "mida": 25150693
+        "mida": 25150693,
+        "durada_text": "00:52:23",
+        "durada_ms": 3143000,
+        "data_text": "20/11/2020 22:00",
+        "data": "2020-11-20T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 13)",
@@ -101,7 +149,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-13/audio/1085823/",
         "temporada": 1,
         "setmana": 13,
-        "mida": 26501746
+        "mida": 26501746,
+        "durada_text": "00:55:12",
+        "durada_ms": 3312000,
+        "data_text": "27/11/2020 22:00",
+        "data": "2020-11-27T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 14)",
@@ -109,7 +161,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-14/audio/1086543/",
         "temporada": 1,
         "setmana": 14,
-        "mida": 26892329
+        "mida": 26892329,
+        "durada_text": "00:56:01",
+        "durada_ms": 3361000,
+        "data_text": "04/12/2020 22:00",
+        "data": "2020-12-04T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 15)",
@@ -117,7 +173,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-15/audio/1087398/",
         "temporada": 1,
         "setmana": 15,
-        "mida": 25292173
+        "mida": 25292173,
+        "durada_text": "00:52:41",
+        "durada_ms": 3161000,
+        "data_text": "11/12/2020 22:00",
+        "data": "2020-12-11T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 16)",
@@ -125,7 +185,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-16/audio/1087914/",
         "temporada": 1,
         "setmana": 16,
-        "mida": 24971598
+        "mida": 24971598,
+        "durada_text": "00:52:01",
+        "durada_ms": 3121000,
+        "data_text": "18/12/2020 22:00",
+        "data": "2020-12-18T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 17)",
@@ -133,7 +197,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-17/audio/1088839/",
         "temporada": 1,
         "setmana": 17,
-        "mida": 25201684
+        "mida": 25201684,
+        "durada_text": "00:52:30",
+        "durada_ms": 3150000,
+        "data_text": "25/12/2020 22:00",
+        "data": "2020-12-25T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 24)",
@@ -141,7 +209,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-24/audio/1092578/",
         "temporada": 1,
         "setmana": 24,
-        "mida": 25004617
+        "mida": 25004617,
+        "durada_text": "00:52:05",
+        "durada_ms": 3125000,
+        "data_text": "12/02/2021 22:00",
+        "data": "2021-02-12T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 26)",
@@ -149,7 +221,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-26/audio/1093930/",
         "temporada": 1,
         "setmana": 26,
-        "mida": 24565133
+        "mida": 24565133,
+        "durada_text": "00:51:10",
+        "durada_ms": 3070000,
+        "data_text": "26/02/2021 22:00",
+        "data": "2021-02-26T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 29)",
@@ -157,7 +233,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-29/audio/1096095/",
         "temporada": 1,
         "setmana": 29,
-        "mida": 24790204
+        "mida": 24790204,
+        "durada_text": "00:51:38",
+        "durada_ms": 3098000,
+        "data_text": "19/03/2021 22:00",
+        "data": "2021-03-19T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 30)",
@@ -165,7 +245,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-30/audio/1096845/",
         "temporada": 1,
         "setmana": 30,
-        "mida": 24940042
+        "mida": 24940042,
+        "durada_text": "00:51:57",
+        "durada_ms": 3117000,
+        "data_text": "26/03/2021 22:00",
+        "data": "2021-03-26T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 31)",
@@ -173,7 +257,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-31/audio/1097415/",
         "temporada": 1,
         "setmana": 31,
-        "mida": 24932728
+        "mida": 24932728,
+        "durada_text": "00:51:56",
+        "durada_ms": 3116000,
+        "data_text": "02/04/2021 22:00",
+        "data": "2021-04-02T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 32)",
@@ -181,7 +269,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-32/audio/1098008/",
         "temporada": 1,
         "setmana": 32,
-        "mida": 25103673
+        "mida": 25103673,
+        "durada_text": "00:52:17",
+        "durada_ms": 3137000,
+        "data_text": "09/04/2021 22:00",
+        "data": "2021-04-09T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 33)",
@@ -189,7 +281,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-33/audio/1098674/",
         "temporada": 1,
         "setmana": 33,
-        "mida": 100518144
+        "mida": 100518144,
+        "durada_text": "00:52:21",
+        "durada_ms": 3141000,
+        "data_text": "16/04/2021 22:00",
+        "data": "2021-04-16T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 34)",
@@ -197,7 +293,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-34/audio/1099360/",
         "temporada": 1,
         "setmana": 34,
-        "mida": 98929920
+        "mida": 98929920,
+        "durada_text": "00:51:31",
+        "durada_ms": 3091000,
+        "data_text": "23/04/2021 22:00",
+        "data": "2021-04-23T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 35)",
@@ -205,7 +305,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-35/audio/1100102/",
         "temporada": 1,
         "setmana": 35,
-        "mida": 99917568
+        "mida": 99917568,
+        "durada_text": "00:52:02",
+        "durada_ms": 3122000,
+        "data_text": "30/04/2021 22:00",
+        "data": "2021-04-30T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 36)",
@@ -213,7 +317,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-36/audio/1100801/",
         "temporada": 1,
         "setmana": 36,
-        "mida": 100641792
+        "mida": 100641792,
+        "durada_text": "00:52:25",
+        "durada_ms": 3145000,
+        "data_text": "07/05/2021 22:00",
+        "data": "2021-05-07T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 37)",
@@ -221,7 +329,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-37/audio/1101237/",
         "temporada": 1,
         "setmana": 37,
-        "mida": 100200960
+        "mida": 100200960,
+        "durada_text": "00:52:11",
+        "durada_ms": 3131000,
+        "data_text": "14/05/2021 22:00",
+        "data": "2021-05-14T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 38)",
@@ -229,7 +341,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-38/audio/1102164/",
         "temporada": 1,
         "setmana": 38,
-        "mida": 100333824
+        "mida": 100333824,
+        "durada_text": "00:52:15",
+        "durada_ms": 3135000,
+        "data_text": "21/05/2021 22:00",
+        "data": "2021-05-21T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 39)",
@@ -237,7 +353,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-39/audio/1102593/",
         "temporada": 1,
         "setmana": 39,
-        "mida": 100974336
+        "mida": 100974336,
+        "durada_text": "00:52:35",
+        "durada_ms": 3155000,
+        "data_text": "28/05/2021 22:00",
+        "data": "2021-05-28T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 40)",
@@ -245,7 +365,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-40/audio/1103557/",
         "temporada": 1,
         "setmana": 40,
-        "mida": 100416768
+        "mida": 100416768,
+        "durada_text": "00:52:18",
+        "durada_ms": 3138000,
+        "data_text": "04/06/2021 22:00",
+        "data": "2021-06-04T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 41)",
@@ -253,7 +377,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-41/audio/1104244/",
         "temporada": 1,
         "setmana": 41,
-        "mida": 50094915
+        "mida": 50094915,
+        "durada_text": "00:52:10",
+        "durada_ms": 3130000,
+        "data_text": "11/06/2021 22:00",
+        "data": "2021-06-11T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 42)",
@@ -261,7 +389,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-42/audio/1104923/",
         "temporada": 1,
         "setmana": 42,
-        "mida": 50254994
+        "mida": 50254994,
+        "durada_text": "00:52:20",
+        "durada_ms": 3140000,
+        "data_text": "18/06/2021 22:00",
+        "data": "2021-06-18T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 43)",
@@ -269,7 +401,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-43/audio/1105355/",
         "temporada": 1,
         "setmana": 43,
-        "mida": 50229498
+        "mida": 50229498,
+        "durada_text": "00:52:19",
+        "durada_ms": 3139000,
+        "data_text": "25/06/2021 22:00",
+        "data": "2021-06-25T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 44)",
@@ -277,7 +413,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-44/audio/1106158/",
         "temporada": 1,
         "setmana": 44,
-        "mida": 50310582
+        "mida": 50310582,
+        "durada_text": "00:52:24",
+        "durada_ms": 3144000,
+        "data_text": "02/07/2021 22:00",
+        "data": "2021-07-02T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 45)",
@@ -285,7 +425,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-45/audio/1106755/",
         "temporada": 1,
         "setmana": 45,
-        "mida": 50329391
+        "mida": 50329391,
+        "durada_text": "00:52:25",
+        "durada_ms": 3145000,
+        "data_text": "09/07/2021 22:00",
+        "data": "2021-07-09T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 1, setmana 46)",
@@ -293,7 +437,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-46/audio/1107362/",
         "temporada": 1,
         "setmana": 46,
-        "mida": 50619872
+        "mida": 50619872,
+        "durada_text": "00:52:43",
+        "durada_ms": 3163000,
+        "data_text": "16/07/2021 22:00",
+        "data": "2021-07-16T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 1)",
@@ -301,7 +449,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-02x01/audio/1109164/",
         "temporada": 2,
         "setmana": 1,
-        "mida": 53556871
+        "mida": 53556871,
+        "durada_text": "00:55:47",
+        "durada_ms": 3347000,
+        "data_text": "03/09/2021 22:00",
+        "data": "2021-09-03T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 2)",
@@ -309,7 +461,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2x02/audio/1109705/",
         "temporada": 2,
         "setmana": 2,
-        "mida": 53556871
+        "mida": 53556871,
+        "durada_text": "00:55:47",
+        "durada_ms": 3347000,
+        "data_text": "10/09/2021 22:00",
+        "data": "2021-09-10T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 3)",
@@ -317,7 +473,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2x03/audio/1110296/",
         "temporada": 2,
         "setmana": 3,
-        "mida": 53065351
+        "mida": 53065351,
+        "durada_text": "00:55:16",
+        "durada_ms": 3316000,
+        "data_text": "17/09/2021 22:00",
+        "data": "2021-09-17T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 4)",
@@ -325,7 +485,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2x03/audio/1110680/",
         "temporada": 2,
         "setmana": 4,
-        "mida": 60000130
+        "mida": 60000130,
+        "durada_text": "01:02:30",
+        "durada_ms": 3750000,
+        "data_text": "24/09/2021 22:00",
+        "data": "2021-09-24T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 5)",
@@ -333,7 +497,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2x05/audio/1111548/",
         "temporada": 2,
         "setmana": 5,
-        "mida": 53245492
+        "mida": 53245492,
+        "durada_text": "00:55:27",
+        "durada_ms": 3327000,
+        "data_text": "01/10/2021 22:00",
+        "data": "2021-10-01T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 6)",
@@ -341,7 +509,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2x06/audio/1112182/",
         "temporada": 2,
         "setmana": 6,
-        "mida": 53071621
+        "mida": 53071621,
+        "durada_text": "00:55:16",
+        "durada_ms": 3316000,
+        "data_text": "08/10/2021 22:00",
+        "data": "2021-10-08T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 7)",
@@ -349,7 +521,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2x07/audio/1112759/",
         "temporada": 2,
         "setmana": 7,
-        "mida": 53184888
+        "mida": 53184888,
+        "durada_text": "00:55:24",
+        "durada_ms": 3324000,
+        "data_text": "15/10/2021 22:00",
+        "data": "2021-10-15T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 8)",
@@ -357,7 +533,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-8/audio/1113383/",
         "temporada": 2,
         "setmana": 8,
-        "mida": 53104640
+        "mida": 53104640,
+        "durada_text": "00:55:19",
+        "durada_ms": 3319000,
+        "data_text": "22/10/2021 22:00",
+        "data": "2021-10-22T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 9)",
@@ -365,7 +545,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-9/audio/1114068/",
         "temporada": 2,
         "setmana": 9,
-        "mida": 52768182
+        "mida": 52768182,
+        "durada_text": "00:54:58",
+        "durada_ms": 3298000,
+        "data_text": "29/10/2021 22:00",
+        "data": "2021-10-29T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 10)",
@@ -373,7 +557,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-10/audio/1114790/",
         "temporada": 2,
         "setmana": 10,
-        "mida": 52664529
+        "mida": 52664529,
+        "durada_text": "00:54:51",
+        "durada_ms": 3291000,
+        "data_text": "05/11/2021 22:00",
+        "data": "2021-11-05T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 11)",
@@ -381,7 +569,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-11/audio/1115568/",
         "temporada": 2,
         "setmana": 11,
-        "mida": 53176946
+        "mida": 53176946,
+        "durada_text": "00:55:23",
+        "durada_ms": 3323000,
+        "data_text": "12/11/2021 22:00",
+        "data": "2021-11-12T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 12)",
@@ -389,7 +581,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-12/audio/1116374/",
         "temporada": 2,
         "setmana": 12,
-        "mida": 52652826
+        "mida": 52652826,
+        "durada_text": "00:54:50",
+        "durada_ms": 3290000,
+        "data_text": "19/11/2021 22:00",
+        "data": "2021-11-19T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 13)",
@@ -397,7 +593,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-13/audio/1117200/",
         "temporada": 2,
         "setmana": 13,
-        "mida": 53153541
+        "mida": 53153541,
+        "durada_text": "00:55:22",
+        "durada_ms": 3322000,
+        "data_text": "26/11/2021 22:00",
+        "data": "2021-11-26T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 14)",
@@ -405,7 +605,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-14/audio/1118017/",
         "temporada": 2,
         "setmana": 14,
-        "mida": 52654080
+        "mida": 52654080,
+        "durada_text": "00:54:50",
+        "durada_ms": 3290000,
+        "data_text": "03/12/2021 22:00",
+        "data": "2021-12-03T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 15)",
@@ -413,7 +617,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-15/audio/1118632/",
         "temporada": 2,
         "setmana": 15,
-        "mida": 52748538
+        "mida": 52748538,
+        "durada_text": "00:54:56",
+        "durada_ms": 3296000,
+        "data_text": "10/12/2021 22:00",
+        "data": "2021-12-10T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 16)",
@@ -421,7 +629,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-16/audio/1119461/",
         "temporada": 2,
         "setmana": 16,
-        "mida": 53058246
+        "mida": 53058246,
+        "durada_text": "00:55:16",
+        "durada_ms": 3316000,
+        "data_text": "17/12/2021 22:00",
+        "data": "2021-12-17T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 17)",
@@ -429,7 +641,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-17/audio/1120019/",
         "temporada": 2,
         "setmana": 17,
-        "mida": 53067023
+        "mida": 53067023,
+        "durada_text": "00:55:16",
+        "durada_ms": 3316000,
+        "data_text": "24/12/2021 22:00",
+        "data": "2021-12-24T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 18)",
@@ -437,7 +653,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-18/audio/1120882/",
         "temporada": 2,
         "setmana": 18,
-        "mida": 52896914
+        "mida": 52896914,
+        "durada_text": "00:55:06",
+        "durada_ms": 3306000,
+        "data_text": "31/12/2021 22:00",
+        "data": "2021-12-31T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 19)",
@@ -445,7 +665,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-19/audio/1121187/",
         "temporada": 2,
         "setmana": 19,
-        "mida": 52809560
+        "mida": 52809560,
+        "durada_text": "00:55:00",
+        "durada_ms": 3300000,
+        "data_text": "07/01/2022 22:00",
+        "data": "2022-01-07T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 20)",
@@ -453,7 +677,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-20/audio/1122259/",
         "temporada": 2,
         "setmana": 20,
-        "mida": 53152287
+        "mida": 53152287,
+        "durada_text": "00:55:22",
+        "durada_ms": 3322000,
+        "data_text": "14/01/2022 22:00",
+        "data": "2022-01-14T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 21)",
@@ -461,7 +689,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-21/audio/1122964/",
         "temporada": 2,
         "setmana": 21,
-        "mida": 53043200
+        "mida": 53043200,
+        "durada_text": "00:55:15",
+        "durada_ms": 3315000,
+        "data_text": "21/01/2022 22:00",
+        "data": "2022-01-21T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 22)",
@@ -469,7 +701,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-22/audio/1123791/",
         "temporada": 2,
         "setmana": 22,
-        "mida": 53001404
+        "mida": 53001404,
+        "durada_text": "00:55:12",
+        "durada_ms": 3312000,
+        "data_text": "28/01/2022 22:00",
+        "data": "2022-01-28T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 23)",
@@ -477,7 +713,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-23/audio/1124543/",
         "temporada": 2,
         "setmana": 23,
-        "mida": 53147689
+        "mida": 53147689,
+        "durada_text": "00:55:21",
+        "durada_ms": 3321000,
+        "data_text": "04/02/2022 22:00",
+        "data": "2022-02-04T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 24)",
@@ -485,7 +725,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-24/audio/1125336/",
         "temporada": 2,
         "setmana": 24,
-        "mida": 52740179
+        "mida": 52740179,
+        "durada_text": "00:54:56",
+        "durada_ms": 3296000,
+        "data_text": "11/02/2022 22:30",
+        "data": "2022-02-11T22:30:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 25)",
@@ -493,7 +737,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-25/audio/1126152/",
         "temporada": 2,
         "setmana": 25,
-        "mida": 53102968
+        "mida": 53102968,
+        "durada_text": "00:55:18",
+        "durada_ms": 3318000,
+        "data_text": "18/02/2022 22:00",
+        "data": "2022-02-18T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 26)",
@@ -501,7 +749,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-26/audio/1126920/",
         "temporada": 2,
         "setmana": 26,
-        "mida": 52795768
+        "mida": 52795768,
+        "durada_text": "00:54:59",
+        "durada_ms": 3299000,
+        "data_text": "25/02/2022 22:00",
+        "data": "2022-02-25T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 27)",
@@ -509,7 +761,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-27/audio/1127704/",
         "temporada": 2,
         "setmana": 27,
-        "mida": 53080816
+        "mida": 53080816,
+        "durada_text": "00:55:17",
+        "durada_ms": 3317000,
+        "data_text": "04/03/2022 22:00",
+        "data": "2022-03-04T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 28)",
@@ -517,7 +773,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-28/audio/1128448/",
         "temporada": 2,
         "setmana": 28,
-        "mida": 52199758
+        "mida": 52199758,
+        "durada_text": "00:54:22",
+        "durada_ms": 3262000,
+        "data_text": "11/03/2022 22:00",
+        "data": "2022-03-11T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 29)",
@@ -525,7 +785,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-29/audio/1129189/",
         "temporada": 2,
         "setmana": 29,
-        "mida": 53041946
+        "mida": 53041946,
+        "durada_text": "00:55:15",
+        "durada_ms": 3315000,
+        "data_text": "18/03/2022 22:00",
+        "data": "2022-03-18T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 30)",
@@ -533,7 +797,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-30/audio/1129942/",
         "temporada": 2,
         "setmana": 30,
-        "mida": 52943307
+        "mida": 52943307,
+        "durada_text": "00:55:08",
+        "durada_ms": 3308000,
+        "data_text": "25/03/2022 22:00",
+        "data": "2022-03-25T22:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 31)",
@@ -541,7 +809,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-31/audio/1130713/",
         "temporada": 2,
         "setmana": 31,
-        "mida": 53212055
+        "mida": 53212055,
+        "durada_text": "00:55:25",
+        "durada_ms": 3325000,
+        "data_text": "01/04/2022 22:00",
+        "data": "2022-04-01T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 32)",
@@ -549,7 +821,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-32/audio/1131491/",
         "temporada": 2,
         "setmana": 32,
-        "mida": 52715937
+        "mida": 52715937,
+        "durada_text": "00:54:54",
+        "durada_ms": 3294000,
+        "data_text": "08/04/2022 22:00",
+        "data": "2022-04-08T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 33)",
@@ -557,7 +833,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-33/audio/1132029/",
         "temporada": 2,
         "setmana": 33,
-        "mida": 52857626
+        "mida": 52857626,
+        "durada_text": "00:55:03",
+        "durada_ms": 3303000,
+        "data_text": "15/04/2022 22:00",
+        "data": "2022-04-15T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 34)",
@@ -565,7 +845,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-34/audio/1132895/",
         "temporada": 2,
         "setmana": 34,
-        "mida": 53051977
+        "mida": 53051977,
+        "durada_text": "00:55:15",
+        "durada_ms": 3315000,
+        "data_text": "22/04/2022 22:00",
+        "data": "2022-04-22T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 35)",
@@ -573,7 +857,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-35/audio/1133619/",
         "temporada": 2,
         "setmana": 35,
-        "mida": 52612702
+        "mida": 52612702,
+        "durada_text": "00:54:48",
+        "durada_ms": 3288000,
+        "data_text": "29/04/2022 22:00",
+        "data": "2022-04-29T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 36)",
@@ -581,7 +869,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-36/audio/1134423/",
         "temporada": 2,
         "setmana": 36,
-        "mida": 53270569
+        "mida": 53270569,
+        "durada_text": "00:55:29",
+        "durada_ms": 3329000,
+        "data_text": "06/05/2022 22:00",
+        "data": "2022-05-06T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 37)",
@@ -589,7 +881,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-37/audio/1135170/",
         "temporada": 2,
         "setmana": 37,
-        "mida": 53125537
+        "mida": 53125537,
+        "durada_text": "00:55:20",
+        "durada_ms": 3320000,
+        "data_text": "13/05/2022 22:00",
+        "data": "2022-05-13T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 38)",
@@ -597,7 +893,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-38/audio/1135939/",
         "temporada": 2,
         "setmana": 38,
-        "mida": 52916140
+        "mida": 52916140,
+        "durada_text": "00:55:07",
+        "durada_ms": 3307000,
+        "data_text": "20/05/2022 22:00",
+        "data": "2022-05-20T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 39)",
@@ -605,7 +905,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-39/audio/1136737/",
         "temporada": 2,
         "setmana": 39,
-        "mida": 53264718
+        "mida": 53264718,
+        "durada_text": "00:55:29",
+        "durada_ms": 3329000,
+        "data_text": "27/05/2022 22:00",
+        "data": "2022-05-27T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 40)",
@@ -613,7 +917,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-40/audio/1137529/",
         "temporada": 2,
         "setmana": 40,
-        "mida": 52709668
+        "mida": 52709668,
+        "durada_text": "00:54:54",
+        "durada_ms": 3294000,
+        "data_text": "03/06/2022 22:00",
+        "data": "2022-06-03T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 41)",
@@ -621,7 +929,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-41/audio/1138210/",
         "temporada": 2,
         "setmana": 41,
-        "mida": 52517407
+        "mida": 52517407,
+        "durada_text": "00:54:42",
+        "durada_ms": 3282000,
+        "data_text": "10/06/2022 22:00",
+        "data": "2022-06-10T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 42)",
@@ -629,7 +941,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-42/audio/1139048/",
         "temporada": 2,
         "setmana": 42,
-        "mida": 52981342
+        "mida": 52981342,
+        "durada_text": "00:55:11",
+        "durada_ms": 3311000,
+        "data_text": "17/06/2022 22:00",
+        "data": "2022-06-17T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 43)",
@@ -637,7 +953,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-43/audio/1139649/",
         "temporada": 2,
         "setmana": 43,
-        "mida": 52676231
+        "mida": 52676231,
+        "durada_text": "00:54:52",
+        "durada_ms": 3292000,
+        "data_text": "24/06/2022 22:00",
+        "data": "2022-06-24T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 44)",
@@ -645,7 +965,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-44/audio/1140119/",
         "temporada": 2,
         "setmana": 44,
-        "mida": 52014184
+        "mida": 52014184,
+        "durada_text": "00:54:10",
+        "durada_ms": 3250000,
+        "data_text": "01/07/2022 22:00",
+        "data": "2022-07-01T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 45)",
@@ -653,7 +977,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-45/audio/1141164/",
         "temporada": 2,
         "setmana": 45,
-        "mida": 52798275
+        "mida": 52798275,
+        "durada_text": "00:54:59",
+        "durada_ms": 3299000,
+        "data_text": "08/07/2022 22:00",
+        "data": "2022-07-08T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 2, setmana 46)",
@@ -661,7 +989,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-46/audio/1141926/",
         "temporada": 2,
         "setmana": 46,
-        "mida": 52500689
+        "mida": 52500689,
+        "durada_text": "00:54:41",
+        "durada_ms": 3281000,
+        "data_text": "15/07/2022 22:00",
+        "data": "2022-07-15T22:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 1)",
@@ -669,7 +1001,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-1/audio/1144876/",
         "temporada": 3,
         "setmana": 1,
-        "mida": 50267533
+        "mida": 50267533,
+        "durada_text": "00:52:21",
+        "durada_ms": 3141000,
+        "data_text": "02/09/2022 21:00",
+        "data": "2022-09-02T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 2)",
@@ -677,7 +1013,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2/audio/1145582/",
         "temporada": 3,
         "setmana": 2,
-        "mida": 50216124
+        "mida": 50216124,
+        "durada_text": "00:52:18",
+        "durada_ms": 3138000,
+        "data_text": "09/09/2022 21:00",
+        "data": "2022-09-09T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 3)",
@@ -685,7 +1025,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-3/audio/1146306/",
         "temporada": 3,
         "setmana": 3,
-        "mida": 49860022
+        "mida": 49860022,
+        "durada_text": "00:51:56",
+        "durada_ms": 3116000,
+        "data_text": "16/09/2022 21:00",
+        "data": "2022-09-16T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 4)",
@@ -693,7 +1037,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-4/audio/1147108/",
         "temporada": 3,
         "setmana": 4,
-        "mida": 50030968
+        "mida": 50030968,
+        "durada_text": "00:52:06",
+        "durada_ms": 3126000,
+        "data_text": "23/09/2022 21:00",
+        "data": "2022-09-23T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 5)",
@@ -701,7 +1049,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-5/audio/1147755/",
         "temporada": 3,
         "setmana": 5,
-        "mida": 50113724
+        "mida": 50113724,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "30/09/2022 21:00",
+        "data": "2022-09-30T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 6)",
@@ -709,7 +1061,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-6/audio/1148687/",
         "temporada": 3,
         "setmana": 6,
-        "mida": 50273802
+        "mida": 50273802,
+        "durada_text": "00:52:22",
+        "durada_ms": 3142000,
+        "data_text": "07/10/2022 21:00",
+        "data": "2022-10-07T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 7)",
@@ -717,7 +1073,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-7/audio/1149250/",
         "temporada": 3,
         "setmana": 7,
-        "mida": 49503921
+        "mida": 49503921,
+        "durada_text": "00:51:33",
+        "durada_ms": 3093000,
+        "data_text": "14/10/2022 21:00",
+        "data": "2022-10-14T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 8)",
@@ -725,7 +1085,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-8/audio/1150203/",
         "temporada": 3,
         "setmana": 8,
-        "mida": 50158027
+        "mida": 50158027,
+        "durada_text": "00:52:14",
+        "durada_ms": 3134000,
+        "data_text": "21/10/2022 21:00",
+        "data": "2022-10-21T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 9)",
@@ -733,7 +1097,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-9/audio/1151015/",
         "temporada": 3,
         "setmana": 9,
-        "mida": 50002546
+        "mida": 50002546,
+        "durada_text": "00:52:05",
+        "durada_ms": 3125000,
+        "data_text": "28/10/2022 21:00",
+        "data": "2022-10-28T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 10)",
@@ -741,7 +1109,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-10/audio/1151444/",
         "temporada": 3,
         "setmana": 10,
-        "mida": 49530253
+        "mida": 49530253,
+        "durada_text": "00:51:35",
+        "durada_ms": 3095000,
+        "data_text": "04/11/2022 21:00",
+        "data": "2022-11-04T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 11)",
@@ -749,7 +1121,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-11/audio/1152438/",
         "temporada": 3,
         "setmana": 11,
-        "mida": 50107872
+        "mida": 50107872,
+        "durada_text": "00:52:11",
+        "durada_ms": 3131000,
+        "data_text": "11/11/2022 21:00",
+        "data": "2022-11-11T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 12)",
@@ -757,7 +1133,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-12/audio/1153225/",
         "temporada": 3,
         "setmana": 12,
-        "mida": 50121247
+        "mida": 50121247,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "18/11/2022 21:00",
+        "data": "2022-11-18T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 13)",
@@ -765,7 +1145,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-13/audio/1153989/",
         "temporada": 3,
         "setmana": 13,
-        "mida": 50746932
+        "mida": 50746932,
+        "durada_text": "00:52:51",
+        "durada_ms": 3171000,
+        "data_text": "25/11/2022 21:00",
+        "data": "2022-11-25T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 14)",
@@ -773,7 +1157,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-14/audio/1154763/",
         "temporada": 3,
         "setmana": 14,
-        "mida": 50309746
+        "mida": 50309746,
+        "durada_text": "00:52:24",
+        "durada_ms": 3144000,
+        "data_text": "02/12/2022 21:00",
+        "data": "2022-12-02T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 15)",
@@ -781,7 +1169,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-15/audio/1155431/",
         "temporada": 3,
         "setmana": 15,
-        "mida": 50212362
+        "mida": 50212362,
+        "durada_text": "00:52:18",
+        "durada_ms": 3138000,
+        "data_text": "09/12/2022 21:00",
+        "data": "2022-12-09T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 16)",
@@ -789,7 +1181,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-16/audio/1156198/",
         "temporada": 3,
         "setmana": 16,
-        "mida": 49735471
+        "mida": 49735471,
+        "durada_text": "00:51:48",
+        "durada_ms": 3108000,
+        "data_text": "16/12/2022 21:00",
+        "data": "2022-12-16T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 17)",
@@ -797,7 +1193,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-17/audio/1156872/",
         "temporada": 3,
         "setmana": 17,
-        "mida": 50134622
+        "mida": 50134622,
+        "durada_text": "00:52:13",
+        "durada_ms": 3133000,
+        "data_text": "23/12/2022 21:00",
+        "data": "2022-12-23T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 18)",
@@ -805,7 +1205,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-18/audio/1157568/",
         "temporada": 3,
         "setmana": 18,
-        "mida": 50355722
+        "mida": 50355722,
+        "durada_text": "00:52:27",
+        "durada_ms": 3147000,
+        "data_text": "30/12/2022 21:00",
+        "data": "2022-12-30T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 19)",
@@ -813,7 +1217,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-19/audio/1157970/",
         "temporada": 3,
         "setmana": 19,
-        "mida": 50143817
+        "mida": 50143817,
+        "durada_text": "00:52:13",
+        "durada_ms": 3133000,
+        "data_text": "06/01/2023 21:00",
+        "data": "2023-01-06T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 20)",
@@ -821,7 +1229,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-20/audio/1158937/",
         "temporada": 3,
         "setmana": 20,
-        "mida": 49929404
+        "mida": 49929404,
+        "durada_text": "00:52:00",
+        "durada_ms": 3120000,
+        "data_text": "13/01/2023 21:00",
+        "data": "2023-01-13T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 21)",
@@ -829,7 +1241,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-21/audio/1159680/",
         "temporada": 3,
         "setmana": 21,
-        "mida": 50150504
+        "mida": 50150504,
+        "durada_text": "00:52:14",
+        "durada_ms": 3134000,
+        "data_text": "20/01/2023 21:00",
+        "data": "2023-01-20T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 22)",
@@ -837,7 +1253,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-22/audio/1160447/",
         "temporada": 3,
         "setmana": 22,
-        "mida": 50303895
+        "mida": 50303895,
+        "durada_text": "00:52:23",
+        "durada_ms": 3143000,
+        "data_text": "27/01/2023 21:00",
+        "data": "2023-01-27T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 23)",
@@ -845,7 +1265,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-23/audio/1161237/",
         "temporada": 3,
         "setmana": 23,
-        "mida": 49980813
+        "mida": 49980813,
+        "durada_text": "00:52:03",
+        "durada_ms": 3123000,
+        "data_text": "03/02/2023 21:00",
+        "data": "2023-02-03T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 24)",
@@ -853,7 +1277,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-24/audio/1161994/",
         "temporada": 3,
         "setmana": 24,
-        "mida": 50321449
+        "mida": 50321449,
+        "durada_text": "00:52:25",
+        "durada_ms": 3145000,
+        "data_text": "10/02/2023 21:00",
+        "data": "2023-02-10T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 25)",
@@ -861,7 +1289,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-25/audio/1162762/",
         "temporada": 3,
         "setmana": 25,
-        "mida": 50125844
+        "mida": 50125844,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "17/02/2023 21:00",
+        "data": "2023-02-17T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 26)",
@@ -869,7 +1301,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-26/audio/1163575/",
         "temporada": 3,
         "setmana": 26,
-        "mida": 49936509
+        "mida": 49936509,
+        "durada_text": "00:52:01",
+        "durada_ms": 3121000,
+        "data_text": "24/02/2023 21:00",
+        "data": "2023-02-24T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 27)",
@@ -877,7 +1313,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-27/audio/1164362/",
         "temporada": 3,
         "setmana": 27,
-        "mida": 50402533
+        "mida": 50402533,
+        "durada_text": "00:52:30",
+        "durada_ms": 3150000,
+        "data_text": "03/03/2023 21:00",
+        "data": "2023-03-03T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 28)",
@@ -885,7 +1325,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-28/audio/1165094/",
         "temporada": 3,
         "setmana": 28,
-        "mida": 49508101
+        "mida": 49508101,
+        "durada_text": "00:51:34",
+        "durada_ms": 3094000,
+        "data_text": "10/03/2023 21:00",
+        "data": "2023-03-10T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 29)",
@@ -893,7 +1337,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-29/audio/1165916/",
         "temporada": 3,
         "setmana": 29,
-        "mida": 49854171
+        "mida": 49854171,
+        "durada_text": "00:51:55",
+        "durada_ms": 3115000,
+        "data_text": "17/03/2023 21:00",
+        "data": "2023-03-17T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 30)",
@@ -901,7 +1349,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-30/audio/1166282/",
         "temporada": 3,
         "setmana": 30,
-        "mida": 50295536
+        "mida": 50295536,
+        "durada_text": "00:52:23",
+        "durada_ms": 3143000,
+        "data_text": "24/03/2023 21:00",
+        "data": "2023-03-24T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 31)",
@@ -909,7 +1361,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-31/audio/1167324/",
         "temporada": 3,
         "setmana": 31,
-        "mida": 50227409
+        "mida": 50227409,
+        "durada_text": "00:52:19",
+        "durada_ms": 3139000,
+        "data_text": "31/03/2023 21:00",
+        "data": "2023-03-31T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 32)",
@@ -917,7 +1373,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-32/audio/1167796/",
         "temporada": 3,
         "setmana": 32,
-        "mida": 50381217
+        "mida": 50381217,
+        "durada_text": "00:52:28",
+        "durada_ms": 3148000,
+        "data_text": "07/04/2023 21:00",
+        "data": "2023-04-07T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 33)",
@@ -925,7 +1385,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-33/audio/1168406/",
         "temporada": 3,
         "setmana": 33,
-        "mida": 50295954
+        "mida": 50295954,
+        "durada_text": "00:52:23",
+        "durada_ms": 3143000,
+        "data_text": "14/04/2023 21:00",
+        "data": "2023-04-14T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 34)",
@@ -933,7 +1397,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-34/audio/1169435/",
         "temporada": 3,
         "setmana": 34,
-        "mida": 49768489
+        "mida": 49768489,
+        "durada_text": "00:51:50",
+        "durada_ms": 3110000,
+        "data_text": "21/04/2023 21:00",
+        "data": "2023-04-21T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 35)",
@@ -941,7 +1409,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-35/audio/1170291/",
         "temporada": 3,
         "setmana": 35,
-        "mida": 49883846
+        "mida": 49883846,
+        "durada_text": "00:51:57",
+        "durada_ms": 3117000,
+        "data_text": "28/04/2023 21:00",
+        "data": "2023-04-28T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 36)",
@@ -949,7 +1421,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-36/audio/1170987/",
         "temporada": 3,
         "setmana": 36,
-        "mida": 49747173
+        "mida": 49747173,
+        "durada_text": "00:51:49",
+        "durada_ms": 3109000,
+        "data_text": "05/05/2023 21:00",
+        "data": "2023-05-05T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 37)",
@@ -957,7 +1433,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-37/audio/1171715/",
         "temporada": 3,
         "setmana": 37,
-        "mida": 50043924
+        "mida": 50043924,
+        "durada_text": "00:52:07",
+        "durada_ms": 3127000,
+        "data_text": "12/05/2023 21:00",
+        "data": "2023-05-12T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 38)",
@@ -965,7 +1445,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-38/audio/1172491/",
         "temporada": 3,
         "setmana": 38,
-        "mida": 49865874
+        "mida": 49865874,
+        "durada_text": "00:51:56",
+        "durada_ms": 3116000,
+        "data_text": "19/05/2023 21:00",
+        "data": "2023-05-19T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 39)",
@@ -973,7 +1457,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-39/audio/1173304/",
         "temporada": 3,
         "setmana": 39,
-        "mida": 50074017
+        "mida": 50074017,
+        "durada_text": "00:52:09",
+        "durada_ms": 3129000,
+        "data_text": "26/05/2023 21:00",
+        "data": "2023-05-26T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 40)",
@@ -981,7 +1469,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-40/audio/1173627/",
         "temporada": 3,
         "setmana": 40,
-        "mida": 50280489
+        "mida": 50280489,
+        "durada_text": "00:52:22",
+        "durada_ms": 3142000,
+        "data_text": "02/06/2023 21:00",
+        "data": "2023-06-02T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 41)",
@@ -989,7 +1481,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-41/audio/1174853/",
         "temporada": 3,
         "setmana": 41,
-        "mida": 50203585
+        "mida": 50203585,
+        "durada_text": "00:52:17",
+        "durada_ms": 3137000,
+        "data_text": "09/06/2023 21:00",
+        "data": "2023-06-09T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 42)",
@@ -997,7 +1493,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-42/audio/1175538/",
         "temporada": 3,
         "setmana": 42,
-        "mida": 50022191
+        "mida": 50022191,
+        "durada_text": "00:52:06",
+        "durada_ms": 3126000,
+        "data_text": "16/06/2023 21:00",
+        "data": "2023-06-16T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 43)",
@@ -1005,7 +1505,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-43/audio/1176318/",
         "temporada": 3,
         "setmana": 43,
-        "mida": 50422177
+        "mida": 50422177,
+        "durada_text": "00:52:31",
+        "durada_ms": 3151000,
+        "data_text": "23/06/2023 21:00",
+        "data": "2023-06-23T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 44)",
@@ -1013,7 +1517,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-44/audio/1176999/",
         "temporada": 3,
         "setmana": 44,
-        "mida": 49472156
+        "mida": 49472156,
+        "durada_text": "00:51:32",
+        "durada_ms": 3092000,
+        "data_text": "30/06/2023 21:00",
+        "data": "2023-06-30T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 3, setmana 45)",
@@ -1021,7 +1529,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-45/audio/1177706/",
         "temporada": 3,
         "setmana": 45,
-        "mida": 50255830
+        "mida": 50255830,
+        "durada_text": "00:52:20",
+        "durada_ms": 3140000,
+        "data_text": "07/07/2023 21:00",
+        "data": "2023-07-07T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 1)",
@@ -1029,7 +1541,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-01/audio/1181587/",
         "temporada": 4,
         "setmana": 1,
-        "mida": 50127934
+        "mida": 50127934,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "08/09/2023 21:00",
+        "data": "2023-09-08T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 2)",
@@ -1037,7 +1553,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-02/audio/1182313/",
         "temporada": 4,
         "setmana": 2,
-        "mida": 50522488
+        "mida": 50522488,
+        "durada_text": "00:52:37",
+        "durada_ms": 3157000,
+        "data_text": "15/09/2023 21:00",
+        "data": "2023-09-15T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 3)",
@@ -1045,7 +1565,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-03/audio/1183048/",
         "temporada": 4,
         "setmana": 3,
-        "mida": 50186449
+        "mida": 50186449,
+        "durada_text": "00:52:16",
+        "durada_ms": 3136000,
+        "data_text": "22/09/2023 21:00",
+        "data": "2023-09-22T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 4)",
@@ -1053,7 +1577,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-4/audio/1183821/",
         "temporada": 4,
         "setmana": 4,
-        "mida": 50117067
+        "mida": 50117067,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "29/09/2023 21:00",
+        "data": "2023-09-29T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 5)",
@@ -1061,7 +1589,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-5/audio/1184513/",
         "temporada": 4,
         "setmana": 5,
-        "mida": 49930657
+        "mida": 49930657,
+        "durada_text": "00:52:00",
+        "durada_ms": 3120000,
+        "data_text": "06/10/2023 21:00",
+        "data": "2023-10-06T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 6)",
@@ -1069,7 +1601,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-6/audio/1185026/",
         "temporada": 4,
         "setmana": 6,
-        "mida": 50042671
+        "mida": 50042671,
+        "durada_text": "00:52:07",
+        "durada_ms": 3127000,
+        "data_text": "13/10/2023 21:00",
+        "data": "2023-10-13T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 7)",
@@ -1077,7 +1613,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-07/audio/1185974/",
         "temporada": 4,
         "setmana": 7,
-        "mida": 50121665
+        "mida": 50121665,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "20/10/2023 21:00",
+        "data": "2023-10-20T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 8)",
@@ -1085,7 +1625,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-9/audio/1186753/",
         "temporada": 4,
         "setmana": 8,
-        "mida": 50100767
+        "mida": 50100767,
+        "durada_text": "00:52:11",
+        "durada_ms": 3131000,
+        "data_text": "27/10/2023 21:00",
+        "data": "2023-10-27T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 9)",
@@ -1093,7 +1637,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-9/audio/1187322/",
         "temporada": 4,
         "setmana": 9,
-        "mida": 50142981
+        "mida": 50142981,
+        "durada_text": "00:52:13",
+        "durada_ms": 3133000,
+        "data_text": "03/11/2023 21:00",
+        "data": "2023-11-03T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 10)",
@@ -1101,7 +1649,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-10/audio/1188219/",
         "temporada": 4,
         "setmana": 10,
-        "mida": 50384143
+        "mida": 50384143,
+        "durada_text": "00:52:29",
+        "durada_ms": 3149000,
+        "data_text": "10/11/2023 21:00",
+        "data": "2023-11-10T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 11)",
@@ -1109,7 +1661,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-11/audio/1189030/",
         "temporada": 4,
         "setmana": 11,
-        "mida": 49951555
+        "mida": 49951555,
+        "durada_text": "00:52:01",
+        "durada_ms": 3121000,
+        "data_text": "17/11/2023 21:00",
+        "data": "2023-11-17T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 12)",
@@ -1117,7 +1673,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-12/audio/1189762/",
         "temporada": 4,
         "setmana": 12,
-        "mida": 49660656
+        "mida": 49660656,
+        "durada_text": "00:51:43",
+        "durada_ms": 3103000,
+        "data_text": "24/11/2023 21:00",
+        "data": "2023-11-24T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 13)",
@@ -1125,7 +1685,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-13/audio/1190474/",
         "temporada": 4,
         "setmana": 13,
-        "mida": 50313926
+        "mida": 50313926,
+        "durada_text": "00:52:24",
+        "durada_ms": 3144000,
+        "data_text": "01/12/2023 21:00",
+        "data": "2023-12-01T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 14)",
@@ -1133,7 +1697,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-14/audio/1190783/",
         "temporada": 4,
         "setmana": 14,
-        "mida": 49977051
+        "mida": 49977051,
+        "durada_text": "00:52:03",
+        "durada_ms": 3123000,
+        "data_text": "08/12/2023 21:00",
+        "data": "2023-12-08T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 15)",
@@ -1141,7 +1709,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-15/audio/1191945/",
         "temporada": 4,
         "setmana": 15,
-        "mida": 49973289
+        "mida": 49973289,
+        "durada_text": "00:52:03",
+        "durada_ms": 3123000,
+        "data_text": "15/12/2023 21:00",
+        "data": "2023-12-15T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 16)",
@@ -1149,7 +1721,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-16/audio/1192596/",
         "temporada": 4,
         "setmana": 16,
-        "mida": 50224901
+        "mida": 50224901,
+        "durada_text": "00:52:19",
+        "durada_ms": 3139000,
+        "data_text": "22/12/2023 21:00",
+        "data": "2023-12-22T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 17)",
@@ -1157,7 +1733,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-17/audio/1193216/",
         "temporada": 4,
         "setmana": 17,
-        "mida": 49851245
+        "mida": 49851245,
+        "durada_text": "00:51:55",
+        "durada_ms": 3115000,
+        "data_text": "29/12/2023 21:00",
+        "data": "2023-12-29T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 18)",
@@ -1165,7 +1745,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-18/audio/1193775/",
         "temporada": 4,
         "setmana": 18,
-        "mida": 50307657
+        "mida": 50307657,
+        "durada_text": "00:52:24",
+        "durada_ms": 3144000,
+        "data_text": "05/01/2024 21:00",
+        "data": "2024-01-05T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 19)",
@@ -1173,7 +1757,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-19/audio/1194515/",
         "temporada": 4,
         "setmana": 19,
-        "mida": 50400026
+        "mida": 50400026,
+        "durada_text": "00:52:30",
+        "durada_ms": 3150000,
+        "data_text": "12/01/2024 21:00",
+        "data": "2024-01-12T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 20)",
@@ -1181,7 +1769,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-20/audio/1195138/",
         "temporada": 4,
         "setmana": 20,
-        "mida": 50039327
+        "mida": 50039327,
+        "durada_text": "00:52:07",
+        "durada_ms": 3127000,
+        "data_text": "19/01/2024 21:00",
+        "data": "2024-01-19T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 21)",
@@ -1189,7 +1781,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-21/audio/1196053/",
         "temporada": 4,
         "setmana": 21,
-        "mida": 49974961
+        "mida": 49974961,
+        "durada_text": "00:52:03",
+        "durada_ms": 3123000,
+        "data_text": "26/01/2024 21:00",
+        "data": "2024-01-26T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 22)",
@@ -1197,7 +1793,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-22/audio/1196809/",
         "temporada": 4,
         "setmana": 22,
-        "mida": 49855007
+        "mida": 49855007,
+        "durada_text": "00:51:55",
+        "durada_ms": 3115000,
+        "data_text": "02/02/2024 21:00",
+        "data": "2024-02-02T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 23)",
@@ -1205,7 +1805,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-23/audio/1197586/",
         "temporada": 4,
         "setmana": 23,
-        "mida": 50058971
+        "mida": 50058971,
+        "durada_text": "00:52:08",
+        "durada_ms": 3128000,
+        "data_text": "09/02/2024 21:00",
+        "data": "2024-02-09T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 24)",
@@ -1213,7 +1817,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-24/audio/1198364/",
         "temporada": 4,
         "setmana": 24,
-        "mida": 49987918
+        "mida": 49987918,
+        "durada_text": "00:52:04",
+        "durada_ms": 3124000,
+        "data_text": "16/02/2024 21:00",
+        "data": "2024-02-16T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 25)",
@@ -1221,7 +1829,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-25/audio/1198630/",
         "temporada": 4,
         "setmana": 25,
-        "mida": 50198151
+        "mida": 50198151,
+        "durada_text": "00:52:17",
+        "durada_ms": 3137000,
+        "data_text": "23/02/2024 21:00",
+        "data": "2024-02-23T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 26)",
@@ -1229,7 +1841,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-26/audio/1199918/",
         "temporada": 4,
         "setmana": 26,
-        "mida": 50117485
+        "mida": 50117485,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "01/03/2024 21:00",
+        "data": "2024-03-01T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 27)",
@@ -1237,7 +1853,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-27/audio/1200692/",
         "temporada": 4,
         "setmana": 27,
-        "mida": 49710811
+        "mida": 49710811,
+        "durada_text": "00:51:46",
+        "durada_ms": 3106000,
+        "data_text": "08/03/2024 21:00",
+        "data": "2024-03-08T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 28)",
@@ -1245,7 +1865,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-28/audio/1201460/",
         "temporada": 4,
         "setmana": 28,
-        "mida": 49990844
+        "mida": 49990844,
+        "durada_text": "00:52:04",
+        "durada_ms": 3124000,
+        "data_text": "15/03/2024 21:00",
+        "data": "2024-03-15T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 29)",
@@ -1253,7 +1877,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-29/audio/1202032/",
         "temporada": 4,
         "setmana": 29,
-        "mida": 50544222
+        "mida": 50544222,
+        "durada_text": "00:52:39",
+        "durada_ms": 3159000,
+        "data_text": "22/03/2024 21:00",
+        "data": "2024-03-22T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 30)",
@@ -1261,7 +1889,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-30/audio/1202545/",
         "temporada": 4,
         "setmana": 30,
-        "mida": 50549655
+        "mida": 50549655,
+        "durada_text": "00:52:39",
+        "durada_ms": 3159000,
+        "data_text": "29/03/2024 21:00",
+        "data": "2024-03-29T21:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 31)",
@@ -1269,7 +1901,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-31/audio/1203688/",
         "temporada": 4,
         "setmana": 31,
-        "mida": 50126680
+        "mida": 50126680,
+        "durada_text": "00:52:12",
+        "durada_ms": 3132000,
+        "data_text": "05/04/2024 21:00",
+        "data": "2024-04-05T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 32)",
@@ -1277,7 +1913,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-32/audio/1204437/",
         "temporada": 4,
         "setmana": 32,
-        "mida": 50274638
+        "mida": 50274638,
+        "durada_text": "00:52:22",
+        "durada_ms": 3142000,
+        "data_text": "12/04/2024 21:00",
+        "data": "2024-04-12T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 33)",
@@ -1285,7 +1925,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-33/audio/1205259/",
         "temporada": 4,
         "setmana": 33,
-        "mida": 50170566
+        "mida": 50170566,
+        "durada_text": "00:52:15",
+        "durada_ms": 3135000,
+        "data_text": "19/04/2024 21:00",
+        "data": "2024-04-19T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 34)",
@@ -1293,7 +1937,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-34/audio/1206049/",
         "temporada": 4,
         "setmana": 34,
-        "mida": 49475918
+        "mida": 49475918,
+        "durada_text": "00:51:32",
+        "durada_ms": 3092000,
+        "data_text": "26/04/2024 21:00",
+        "data": "2024-04-26T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 35)",
@@ -1301,7 +1949,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-35/audio/1206706/",
         "temporada": 4,
         "setmana": 35,
-        "mida": 50438060
+        "mida": 50438060,
+        "durada_text": "00:52:32",
+        "durada_ms": 3152000,
+        "data_text": "03/05/2024 21:00",
+        "data": "2024-05-03T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 36)",
@@ -1309,7 +1961,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-36/audio/1207508/",
         "temporada": 4,
         "setmana": 36,
-        "mida": 50267951
+        "mida": 50267951,
+        "durada_text": "00:52:21",
+        "durada_ms": 3141000,
+        "data_text": "10/05/2024 21:00",
+        "data": "2024-05-10T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 37)",
@@ -1317,7 +1973,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-37/audio/1208168/",
         "temporada": 4,
         "setmana": 37,
-        "mida": 49923552
+        "mida": 49923552,
+        "durada_text": "00:52:00",
+        "durada_ms": 3120000,
+        "data_text": "17/05/2024 21:00",
+        "data": "2024-05-17T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 38)",
@@ -1325,7 +1985,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-38/audio/1209090/",
         "temporada": 4,
         "setmana": 38,
-        "mida": 49900146
+        "mida": 49900146,
+        "durada_text": "00:51:58",
+        "durada_ms": 3118000,
+        "data_text": "24/05/2024 21:00",
+        "data": "2024-05-24T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 39)",
@@ -1333,7 +1997,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-39/audio/1209843/",
         "temporada": 4,
         "setmana": 39,
-        "mida": 50103275
+        "mida": 50103275,
+        "durada_text": "00:52:11",
+        "durada_ms": 3131000,
+        "data_text": "31/05/2024 21:00",
+        "data": "2024-05-31T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 40)",
@@ -1341,7 +2009,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-40/audio/1210604/",
         "temporada": 4,
         "setmana": 40,
-        "mida": 50241619
+        "mida": 50241619,
+        "durada_text": "00:52:20",
+        "durada_ms": 3140000,
+        "data_text": "07/06/2024 21:00",
+        "data": "2024-06-07T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 41)",
@@ -1349,7 +2021,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-41/audio/1211373/",
         "temporada": 4,
         "setmana": 41,
-        "mida": 50602736
+        "mida": 50602736,
+        "durada_text": "00:52:42",
+        "durada_ms": 3162000,
+        "data_text": "14/06/2024 21:00",
+        "data": "2024-06-14T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 42)",
@@ -1357,7 +2033,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-42/audio/1212162/",
         "temporada": 4,
         "setmana": 42,
-        "mida": 49728783
+        "mida": 49728783,
+        "durada_text": "00:51:48",
+        "durada_ms": 3108000,
+        "data_text": "21/06/2024 21:00",
+        "data": "2024-06-21T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 43)",
@@ -1365,7 +2045,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-44/audio/1212794/",
         "temporada": 4,
         "setmana": 43,
-        "mida": 49952809
+        "mida": 49952809,
+        "durada_text": "00:52:02",
+        "durada_ms": 3122000,
+        "data_text": "28/06/2024 21:00",
+        "data": "2024-06-28T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 4, setmana 44)",
@@ -1373,7 +2057,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-44/audio/1213308/",
         "temporada": 4,
         "setmana": 44,
-        "mida": 49979559
+        "mida": 49979559,
+        "durada_text": "00:52:03",
+        "durada_ms": 3123000,
+        "data_text": "05/07/2024 21:00",
+        "data": "2024-07-05T21:00:00+02:00"
     },
     {
         "title": "Millors moments (especial assassins serials)",
@@ -1381,7 +2069,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-especial-assassins-serials-4t/audio/1214524/",
         "temporada": 4,
         "setmana": 45,
-        "mida": 50434716
+        "mida": 50434716,
+        "durada_text": "00:52:32",
+        "durada_ms": 3152000,
+        "data_text": "23/08/2024 21:00",
+        "data": "2024-08-23T21:00:00+02:00"
     },
     {
         "title": "Millors moments (especial assassins en sèrie)",
@@ -1389,7 +2081,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-especial-assassins-serials-4t/audio/1213850/",
         "temporada": 4,
         "setmana": 46,
-        "mida": 50178089
+        "mida": 50178089,
+        "durada_text": "00:52:16",
+        "durada_ms": 3136000,
+        "data_text": "30/08/2024 21:00",
+        "data": "2024-08-30T21:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 1)",
@@ -1397,7 +2093,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-1/audio/1217039/",
         "temporada": 5,
         "setmana": 1,
-        "mida": 50390413
+        "mida": 50390413,
+        "durada_text": "00:52:29",
+        "durada_ms": 3149000,
+        "data_text": "06/09/2024 13:00",
+        "data": "2024-09-06T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 2)",
@@ -1405,7 +2105,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-2/audio/1217589/",
         "temporada": 5,
         "setmana": 2,
-        "mida": 49905580
+        "mida": 49905580,
+        "durada_text": "00:51:59",
+        "durada_ms": 3119000,
+        "data_text": "13/09/2024 13:00",
+        "data": "2024-09-13T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 3)",
@@ -1413,7 +2117,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-3/audio/1218406/",
         "temporada": 5,
         "setmana": 3,
-        "mida": 50474840
+        "mida": 50474840,
+        "durada_text": "00:52:34",
+        "durada_ms": 3154000,
+        "data_text": "20/09/2024 13:00",
+        "data": "2024-09-20T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 4)",
@@ -1421,7 +2129,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-4/audio/1219140/",
         "temporada": 5,
         "setmana": 4,
-        "mida": 49836617
+        "mida": 49836617,
+        "durada_text": "00:51:54",
+        "durada_ms": 3114000,
+        "data_text": "27/09/2024 13:00",
+        "data": "2024-09-27T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 5)",
@@ -1429,7 +2141,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-5/audio/1219887/",
         "temporada": 5,
         "setmana": 5,
-        "mida": 50191046
+        "mida": 50191046,
+        "durada_text": "00:52:16",
+        "durada_ms": 3136000,
+        "data_text": "04/10/2024 13:00",
+        "data": "2024-10-04T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 6)",
@@ -1437,7 +2153,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-6/audio/1220737/",
         "temporada": 5,
         "setmana": 6,
-        "mida": 49481769
+        "mida": 49481769,
+        "durada_text": "00:51:32",
+        "durada_ms": 3092000,
+        "data_text": "11/10/2024 13:00",
+        "data": "2024-10-11T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 7)",
@@ -1445,7 +2165,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-7/audio/1221450/",
         "temporada": 5,
         "setmana": 7,
-        "mida": 49476336
+        "mida": 49476336,
+        "durada_text": "00:51:32",
+        "durada_ms": 3092000,
+        "data_text": "18/10/2024 13:00",
+        "data": "2024-10-18T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 8)",
@@ -1453,7 +2177,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-8/audio/1222218/",
         "temporada": 5,
         "setmana": 8,
-        "mida": 49579154
+        "mida": 49579154,
+        "durada_text": "00:51:38",
+        "durada_ms": 3098000,
+        "data_text": "25/10/2024 13:00",
+        "data": "2024-10-25T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 9)",
@@ -1461,7 +2189,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-9/audio/1222944/",
         "temporada": 5,
         "setmana": 9,
-        "mida": 50255412
+        "mida": 50255412,
+        "durada_text": "00:52:20",
+        "durada_ms": 3140000,
+        "data_text": "01/11/2024 13:00",
+        "data": "2024-11-01T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 10)",
@@ -1469,7 +2201,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-10/audio/1223639/",
         "temporada": 5,
         "setmana": 10,
-        "mida": 50103693
+        "mida": 50103693,
+        "durada_text": "00:52:11",
+        "durada_ms": 3131000,
+        "data_text": "08/11/2024 13:00",
+        "data": "2024-11-08T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 11)",
@@ -1477,7 +2213,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-11/audio/1224456/",
         "temporada": 5,
         "setmana": 11,
-        "mida": 49606739
+        "mida": 49606739,
+        "durada_text": "00:51:40",
+        "durada_ms": 3100000,
+        "data_text": "15/11/2024 13:00",
+        "data": "2024-11-15T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 12)",
@@ -1485,7 +2225,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-12/audio/1225165/",
         "temporada": 5,
         "setmana": 12,
-        "mida": 50060225
+        "mida": 50060225,
+        "durada_text": "00:52:08",
+        "durada_ms": 3128000,
+        "data_text": "22/11/2024 13:00",
+        "data": "2024-11-22T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 13)",
@@ -1493,7 +2237,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-13/audio/1225981/",
         "temporada": 5,
         "setmana": 13,
-        "mida": 50087392
+        "mida": 50087392,
+        "durada_text": "00:52:10",
+        "durada_ms": 3130000,
+        "data_text": "29/11/2024 13:00",
+        "data": "2024-11-29T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 14)",
@@ -1501,7 +2249,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-14/audio/1226644/",
         "temporada": 5,
         "setmana": 14,
-        "mida": 49865874
+        "mida": 49865874,
+        "durada_text": "00:51:56",
+        "durada_ms": 3116000,
+        "data_text": "06/12/2024 13:00",
+        "data": "2024-12-06T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 15)",
@@ -1509,7 +2261,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-15/audio/1227425/",
         "temporada": 5,
         "setmana": 15,
-        "mida": 49592111
+        "mida": 49592111,
+        "durada_text": "00:51:39",
+        "durada_ms": 3099000,
+        "data_text": "13/12/2024 13:00",
+        "data": "2024-12-13T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 16)",
@@ -1517,7 +2273,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-16/audio/1228346/",
         "temporada": 5,
         "setmana": 16,
-        "mida": 50051448
+        "mida": 50051448,
+        "durada_text": "00:52:08",
+        "durada_ms": 3128000,
+        "data_text": "20/12/2024 13:00",
+        "data": "2024-12-20T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 17)",
@@ -1525,7 +2285,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-17/audio/1228680/",
         "temporada": 5,
         "setmana": 17,
-        "mida": 49264013
+        "mida": 49264013,
+        "durada_text": "00:51:19",
+        "durada_ms": 3079000,
+        "data_text": "27/12/2024 13:00",
+        "data": "2024-12-27T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 18)",
@@ -1533,7 +2297,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-18/audio/1229428/",
         "temporada": 5,
         "setmana": 18,
-        "mida": 48839366
+        "mida": 48839366,
+        "durada_text": "00:50:52",
+        "durada_ms": 3052000,
+        "data_text": "03/01/2025 13:00",
+        "data": "2025-01-03T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 19)",
@@ -1541,7 +2309,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-19/audio/1230265/",
         "temporada": 5,
         "setmana": 19,
-        "mida": 50173910
+        "mida": 50173910,
+        "durada_text": "00:52:15",
+        "durada_ms": 3135000,
+        "data_text": "10/01/2025 06:00",
+        "data": "2025-01-10T06:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 20)",
@@ -1549,7 +2321,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-20/audio/1231061/",
         "temporada": 5,
         "setmana": 20,
-        "mida": 50028460
+        "mida": 50028460,
+        "durada_text": "00:52:06",
+        "durada_ms": 3126000,
+        "data_text": "17/01/2025 06:00",
+        "data": "2025-01-17T06:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 21)",
@@ -1557,7 +2333,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-21/audio/1232134/",
         "temporada": 5,
         "setmana": 21,
-        "mida": 50199823
+        "mida": 50199823,
+        "durada_text": "00:52:17",
+        "durada_ms": 3137000,
+        "data_text": "24/01/2025 13:00",
+        "data": "2025-01-24T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 22)",
@@ -1565,7 +2345,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-22/audio/1232822/",
         "temporada": 5,
         "setmana": 22,
-        "mida": 50283415
+        "mida": 50283415,
+        "durada_text": "00:52:22",
+        "durada_ms": 3142000,
+        "data_text": "31/01/2025 13:00",
+        "data": "2025-01-31T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 23)",
@@ -1573,7 +2357,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-23/audio/1233727/",
         "temporada": 5,
         "setmana": 23,
-        "mida": 49777266
+        "mida": 49777266,
+        "durada_text": "00:51:51",
+        "durada_ms": 3111000,
+        "data_text": "07/02/2025 13:00",
+        "data": "2025-02-07T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 24)",
@@ -1581,7 +2369,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-24/audio/1234505/",
         "temporada": 5,
         "setmana": 24,
-        "mida": 50363663
+        "mida": 50363663,
+        "durada_text": "00:52:27",
+        "durada_ms": 3147000,
+        "data_text": "14/02/2025 13:00",
+        "data": "2025-02-14T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 25)",
@@ -1589,7 +2381,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-25/audio/1235229/",
         "temporada": 5,
         "setmana": 25,
-        "mida": 50082795
+        "mida": 50082795,
+        "durada_text": "00:52:10",
+        "durada_ms": 3130000,
+        "data_text": "21/02/2025 13:00",
+        "data": "2025-02-21T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 26)",
@@ -1597,7 +2393,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-26/audio/1236039/",
         "temporada": 5,
         "setmana": 26,
-        "mida": 49588767
+        "mida": 49588767,
+        "durada_text": "00:51:39",
+        "durada_ms": 3099000,
+        "data_text": "28/02/2025 13:00",
+        "data": "2025-02-28T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 27)",
@@ -1605,7 +2405,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-27/audio/1236785/",
         "temporada": 5,
         "setmana": 27,
-        "mida": 50130442
+        "mida": 50130442,
+        "durada_text": "00:52:13",
+        "durada_ms": 3133000,
+        "data_text": "07/03/2025 13:00",
+        "data": "2025-03-07T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 28)",
@@ -1613,7 +2417,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-28/audio/1237532/",
         "temporada": 5,
         "setmana": 28,
-        "mida": 50148832
+        "mida": 50148832,
+        "durada_text": "00:52:14",
+        "durada_ms": 3134000,
+        "data_text": "14/03/2025 13:00",
+        "data": "2025-03-14T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 29)",
@@ -1621,7 +2429,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-29/audio/1238301/",
         "temporada": 5,
         "setmana": 29,
-        "mida": 50084049
+        "mida": 50084049,
+        "durada_text": "00:52:10",
+        "durada_ms": 3130000,
+        "data_text": "21/03/2025 13:00",
+        "data": "2025-03-21T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 30)",
@@ -1629,7 +2441,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-30/audio/1239077/",
         "temporada": 5,
         "setmana": 30,
-        "mida": 49806524
+        "mida": 49806524,
+        "durada_text": "00:51:52",
+        "durada_ms": 3112000,
+        "data_text": "28/03/2025 13:00",
+        "data": "2025-03-28T13:00:00+01:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 31)",
@@ -1637,7 +2453,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-31/audio/1239845/",
         "temporada": 5,
         "setmana": 31,
-        "mida": 50419252
+        "mida": 50419252,
+        "durada_text": "00:52:31",
+        "durada_ms": 3151000,
+        "data_text": "04/04/2025 13:00",
+        "data": "2025-04-04T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 32)",
@@ -1645,7 +2465,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-semana-32/audio/1240753/",
         "temporada": 5,
         "setmana": 32,
-        "mida": 50315180
+        "mida": 50315180,
+        "durada_text": "00:52:24",
+        "durada_ms": 3144000,
+        "data_text": "11/04/2025 13:00",
+        "data": "2025-04-11T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 33)",
@@ -1653,7 +2477,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-33/audio/1241182/",
         "temporada": 5,
         "setmana": 33,
-        "mida": 50021355
+        "mida": 50021355,
+        "durada_text": "00:52:06",
+        "durada_ms": 3126000,
+        "data_text": "18/04/2025 13:00",
+        "data": "2025-04-18T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 34)",
@@ -1661,7 +2489,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-34/audio/1242761/",
         "temporada": 5,
         "setmana": 34,
-        "mida": 49908924
+        "mida": 49908924,
+        "durada_text": "00:51:59",
+        "durada_ms": 3119000,
+        "data_text": "25/04/2025 13:00",
+        "data": "2025-04-25T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 35)",
@@ -1669,7 +2501,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-35/audio/1242844/",
         "temporada": 5,
         "setmana": 35,
-        "mida": 49632235
+        "mida": 49632235,
+        "durada_text": "00:51:42",
+        "durada_ms": 3102000,
+        "data_text": "02/05/2025 13:00",
+        "data": "2025-05-02T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 36)",
@@ -1677,7 +2513,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-36/audio/1243570/",
         "temporada": 5,
         "setmana": 36,
-        "mida": 50296790
+        "mida": 50296790,
+        "durada_text": "00:52:23",
+        "durada_ms": 3143000,
+        "data_text": "09/05/2025 13:00",
+        "data": "2025-05-09T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 37)",
@@ -1685,7 +2525,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-37/audio/1244317/",
         "temporada": 5,
         "setmana": 37,
-        "mida": 50048940
+        "mida": 50048940,
+        "durada_text": "00:52:08",
+        "durada_ms": 3128000,
+        "data_text": "16/05/2025 13:00",
+        "data": "2025-05-16T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 38)",
@@ -1693,7 +2537,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-38/audio/1245126/",
         "temporada": 5,
         "setmana": 38,
-        "mida": 50150922
+        "mida": 50150922,
+        "durada_text": "00:52:14",
+        "durada_ms": 3134000,
+        "data_text": "23/05/2025 13:00",
+        "data": "2025-05-23T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 39)",
@@ -1701,7 +2549,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-39/audio/1246015/",
         "temporada": 5,
         "setmana": 39,
-        "mida": 50035983
+        "mida": 50035983,
+        "durada_text": "00:52:07",
+        "durada_ms": 3127000,
+        "data_text": "30/05/2025 13:00",
+        "data": "2025-05-30T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 40)",
@@ -1709,7 +2561,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-40/audio/1246642/",
         "temporada": 5,
         "setmana": 40,
-        "mida": 49716244
+        "mida": 49716244,
+        "durada_text": "00:51:47",
+        "durada_ms": 3107000,
+        "data_text": "06/06/2025 13:00",
+        "data": "2025-06-06T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 41)",
@@ -1717,7 +2573,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-41/audio/1247276/",
         "temporada": 5,
         "setmana": 41,
-        "mida": 50586853
+        "mida": 50586853,
+        "durada_text": "00:52:41",
+        "durada_ms": 3161000,
+        "data_text": "13/06/2025 13:00",
+        "data": "2025-06-13T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 42)",
@@ -1725,7 +2585,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-42/audio/1248101/",
         "temporada": 5,
         "setmana": 42,
-        "mida": 50225319
+        "mida": 50225319,
+        "durada_text": "00:52:19",
+        "durada_ms": 3139000,
+        "data_text": "20/06/2025 13:00",
+        "data": "2025-06-20T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 43)",
@@ -1733,7 +2597,11 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-43/audio/1248829/",
         "temporada": 5,
         "setmana": 43,
-        "mida": 49170390
+        "mida": 49170390,
+        "durada_text": "00:51:13",
+        "durada_ms": 3073000,
+        "data_text": "27/06/2025 13:00",
+        "data": "2025-06-27T13:00:00+02:00"
     },
     {
         "title": "Millors moments (temporada 5, setmana 44)",
@@ -1741,6 +2609,10 @@
         "urlPagina": "https://www.3cat.cat/3cat/millors-moments-setmana-44/audio/1249534/",
         "temporada": 5,
         "setmana": 44,
-        "mida": 50166386
+        "mida": 50166386,
+        "durada_text": "00:52:15",
+        "durada_ms": 3135000,
+        "data_text": "04/07/2025 13:00",
+        "data": "2025-07-04T13:00:00+02:00"
     }
 ]
