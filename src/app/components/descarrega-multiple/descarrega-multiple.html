@@ -1,15 +1,17 @@
-
-<div class="content">
-
-    <button class="boto tancar" (click)="dialogRef.close()">
-        <i class="fa-solid fa-xmark"></i>
-    </button>
-
-    <h1 class="mx-4">Selecciona els capítols</h1>
+<section class="descarrega-multiple card">
+    <div class="d-flex flex-wrap column-gap-2 row-gap-3 justify-content-between align-items-center m-2 mb-4">
+        <h3 class="text-start mb-0 ps-2">Descarrega'ls tots de cop:</h3>
+        <div class="botons-rapids ms-auto">
+            @if (!seleccioBuida) {
+                <button class="boto esborrar" (click)="esborrarSeleccio()"><i class="fa-solid fa-xmark"></i></button>
+            }
+            <button class="boto seleccionar" (click)="seleccionarTotesTemporades()">Seleccionar les 5 temporades (~ 25 min)</button>
+        </div>
+    </div>
 
     <section>
         <h4 class="mt-5 mb-4">Temporades:</h4>
-        <div class="mt-2 mb-5 botons-temporades">
+        <div class="botons-temporades mt-2">
             @for (boto of botonsTemporades; track boto.id) {
                 <label [class.selected]="seleccio[boto.id]" [class.disabled]="cs.descarregant">
                     @if (seleccio[boto.id]) {
@@ -24,9 +26,9 @@
 
     
     @if (llistaSeleccionada.length) {
-        <section class="pb-4">
+        <section class="pb-4 mt-5">
             <h4 class="mb-4">Rang de capítols seleccionats:</h4>
-            <p-slider class="my-2" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
+            <p-slider class="my-2 mx-2" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
         </section>
 
         <section class="mt-4 mb-4">
@@ -90,6 +92,4 @@
             </div>
         }
     }
-
-
-</div>
+</section>

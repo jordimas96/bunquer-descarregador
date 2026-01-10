@@ -1,7 +1,10 @@
 @import "src/styles.scss";
 
+:host { display: block; }
+
 .descarrega-individual.card {
-    background-color: #480011;
+    background-color: #520c1c;
+    color: #ffd2dc;
     border-radius: 2.5rem;
     padding: 1rem;
     @include mobil { padding: 0.5rem; }
@@ -65,6 +68,8 @@
             width: 100%;
             padding: 0.5rem 1.25rem;
             outline: none;
+
+            color: #ffd2dc;
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.1);

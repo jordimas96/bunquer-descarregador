@@ -4,9 +4,11 @@ Aquest projecte és una eina que permet **descarregar tots els capítols del pro
 
 ## Descripció
 
-La web de Catalunya Ràdio mostra tots els capítols d'El Búnquer amb un scroll infinit, de manera poc còmode per accedir a tots els capítols (sobretot els més vells). Té feed RSS, però allà només hi els darrers 300 capítols. Aquesta web simplement facilita l'accés ràpid a tots els arxius mp3, disponibles a la web oficial.
+La web de Catalunya Ràdio mostra tots els capítols d'El Búnquer amb un scroll infinit, de manera poc còmode per accedir a tots els capítols (sobretot els més vells). Té feed RSS, però allà només hi els darrers 350 capítols. Aquesta web simplement facilita l'accés ràpid a tots els arxius mp3, disponibles a la web oficial.
 
 Per crear aquesta web, primer vaig realitzar un **scraping** de la web oficial per recollir la informació de tots els capítols (enllaços a MP3, títols, temporades i descripcions) i generar un fitxer JSON que serveix com a índex de tots els capítols i base per al funcionament de la web.
+
+Més endavant vaig utilitzar la API pública per a completar el JSON amb més dades, com imatges i duració. La web per a realitzar les peticions és al repositori per a ús tècnic.
 <!-- Els scripts per reproduir el scraping són al repositori per a ús tècnic. -->
 
 ## Funcionalitats de la web

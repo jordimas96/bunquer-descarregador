@@ -1,7 +1,6 @@
 
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { SliderModule } from 'primeng/slider';
 import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
 
@@ -34,19 +33,16 @@ export class DescarregaMultiple {
     public rangCapitols: number[] = [0, this.maxRang];
 
     public seleccio = {
-        temporada1: true,
-        temporada2: true,
-        temporada3: true,
-        temporada4: true,
-        temporada5: true,
+        temporada1: false,
+        temporada2: false,
+        temporada3: false,
+        temporada4: false,
+        temporada5: false,
         millors: false,
     }
 
 
-    constructor(
-        public cs: CapitolsService,
-        public dialogRef: DynamicDialogRef
-    ) {
+    constructor(public cs: CapitolsService) {
         this.llistes = {
             temporada1: cs.capitolsPerTemporades[0],
             temporada2: cs.capitolsPerTemporades[1],
@@ -134,5 +130,35 @@ export class DescarregaMultiple {
     }
     cancelar() {
         this.cs.seguirDescarregant = false;
+    }
+
+    get seleccioBuida(): boolean {
+        return Object.values(this.seleccio).every(v => v === false);
+    }
+
+    esborrarSeleccio() {
+        this.seleccio = {
+            temporada1: false,
+            temporada2: false,
+            temporada3: false,
+            temporada4: false,
+            temporada5: false,
+            millors: false,
+        }
+
+        this.seleccioChange();
+    }
+
+    seleccionarTotesTemporades() {
+        this.seleccio = {
+            temporada1: true,
+            temporada2: true,
+            temporada3: true,
+            temporada4: true,
+            temporada5: true,
+            millors: false,
+        }
+
+        this.seleccioChange();
     }
 }

@@ -66,44 +66,7 @@ header {
         transition: opacity 0.3s;
     }
 
-    .descarrega-multiple.card {
-        background-color: #480011;
-        border-radius: 2rem;
-        padding: 1rem;
-    }
-
-    .boto.descarregar-en-grup {
-        background-color: #ffa4ba;
-        color: #80001e;
-        font-size: 1.5rem;
-        border-radius: 3rem;
-        padding: 1.5rem 2.5rem;
-        font-weight: bold;
-    }
-}
-
-
-// Eliminar estils modal //
-::ng-deep .p-dialog-mask.p-overlay-mask {
-    --p-mask-background: transparent;
-    overflow-y: auto;
-    padding-right: 15px;
-    padding: 0 0.5rem;
-
-    .p-dialog.modal-descarrega-multiple {
-        --p-dialog-background: none;
-        --p-dialog-border-color: none;
-        --p-dialog-border-radius: 2rem;
-        border: none !important;
-
-        max-width: 1200px;
-        width: 100%;
-
-        .p-dialog-header { display: none; }
-        .p-dialog-content {
-            padding: 0;
-            background: none;
-            overflow-y: visible;
-        }
+    app-descarrega-multiple {
+        margin-bottom: 6rem;
     }
 }

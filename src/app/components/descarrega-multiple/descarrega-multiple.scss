@@ -1,46 +1,44 @@
 @import "src/styles.scss";
 
-:host {
-    display: block;
-    margin-bottom: 2rem; // Espai no clickable com a backdrop :/ //
-}
+:host { display: block; }
 
-.content {
-    display: block;
+.descarrega-multiple.card {
+    background-color: #520c1c;
+    color: #ffd2dc;
+    border-radius: 2.5rem;
+    font-size: 1.5rem;
 
-
-    background-color: #91002243;
-    color: white;
-    backdrop-filter: blur(60px);
+    padding: 1rem;
+    @include mobil { padding: 0.5rem; }
     
     text-align: center;
 
-    padding: 2rem;
-    border-radius: 2rem;
-
-    font-size: 1.5rem;
-    
-    box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.6);
-    
-    .boto.tancar {
-        position: absolute;
-        top: 0;
-        right: 0;
-
-        height: 2.5rem;
-        width: 2.5rem;
-        font-size: 1.5rem;
-        border-radius: 3rem;
-        margin: 1rem;
-        
+    .botons-rapids {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 0.25rem;
 
-        background-color: rgba(255, 164, 186, 0.30);
-        color: #ffffff;
+        font-size: 1rem;
+
+        button {
+            color: hsl(336, 100%, 25%);
+            border-radius: 3rem;
+            font-weight: bold;
+
+            padding: 0.25rem 0.5rem;
+            border-radius: 1rem;
+        }
+        .esborrar {
+            width: 2rem;
+            height: 2rem;
+            
+            background-color: #ff4271;
+        }
+        .seleccionar {
+            background-color: #ffa4ba;
+        }
     }
-
 
     .botons-temporades {
         display: flex;
@@ -60,6 +58,7 @@
             }
 
             background-color: #fff2;
+            color: white;
 
             &.selected {
                 background-color: #ffa4ba;
@@ -104,13 +103,10 @@
 
         .info-capitol.card {
             
-            // background-image: var(--fons);
-            // background-size: cover;
-            // background-position: center;
-            
             position: relative;
 
             background-color: hsla(345, 100%, 82%, 0.12);
+            color: white;
             padding: 1rem;
 
             flex: 1;
@@ -135,9 +131,12 @@
             }
 
             .titol {
-                color: hsl(345, 100%, 85%);
+                color: hsl(344, 100%, 91%);
+                background-color: #ffd2dc2e;
                 border-radius: 2rem;
-                padding: 0 1rem;
+                padding: 0 0.75rem;
+                width: fit-content;
+                backdrop-filter: blur(10px);
             }
             .nom {
                 font-size: 1.2rem;
@@ -147,7 +146,8 @@
     }
 
     section.preview-descarrega {
-        background-color: #ffa4ba40;
+        background-color: #ffa4ba26;
+        color: white;
         border-radius: 2rem;
         padding: 1rem;
 
@@ -229,10 +229,3 @@
 .text-80 {
     color: rgba(255, 255, 255, 0.8);
 }
-
-// section {
-//     background-color: #ffa4ba40;
-//     border-radius: 1.5rem;
-//     margin-bottom: 1rem;
-//     padding: 1rem;
-// }
