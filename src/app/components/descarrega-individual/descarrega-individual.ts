@@ -40,7 +40,7 @@ export class DescarregaIndividual {
     }
 
     descarregaTemporada(index: number) {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 250);
         this.sts.seleccionar((index + 1) as 1 | 2 | 3 | 4 | 5 | 6);
     }
 
