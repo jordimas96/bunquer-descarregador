@@ -1,0 +1,118 @@
+<!--                  Jordi Mas Parramon                 -->
+<!--            https://github.com/jordimas96            -->
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <title>generar JSON</title>
+    <meta name="author" content="Jordi Mas Parramon">
+    <meta name="description" content="Eina per a generar el JSON">
+
+    <meta name="color-scheme" content="dark">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            color-scheme: dark;
+            background-color: black;
+            color: white;
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+            font-size: 2rem;
+            padding: 1rem 4rem;
+        }
+        pre {
+            font-family: consolas;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="text-avis">
+        <h1>Eina interna</h1>
+        <h2>Aquesta acció farà 1125 peticions HTTP al servidor de http://dinamics.ccma.cat/ per recopilar la informació de tots els episodis.</h2>
+        <button onclick="ferPeticions()">Fer peticions</button>
+    </div>
+
+
+    <pre id="pre"></pre>
+
+
+    <script src="ids.js"></script>
+    <script>
+
+        function ferPeticions() {
+            if (location.hostname.includes('github.io'))
+                throw new Error('Desactivat en producció. Executa-ho en local.');
+
+
+            document.getElementById("text-avis").style.display = "none";
+            const resultats = new Array(ids.length);
+
+            (async () => {
+                const concurrent = 50;
+                for (let i = 0; i < ids.length; i += concurrent) {
+                    const batch = ids.slice(i, i + concurrent);
+                    await Promise.all(batch.map(async (id, idx) => {
+                        try {
+                            const res = await fetch("http://dinamics.ccma.cat/pvideo/media.jsp?media=audio&version=0s&idint=" + id);
+                            const json = await res.json();
+                            resultats[i + idx] = json;
+                            document.getElementById("pre").textContent = `${i + 1} / ${ids.length}`;
+                        } catch (e) {
+                            console.error("Error", id, e);
+                        }
+                    }));
+                    await new Promise(resolve => setTimeout(resolve, 5));
+                }
+
+                const jsonMapejat = [];
+                for (let i = 0; i < resultats.length; i++) {
+                    const json = resultats[i];
+
+                    let [temporada, capitol] = [null, null];
+
+                    let title = "";
+                    if (trossos = json.informacio.descripcio.match(/Programa\s+([^\s-]+)/)) {
+                        [temporada, capitol] = trossos?.[1].split('x').map(Number);
+                        title = temporada + "x" + capitol + " - " + json.informacio.titol;
+                    } else {
+                        title = json.informacio.titol;
+                    }
+
+                    jsonMapejat.push({
+                        title,
+                        urlArxiu: json.media.url,
+                        urlPagina: json.informacio.permalink,
+                        temporada,
+                        capitol,
+                        imatge_hd: json.keyframes[0].url,
+                        imatge: json.imatges.url,
+                        durada_text: json.informacio.durada.text,
+                        durada_ms: json.informacio.durada.milisegons,
+                        data_text: json.informacio.data_emissio.text,
+                        data: json.informacio.data_emissio.utc
+                    });
+                }
+
+                document.getElementById("pre").textContent = JSON.stringify(jsonMapejat, null, 4); // JSON.stringify(resultats, null, 4);
+                console.log("%c- JSON generat -", "color: lime");
+            })();
+        }
+
+
+
+    </script>
+</body>
+
+</html>
