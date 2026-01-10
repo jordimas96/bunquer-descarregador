@@ -48,7 +48,7 @@ header {
     max-width: 1200px;
     margin: auto;
 
-    font-size: 0.5rem;
+    font-size: 1.5rem;
 
     padding: 0 1rem;
     @include mobil { padding: 0 0.5rem; }
@@ -61,12 +61,33 @@ header {
         text-align: center;
 
         padding: 0.5rem;
-        margin: 4rem 0;
+        margin: 4rem 0 2rem;
 
         transition: opacity 0.3s;
     }
 
+    a.rss {
+        // hsl(27, 84%, 51%);
+        background-color: hsl(27, 84%, 18%);
+        color: hsl(27, 100%, 80%);
+
+        padding: 1rem;
+        padding-right: 2rem;
+        border-radius: 1.75rem;
+        
+        font-size: 1.25rem;
+
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+
+
+        img {
+            height: 3rem;
+        }
+    }
+
     app-descarrega-multiple {
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
     }
 }
