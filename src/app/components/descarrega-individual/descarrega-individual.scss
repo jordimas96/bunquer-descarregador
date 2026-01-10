@@ -54,7 +54,7 @@
             }
             &:not(.obert) {
                 
-                .taula {
+                .content {
                     display: none;
                 }
             }
@@ -80,160 +80,176 @@
             }
         }
 
-        .taula {
-            font-size: 1.25rem;
-            font-weight: 300;
-            // width: 96%;
+        .content {
             margin: 1rem;
-            @include mobil { margin: 0.5rem; }
+            @include mobil { margin: 1rem 0.5rem 0.5rem; }
 
-            border-radius: 1.5rem;
+            .boto.descarregar-temporada {
+                background-color: rgb(255, 162, 185);
+                color: hsl(336, 100%, 25%);
+                
+                font-size: 1.1rem;
 
-            color: white;
+                border-radius: 1rem;
+                font-weight: bold;
 
-            overflow: hidden;
-            
-            tr.header {
-                background-color: hsl(346, 97%, 25%);
+                padding: 0.5rem 1rem;
+            }
 
-                th {
-                    padding: 0.5rem 1rem;
-                    @include mobil { padding: 0.5rem 1rem; }
-                    &:first-child { border-top-left-radius: 1.5rem; }
-                    &:last-child { border-top-right-radius: 1.5rem; }
+
+            .taula {
+                font-size: 1.25rem;
+                font-weight: 300;
+                // width: 96%;
+
+                border-radius: 1.5rem;
+
+                color: white;
+
+                overflow: hidden;
+                
+                tr.header {
+                    background-color: hsl(346, 97%, 25%);
+
+                    th {
+                        padding: 0.5rem 1rem;
+                        @include mobil { padding: 0.5rem 1rem; }
+                        &:first-child { border-top-left-radius: 1.5rem; }
+                        &:last-child { border-top-right-radius: 1.5rem; }
+                    }
                 }
-            }
-            th, td {
-                padding: 0.25rem 0.5rem;
-                text-align: center;
-            }
+                th, td {
+                    padding: 0.25rem 0.5rem;
+                    text-align: center;
+                }
 
-            tr.fila {
-                transition: height 0.3s, background-color 0.3s, ;
+                tr.fila {
+                    transition: height 0.3s, background-color 0.3s, ;
 
-                &:nth-child(even) { background-color: hsl(346, 30%, 10%); }
-                &:nth-child(odd) { background-color: hsl(346, 30%, 13%) }
+                    &:nth-child(even) { background-color: hsl(346, 30%, 10%); }
+                    &:nth-child(odd) { background-color: hsl(346, 30%, 13%) }
 
-                &:hover {
-                    background-color: #640017;
+                    &:hover {
+                        background-color: #640017;
 
-                    .titol {
-                        font-size: 1.35rem;
-                        @include mobil {
-                            font-size: 1rem;
+                        .titol {
+                            font-size: 1.35rem;
+                            @include mobil {
+                                font-size: 1rem;
+                            }
+                            font-weight: bold;
+                            
+                            &::before {
+                                opacity: 0.4;
+                            }
                         }
-                        font-weight: bold;
+                        .botons .boto {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            &.descarregar {
+                                height: 9.5rem;
+                                font-size: 1.75rem;
+                                border-radius: 2.5rem;
+                            }
+                            &.escoltar {
+                                height: 5rem;
+                                font-size: 1.5rem;
+                                border-radius: 1.625rem;
+                            }
+                        }
                         
-                        &::before {
-                            opacity: 0.4;
+                    }
+
+                    .capitol {
+                        .num-capitol {
+                            color: #d6aeb7;
+                            font-size: 1rem;
+                            margin-right: 0.125rem;
                         }
                     }
-                    .botons .boto {
+
+                    .titol {
+                        text-align: left;
+                        @include mobil { font-size: 1rem; }
+
+                        z-index: 1;
+                        position: relative;
+
+                        transition: font-size 0.3s, font-weight 0.3s;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            inset: 0;
+                            background-size: cover;
+                            background-position: center;
+                            opacity: 0.2;
+                            background-image: var(--fons);
+                            z-index: -1;
+
+                            transition: opacity 0.3s;
+                        }
+                    }
+                    td .botons {
+                        display: flex;
+                        gap: 0.5rem;
+                        @include mobil { gap: 0.25rem; }
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                    .boto {
+                        color: white;
+                        border-radius: 1.4rem;
+
+                        height: 2.75rem;
+                        
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        
+                        transition: height 0.3s, font-size 0.3s, border-radius 0.3s;
+
+                        &:disabled {
+                            opacity: 0.5;
+                            cursor: default;
+                        }
 
                         &.descarregar {
-                            height: 9.5rem;
-                            font-size: 1.75rem;
-                            border-radius: 2.5rem;
-                        }
-                        &.escoltar {
-                            height: 5rem;
-                            font-size: 1.5rem;
-                            border-radius: 1.625rem;
-                        }
-                    }
-                    
-                }
+                            background-color: #2d46ff;
+                            &:hover { background-color: #00a2ff !important; }
 
-                .capitol {
-                    .num-capitol {
-                        color: #d6aeb7;
-                        font-size: 1rem;
-                        margin-right: 0.125rem;
-                    }
-                }
+                            width: 5.25rem;
 
-                .titol {
-                    text-align: left;
-                    @include mobil { font-size: 1rem; }
+                            @include mobil {
+                                width: 4rem;
+                            }
 
-                    z-index: 1;
-                    position: relative;
+                            &.descarregat {
+                                background-color: hsl(140, 76%, 34%);
+                                color: rgb(163, 255, 126);
+                                pointer-events: none;
+                            }
 
-                    transition: font-size 0.3s, font-weight 0.3s;
+                            p-progress-spinner {
+                                width: 20px;
+                                height: 20px;
+                                vertical-align: middle;
 
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        inset: 0;
-                        background-size: cover;
-                        background-position: center;
-                        opacity: 0.2;
-                        background-image: var(--fons);
-                        z-index: -1;
-
-                        transition: opacity 0.3s;
-                    }
-                }
-                td .botons {
-                    display: flex;
-                    gap: 0.5rem;
-                    @include mobil { gap: 0.25rem; }
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .boto {
-                    color: white;
-                    border-radius: 1.4rem;
-
-                    height: 2.75rem;
-                    
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    
-                    transition: height 0.3s, font-size 0.3s, border-radius 0.3s;
-
-                    &:disabled {
-                        opacity: 0.5;
-                        cursor: default;
-                    }
-
-                    &.descarregar {
-                        background-color: #2d46ff;
-                        &:hover { background-color: #00a2ff !important; }
-
-                        width: 5.25rem;
-
-                        @include mobil {
-                            width: 4rem;
-                        }
-
-                        &.descarregat {
-                            background-color: hsl(140, 76%, 34%);
-                            color: rgb(163, 255, 126);
-                            pointer-events: none;
-                        }
-
-                        p-progress-spinner {
-                            width: 20px;
-                            height: 20px;
-                            vertical-align: middle;
-
-                            ::ng-deep .p-progressspinner-circle {
-                                stroke: white !important;
+                                ::ng-deep .p-progressspinner-circle {
+                                    stroke: white !important;
+                                }
                             }
                         }
-                    }
 
-                    &.escoltar {
-                        background-color: hsl(346, 100%, 25%);
-                        &:hover { background-color: #dd0034 !important; }
-                        
-                        width: 2.75rem;
+                        &.escoltar {
+                            background-color: hsl(346, 100%, 25%);
+                            &:hover { background-color: #dd0034 !important; }
+                            
+                            width: 2.75rem;
+                        }
                     }
                 }
             }

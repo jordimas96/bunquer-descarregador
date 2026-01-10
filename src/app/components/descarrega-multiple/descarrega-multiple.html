@@ -2,10 +2,10 @@
     <div class="d-flex flex-wrap column-gap-2 row-gap-3 justify-content-between align-items-center m-2 mb-4">
         <h3 class="text-start mb-0 ps-2">Descarrega'ls tots de cop:</h3>
         <div class="botons-rapids ms-auto">
-            @if (!seleccioBuida) {
-                <button class="boto esborrar" (click)="esborrarSeleccio()"><i class="fa-solid fa-xmark"></i></button>
+            @if (!sts.seleccioBuida) {
+                <button class="boto esborrar" (click)="sts.esborrarSeleccio()"><i class="fa-solid fa-xmark"></i></button>
             }
-            <button class="boto seleccionar" (click)="seleccionarTotesTemporades()">Seleccionar les 5 temporades (~ 25 min)</button>
+            <button class="boto seleccionar" (click)="sts.seleccionarLes5()">Seleccionar totes 1-5 (~ 25 min)</button>
         </div>
     </div>
 
@@ -13,11 +13,11 @@
         <h4 class="mt-5 mb-4">Temporades:</h4>
         <div class="botons-temporades mt-2">
             @for (boto of botonsTemporades; track boto.id) {
-                <label [class.selected]="seleccio[boto.id]" [class.disabled]="cs.descarregant">
-                    @if (seleccio[boto.id]) {
+                <label [class.selected]="sts.seleccio[boto.id]" [class.disabled]="cs.descarregant">
+                    @if (sts.seleccio[boto.id]) {
                         <i class="fa-solid fa-check me-1"></i>
                     }
-                    <input type="checkbox" (change)="seleccioChange()" [disabled]="cs.descarregant" [(ngModel)]="seleccio[boto.id]">
+                    <input type="checkbox" (change)="seleccioChange()" [disabled]="cs.descarregant" [(ngModel)]="sts.seleccio[boto.id]">
                     {{ boto.text }}
                 </label>
             }
@@ -28,7 +28,7 @@
     @if (llistaSeleccionada.length) {
         <section class="pb-4 mt-5">
             <h4 class="mb-4">Rang de capítols seleccionats:</h4>
-            <p-slider class="my-2 mx-2" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
+            <p-slider class="my-2 mx-3" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"></p-slider>
         </section>
 
         <section class="mt-4 mb-4">

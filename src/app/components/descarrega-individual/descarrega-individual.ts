@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ProgressSpinner } from 'primeng/progressspinner';
 import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
+import { SeleccioTemporadaService } from 'src/app/services/seleccio-temporada.service';
 
 @Component({
     selector: 'app-descarrega-individual',
@@ -20,7 +21,10 @@ export class DescarregaIndividual {
 
     public desplegablesOberts = [false, false, false, false, false, false];
 
-    constructor(public cs: CapitolsService) { }
+    constructor(
+        public cs: CapitolsService,
+        public sts: SeleccioTemporadaService
+    ) { }
 
     get llistaPerTemporades() {
         return [...this.cs.capitolsPerTemporades, this.cs.millors];
@@ -33,6 +37,11 @@ export class DescarregaIndividual {
 
     actLlistaFiltrada() {
         this.llistaFiltrada = this.cs.getLlistaFiltrada(this.textBuscar.toLowerCase());
+    }
+
+    descarregaTemporada(index: number) {
+        window.scrollTo(0, 0);
+        this.sts.seleccionar((index + 1) as 1 | 2 | 3 | 4 | 5 | 6);
     }
 
 

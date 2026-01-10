@@ -1,8 +1,10 @@
 
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SliderModule } from 'primeng/slider';
+import { Subscription } from 'rxjs';
 import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
+import { SeleccioTemporadaService } from 'src/app/services/seleccio-temporada.service';
 
 @Component({
     selector: 'app-descarrega-multiple',
@@ -13,7 +15,7 @@ import { Capitol, CapitolsService } from 'src/app/services/capitols.service';
     templateUrl: './descarrega-multiple.html',
     styleUrl: './descarrega-multiple.scss'
 })
-export class DescarregaMultiple {
+export class DescarregaMultiple implements OnInit, OnDestroy {
 
     public readonly llistes: any;
 
@@ -32,17 +34,11 @@ export class DescarregaMultiple {
 
     public rangCapitols: number[] = [0, this.maxRang];
 
-    public seleccio = {
-        temporada1: false,
-        temporada2: false,
-        temporada3: false,
-        temporada4: false,
-        temporada5: false,
-        millors: false,
-    }
 
-
-    constructor(public cs: CapitolsService) {
+    constructor(
+        public cs: CapitolsService,
+        public sts: SeleccioTemporadaService
+    ) {
         this.llistes = {
             temporada1: cs.capitolsPerTemporades[0],
             temporada2: cs.capitolsPerTemporades[1],
@@ -51,9 +47,16 @@ export class DescarregaMultiple {
             temporada5: cs.capitolsPerTemporades[4],
             millors: cs.millors,
         };
+    }
 
-        this.seleccioChange();
-
+    private subscripcio: Subscription;
+    ngOnInit() {
+        this.subscripcio = this.sts.seleccioChange$.subscribe(() => {
+            this.seleccioChange();
+        });
+    }
+    ngOnDestroy() {
+        this.subscripcio.unsubscribe();
     }
 
     get maxRang(): number {
@@ -115,8 +118,8 @@ export class DescarregaMultiple {
 
     seleccioChange() {
         this.llistaSeleccionada = [];
-        Object.keys(this.seleccio).forEach(nomLlista => {
-            if (this.seleccio[nomLlista]) {
+        Object.keys(this.sts.seleccio).forEach(nomLlista => {
+            if (this.sts.seleccio[nomLlista]) {
                 this.llistaSeleccionada.push(...this.llistes[nomLlista]);
             }
         });
@@ -132,33 +135,5 @@ export class DescarregaMultiple {
         this.cs.seguirDescarregant = false;
     }
 
-    get seleccioBuida(): boolean {
-        return Object.values(this.seleccio).every(v => v === false);
-    }
 
-    esborrarSeleccio() {
-        this.seleccio = {
-            temporada1: false,
-            temporada2: false,
-            temporada3: false,
-            temporada4: false,
-            temporada5: false,
-            millors: false,
-        }
-
-        this.seleccioChange();
-    }
-
-    seleccionarTotesTemporades() {
-        this.seleccio = {
-            temporada1: true,
-            temporada2: true,
-            temporada3: true,
-            temporada4: true,
-            temporada5: true,
-            millors: false,
-        }
-
-        this.seleccioChange();
-    }
 }
