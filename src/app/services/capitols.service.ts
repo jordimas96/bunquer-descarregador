@@ -199,6 +199,7 @@ export class CapitolsService {
 
     private normalitzar(text: string): string {
         return text
+            .trim()
             .toLowerCase()
             .replaceAll("ç", "__CE_TRENCADA__")
             .normalize("NFD").replace(/[\u0300-\u036f]/g, "")

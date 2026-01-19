@@ -26,7 +26,6 @@
             border-radius: 3rem;
             font-weight: bold;
 
-            padding: 0.25rem 0.5rem;
             border-radius: 1rem;
         }
         .esborrar {
@@ -36,6 +35,7 @@
             background-color: #ff4271;
         }
         .seleccionar {
+            padding: 0.25rem 1rem;
             background-color: #ffa4ba;
         }
     }
@@ -51,10 +51,7 @@
 
             cursor: pointer;
             font-size: 1.5rem;
-
-            @include mobil {
-                font-size: 1.2rem;
-            }
+            @include mobil { font-size: 1.2rem; }
 
             background-color: #fff2;
             color: white;
@@ -73,7 +70,7 @@
             border-radius: 2rem;
             padding: 0.5rem 1rem;
 
-            transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+            transition: background-color 0.3s, color 0.3s, font-weight 0.3s, transform 0.1s !important;
 
             input[type=checkbox] {
                 display: none;
@@ -83,12 +80,18 @@
 
     p-slider {
         --p-slider-track-size: 10px;
+        --p-slider-range-background: transparent;
         --p-slider-range-background: #f61e50;
-        --p-slider-track-background: #ff61863d;
+        // --p-slider-track-background: #ff61863d;
         --p-slider-handle-content-background: #ff7696;
         
         &.p-disabled {
             filter: saturate(0.5);
+        }
+
+        ::ng-deep .p-slider-range {
+            mix-blend-mode: color;
+            // backdrop-filter: contrast(1.25);
         }
     }
 
@@ -173,9 +176,9 @@
         .boto.descarregar {
             background-color: hsl(336, 100%, 79%);
             color: hsl(336, 100%, 25%);
-            font-size: 1.5rem;
+            font-size: 1.75rem;
             border-radius: 3rem;
-            padding: 1.5rem 2.5rem;
+            padding: 1.25rem 2rem;
             font-weight: bold;
         }
     }
