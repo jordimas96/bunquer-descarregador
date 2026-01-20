@@ -28,9 +28,7 @@
     @if (llistaSeleccionada.length) {
         <section class="pb-4 mt-5">
             <h4 class="mb-4">Rang de capítols seleccionats:</h4>
-            <p-slider class="my-2 mx-3" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant"
-                [style]="'--p-slider-track-background:' + gradientSlider"
-            />
+            <p-slider class="my-2 mx-3" [(ngModel)]="rangCapitols" [range]="true" [min]="0" [max]="maxRang" step="1" [disabled]="cs.descarregant" />
         </section>
 
         <section class="mt-4 mb-4">

@@ -80,18 +80,12 @@
 
     p-slider {
         --p-slider-track-size: 10px;
-        --p-slider-range-background: transparent;
         --p-slider-range-background: #f61e50;
-        // --p-slider-track-background: #ff61863d;
+        --p-slider-track-background: #ff61863d;
         --p-slider-handle-content-background: #ff7696;
         
         &.p-disabled {
             filter: saturate(0.5);
-        }
-
-        ::ng-deep .p-slider-range {
-            mix-blend-mode: color;
-            // backdrop-filter: contrast(1.25);
         }
     }
 

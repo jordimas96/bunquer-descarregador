@@ -34,8 +34,6 @@ export class DescarregaMultiple implements OnInit, OnDestroy {
 
     public rangCapitols: number[] = [0, this.maxRang];
 
-    public gradientSlider;
-
 
     constructor(
         public cs: CapitolsService,
@@ -127,8 +125,6 @@ export class DescarregaMultiple implements OnInit, OnDestroy {
 
         // Reset slider //
         this.rangCapitols = [0, this.maxRang];
-
-        this.actualitzarGradientSlider();
     }
 
     descarregar() {
@@ -136,33 +132,6 @@ export class DescarregaMultiple implements OnInit, OnDestroy {
     }
     cancelar() {
         this.cs.seguirDescarregant = false;
-    }
-
-    actualitzarGradientSlider() {
-        let gradient = "";
-        let episodisPerTemporada: number[] = [];
-        let episodisTotals = 0;
-        Object.keys(this.sts.seleccio).forEach(nomLlista => {
-            if (this.sts.seleccio[nomLlista]) {
-                episodisPerTemporada.push(this.llistes[nomLlista].length);
-                episodisTotals += this.llistes[nomLlista].length;
-            }
-        });
-        
-        let percentatgeAnterior = 0;
-        episodisPerTemporada.forEach((t, i) => {
-            // hsl(346.15, 58.71%, 30.39%)
-            let hsl = `\nhsl(346.15, 35%, ${25 + i * 10}%)`;
-            let percentatgeActual = percentatgeAnterior + t / episodisTotals * 100;
-            
-            gradient += `${hsl} ${percentatgeAnterior.toFixed(2)}% ${percentatgeActual.toFixed(2)}%`;
-
-            percentatgeAnterior = percentatgeActual;
-            if (i != episodisPerTemporada.length - 1)
-                gradient += ", ";
-        });
-        
-        this.gradientSlider = `repeating-linear-gradient(to right, ${gradient});`;
     }
 
 
