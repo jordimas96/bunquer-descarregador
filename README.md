@@ -34,7 +34,7 @@ Més endavant vaig utilitzar la API pública per a completar el JSON amb més da
 
 ## Objectiu
 
-Aquest projecte és **independent**, creat per fer més accessible la cultura catalana i fomentar l'ús del català. No està afiliat ni té permís oficial de 3Cat o Catalunya Ràdio. Aquesta web **NO** allotja cap arxiu.
+Aquest projecte és **independent**, creat per fer més accessible la cultura catalana i fomentar l'ús del català. No està afiliat a 3Cat ni a Catalunya Ràdio. Aquesta web **NO** allotja cap arxiu.
 
 ## Autor
 
